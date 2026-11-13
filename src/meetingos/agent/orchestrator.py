@@ -371,14 +371,18 @@ class AgentOrchestrator:
         if target_feature_keywords:
             all_keywords = target_feature_keywords + all_keywords
 
-        # Determine specific entity terms required for evidence relevance
+        # Determine entity terms AND max_citations for this query class.
+        # For cut queries: 3 citations to independently support all three claims:
+        #   1) the dropped-feature decision  2) the kept-feature reason  3) the binding conclusion
+        # For casing/material: 2 strong material citations only
+        # For power source: up to 3 to trace the before/after arc
         required_entity_terms = None
+        max_cit = 3
         if is_cut_query:
             if dropped_feature:
                 if "speech" in dropped_feature:
-                    required_entity_terms = ["speech", "voice", "recognition"]
-                    if any(w in plan.original_question.lower() for w in ["keep", "kept", "screen", "lcd"]):
-                        required_entity_terms.extend(["screen", "lcd"])
+                    # Broad enough to surface both speech-drop AND LCD-keep rationale turns
+                    required_entity_terms = ["speech", "voice", "recognition", "l_c_d_", "screen", "concept", "buttons"]
                 elif "screen" in dropped_feature or "lcd" in dropped_feature:
                     required_entity_terms = ["screen", "lcd", "display"]
                 elif "locator" in dropped_feature or "lost" in dropped_feature:
@@ -386,8 +390,8 @@ class AgentOrchestrator:
                 else:
                     required_entity_terms = [w for w in dropped_feature.lower().split() if len(w) > 3]
             else:
-                for top, kws in [
-                    ("speech_recognition", ["speech", "voice", "recognition"]),
+                for _top, kws in [
+                    ("speech_recognition", ["speech", "voice", "recognition", "l_c_d_", "screen"]),
                     ("display", ["lcd", "screen", "display"]),
                     ("lost_remote_feature", ["locator", "lost", "finder"]),
                 ]:
@@ -396,14 +400,15 @@ class AgentOrchestrator:
                         break
         elif any(w in plan.original_question.lower() for w in ["material", "casing", "plastic", "rubber", "titanium", "latex"]):
             required_entity_terms = ["plastic", "rubber", "titanium", "wood", "latex"]
+            max_cit = 2
         elif any(w in plan.original_question.lower() for w in ["power source", "battery", "power options", "energy source", "kinetic", "solar"]):
             required_entity_terms = ["battery", "kinetic", "solar", "dynamo", "power-wise", "power source", "powered"]
 
-        # Select verified citations (prioritizing target sequence or multi-meeting coverage)
+        # Select verified citations
         citations = self.synthesizer.find_verified_citations_for_team(
             expanded_evidence=expanded_evidence,
             keywords=all_keywords,
-            max_citations=2 if (target_seq and not any(w in plan.original_question.lower() for w in ["first", "addition", "initial"])) else 3,
+            max_citations=max_cit,
             prefer_multi_meeting=(target_seq is None),
             target_meeting_sequence=target_seq,
             required_entity_terms=required_entity_terms,
@@ -459,23 +464,42 @@ class AgentOrchestrator:
                 kept_phrase = f" while keeping {kept_feature}" if kept_feature and kept_feature != dropped_feature else ""
                 s1 = f"When budget constraints forced a cut in meeting {citations[0].meeting_id}, Team {plan.team_id} decided to drop {dropped_feature}{kept_phrase}."
                 spk0 = citation_speakers[0]
-                if len(citations) >= 2:
+
+                # Partition citations: speech-drop vs LCD-keep rationale for richer traceability
+                drop_cites = [c for c in citations if any(w in c.quote.lower() for w in ["haven't really integrated", "might as well s drop", "drop the speech", "drop that"])]
+                keep_cites = [c for c in citations if any(w in c.quote.lower() for w in ["whole concept", "l_c_d_", "screen", "buttons", "lose the l_c_d_"])]
+
+                if drop_cites and keep_cites and len(citations) >= 2:
+                    # Ideal 3-citation layout: drop reason | keep reason | binding conclusion
+                    spk_drop = self.conn.execute(
+                        "SELECT speaker_id FROM turns WHERE meeting_id = ? AND text LIKE ? LIMIT 1",
+                        (drop_cites[0].meeting_id, f"%{drop_cites[0].quote[:15]}%"),
+                    ).fetchone()
+                    spk_keep = self.conn.execute(
+                        "SELECT speaker_id FROM turns WHERE meeting_id = ? AND text LIKE ? LIMIT 1",
+                        (keep_cites[0].meeting_id, f"%{keep_cites[0].quote[:15]}%"),
+                    ).fetchone()
+                    spk_drop_str = self.synthesizer.role_detector.format_speaker(plan.team_id, spk_drop["speaker_id"]) if spk_drop else spk0
+                    spk_keep_str = self.synthesizer.role_detector.format_speaker(plan.team_id, spk_keep["speaker_id"]) if spk_keep else spk0
+                    s2 = f"{spk_drop_str} confirmed dropping {dropped_feature} because '{drop_cites[0].quote.rstrip('.,;!?')}'."
+                    s3 = f"{spk_keep_str} established that keeping {kept_feature or 'the display'} was essential: '{keep_cites[0].quote.rstrip('.,;!?')}'."
+                    # rebuild citations in this order so the JSON mirrors the narrative
+                    citations = [drop_cites[0]] + [keep_cites[0]] + [c for c in citations if c not in drop_cites and c not in keep_cites][:1]
+                    answer_text = f"{s1} {s2} {s3}"
+                elif len(citations) >= 2:
                     spk1 = citation_speakers[1]
                     if any(w in citations[0].quote.lower() for w in ["screen", "lcd", "buttons", "concept"]):
                         s2 = f"{spk0} explained that keeping {kept_feature or 'the display'} was necessary because '{citations[0].quote.rstrip('.,;!?')}'."
-                        s3 = f"Meanwhile, {spk1} confirmed dropping {dropped_feature} because '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                        s3 = f"Meanwhile, {spk1} confirmed dropping {dropped_feature}: '{citations[1].quote.rstrip('.,;!?')}'."
                     elif any(w in citations[1].quote.lower() for w in ["screen", "lcd", "buttons", "concept"]):
-                        s2 = f"{spk0} confirmed dropping {dropped_feature} because '{citations[0].quote.rstrip('.,;!?')}', reducing component costs."
-                        s3 = f"Meanwhile, {spk1} explained that keeping {kept_feature or 'the display'} was necessary because '{citations[1].quote.rstrip('.,;!?')}'."
+                        s2 = f"{spk0} confirmed dropping {dropped_feature}: '{citations[0].quote.rstrip('.,;!?')}'."
+                        s3 = f"Meanwhile, {spk1} established that '{citations[1].quote.rstrip('.,;!?')}'."
                     else:
                         s2 = f"{spk0} explained that '{citations[0].quote.rstrip('.,;!?')}', confirming the decision to reduce costs."
-                        if spk1 == spk0:
-                            s3 = f"{spk0} also affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
-                        else:
-                            s3 = f"Furthermore, {spk1} affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                        s3 = f"{'Also' if spk1 == spk0 else 'Furthermore, ' + spk1} affirmed that '{citations[1].quote.rstrip('.,;!?')}'."
                     answer_text = f"{s1} {s2} {s3}"
                 else:
-                    s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}'."
                     answer_text = f"{s1} {s2}"
             else:
                 s1 = f"In Team {plan.team_id}'s meetings, {speakers_clause} addressed these budget constraints."

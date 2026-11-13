@@ -2,7 +2,7 @@
   "answers": [
     {
       "question_id": "Q01",
-      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker C explained that 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that', confirming the decision to reduce costs. Furthermore, Speaker A (Project Manager) affirmed that 'Okay so we drop the speech' to satisfy their budget target.",
+      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker C confirmed dropping speech recognition because 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that'. Speaker C established that keeping the LCD screen was essential: 'Like let's drop all the buttons, and just make one I mean we're gonna use the L_C_D_ screen anyway'.",
       "citations": [
         {
           "meeting_id": "TS3006d",
@@ -10,7 +10,7 @@
         },
         {
           "meeting_id": "TS3006d",
-          "quote": "Okay so we drop the speech."
+          "quote": "Like let's drop all the buttons, and just make one I mean we're gonna use the L_C_D_ screen anyway."
         }
       ],
       "abstained": false
@@ -26,10 +26,6 @@
         {
           "meeting_id": "ES2003d",
           "quote": "Um plastic for some reason incurs no cost, which I've had to very much make advantage of, despite the fact that rubber's only got a value of two Euros per unit."
-        },
-        {
-          "meeting_id": "ES2003c",
-          "quote": "The uh rubber material is the type of stress ball material, not just normal rubber."
         }
       ],
       "abstained": false
@@ -45,10 +41,6 @@
         {
           "meeting_id": "TS3009c",
           "quote": "I think we Why don't we um use uh titanium or or a hard, yeah, some kind of metal for the uh the the whole remote except the front."
-        },
-        {
-          "meeting_id": "TS3009d",
-          "quote": "plastic coloured titanium, uh titanium-coloured plastic?"
         }
       ],
       "abstained": false
@@ -216,13 +208,17 @@
         {
           "meeting_id": "ES2004d",
           "quote": "The design should minimise R_S_I_ and be easy to locate and we were still um uh slightly ambivalent as to whether to use voice recognition there"
+        },
+        {
+          "meeting_id": "ES2004d",
+          "quote": "Now we talked about voice recognition, we talked about a beeper, have we really have the designers come to any dec real decision on that?"
         }
       ],
       "abstained": false
     },
     {
       "question_id": "Q13",
-      "answer": "In Team TS3004's meetings (TS3004b, TS3004c), Speaker D, Speaker C resolved this design requirement. In TS3004b, Speaker D stated that 'Uh the last uh experiment uh was about gadgets, like uh speech recognition'. Furthermore, in TS3004c, Speaker C established that 'I I haven't got anything about speech recognition, but'.",
+      "answer": "In Team TS3004's meetings (TS3004b, TS3004c), Speaker D, Speaker C, Speaker B resolved this design requirement. In TS3004b, Speaker D stated that 'Uh the last uh experiment uh was about gadgets, like uh speech recognition'. Furthermore, in TS3004c, Speaker C established that 'I I haven't got anything about speech recognition, but'.",
       "citations": [
         {
           "meeting_id": "TS3004b",
@@ -231,6 +227,10 @@
         {
           "meeting_id": "TS3004c",
           "quote": "I I haven't got anything about speech recognition, but"
+        },
+        {
+          "meeting_id": "TS3004c",
+          "quote": "Yeah, it Well that's integrated in the chip, so if you use the speech recognition, that's in it."
         }
       ],
       "abstained": false
@@ -294,7 +294,7 @@
     },
     {
       "question_id": "Q17",
-      "answer": "When budget constraints forced a cut in meeting ES2009d, Team ES2009 decided to drop the secondary power source while keeping the LCD screen. Speaker A (Industrial Designer) confirmed that 'This is, this is very high-powered stuff here, double-clicking, there we go' to satisfy their budget target.",
+      "answer": "When budget constraints forced a cut in meeting ES2009d, Team ES2009 decided to drop the secondary power source while keeping the LCD screen. Speaker A (Industrial Designer) confirmed that 'This is, this is very high-powered stuff here, double-clicking, there we go'.",
       "citations": [
         {
           "meeting_id": "ES2009d",
@@ -388,7 +388,7 @@
     },
     {
       "question_id": "Q23",
-      "answer": "In Team ES2006's meetings (ES2006d), Speaker D (User Interface Designer), Speaker B (Marketing Expert) resolved this design requirement. In ES2006d, Speaker D (User Interface Designer) stated that 'The only the only problem being that at the end we had to cut some things down because of the the budget we had'. Furthermore, in ES2006d, Speaker B (Marketing Expert) established that 'back it, this is just had to be changed'.",
+      "answer": "In Team ES2006's meetings (ES2006d), Speaker D (User Interface Designer), Speaker B (Marketing Expert), Speaker A (Industrial Designer) resolved this design requirement. In ES2006d, Speaker D (User Interface Designer) stated that 'The only the only problem being that at the end we had to cut some things down because of the the budget we had'. Furthermore, in ES2006d, Speaker B (Marketing Expert) established that 'back it, this is just had to be changed'.",
       "citations": [
         {
           "meeting_id": "ES2006d",
@@ -397,6 +397,10 @@
         {
           "meeting_id": "ES2006d",
           "quote": "back it, this is just had to be changed."
+        },
+        {
+          "meeting_id": "ES2006d",
+          "quote": "Although we could have made the R_s better had we had five more minute."
         }
       ],
       "abstained": false
