@@ -12,15 +12,41 @@ from pathlib import Path
 os.environ["HF_HUB_DISABLE_XET"] = "1"
 
 # ---------------------------------------------------------------------------
-# Paths
+# Paths (Dynamically resolved across Linux, Colab, Mac, and Windows)
 # ---------------------------------------------------------------------------
-DATA_DIR = Path(os.environ.get("MEETINGOS_DATA_DIR",
-    r"D:\Catalist_Media\Catalist_AI_Intern_Build_Test_Data"))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
+def _find_data_dir() -> Path:
+    if "MEETINGOS_DATA_DIR" in os.environ:
+        return Path(os.environ["MEETINGOS_DATA_DIR"])
+    candidates = [
+        PROJECT_ROOT / "data",
+        PROJECT_ROOT / "Catalist_AI_Intern_Build_Test_Data",
+        PROJECT_ROOT.parent / "Catalist_AI_Intern_Build_Test_Data",
+        Path(r"D:\Catalist_Media\Catalist_AI_Intern_Build_Test_Data"),
+    ]
+    for c in candidates:
+        if (c / "transcripts").exists() or c.exists():
+            return c
+    return candidates[0]
+
+def _find_outputs_dir() -> Path:
+    if "MEETINGOS_OUTPUTS_DIR" in os.environ:
+        return Path(os.environ["MEETINGOS_OUTPUTS_DIR"])
+    candidates = [
+        PROJECT_ROOT / "outputs",
+        PROJECT_ROOT.parent / "meetingos" / "outputs",
+        Path(r"D:\Catalist_Media\meetingos\outputs"),
+    ]
+    for c in candidates:
+        if (c / "meetingos.db").exists() or c.exists():
+            return c
+    return candidates[0]
+
+DATA_DIR        = _find_data_dir()
 TRANSCRIPTS_DIR = DATA_DIR / "transcripts"
 QUESTIONS_FILE  = DATA_DIR / "questions.json"
-OUTPUTS_DIR     = Path(os.environ.get("MEETINGOS_OUTPUTS_DIR",
-    r"D:\Catalist_Media\meetingos\outputs"))
+OUTPUTS_DIR     = _find_outputs_dir()
 DB_PATH         = OUTPUTS_DIR / "meetingos.db"
 FAISS_DIR       = OUTPUTS_DIR / "faiss_indexes"
 
