@@ -11,11 +11,13 @@ Implements the central execution loop for query resolution:
 from __future__ import annotations
 
 import logging
+import os
 import sqlite3
 import time
 from typing import Optional
 
 from meetingos.agent.checkpoint import CheckpointManager
+from meetingos.agent.claude_client import ClaudeClient
 from meetingos.agent.planner import AgentPlanner, ExecutionPlan
 from meetingos.agent.synthesizer import EvidenceSynthesizer
 from meetingos.agent.tools import AgentTools
@@ -41,6 +43,7 @@ class AgentOrchestrator:
         planner: Optional[AgentPlanner] = None,
         synthesizer: Optional[EvidenceSynthesizer] = None,
         checkpoint_mgr: Optional[CheckpointManager] = None,
+        claude_client: Optional[ClaudeClient] = None,
         max_iterations: int = MAX_RETRIEVAL_ITERATIONS,
     ):
         self.conn = conn
@@ -48,6 +51,7 @@ class AgentOrchestrator:
         self.planner = planner or AgentPlanner(tools)
         self.synthesizer = synthesizer or EvidenceSynthesizer(conn)
         self.checkpoint_mgr = checkpoint_mgr or CheckpointManager(conn)
+        self.claude_client = claude_client or (ClaudeClient() if os.environ.get("ANTHROPIC_API_KEY") else None)
         self.max_iterations = max_iterations
 
     def run_question(
@@ -176,27 +180,35 @@ class AgentOrchestrator:
         """
         Synthesize evidence-grounded answer text and identify candidate citations.
         """
-        # Check if grounded benchmark answer exists for this benchmark question
-        from meetingos.agent.benchmark_knowledge import BENCHMARK_ANSWERS
-
-        if plan.question_id in BENCHMARK_ANSWERS:
-            bdata = BENCHMARK_ANSWERS[plan.question_id]
-            bench_citations = [
-                Citation(meeting_id=c["meeting_id"], quote=c["quote"])
-                for c in bdata.get("citations", [])
-            ]
-            return Answer(
-                question_id=plan.question_id,
-                answer=bdata["answer"],
-                citations=bench_citations,
-                abstained=False,
-            )
-
         if not expanded_evidence:
             return self.synthesizer.build_abstention(
                 plan.question_id,
                 f"No relevant evidence found for Team {plan.team_id}",
             )
+
+        # 1. Model-driven synthesis if Claude client is configured
+        if self.claude_client and self.claude_client.is_available:
+            evidence_turns = []
+            seen_tids = set()
+            for exp in expanded_evidence:
+                for t in exp.core_turns + exp.context_turns:
+                    if t.turn_id not in seen_tids:
+                        seen_tids.add(t.turn_id)
+                        evidence_turns.append({
+                            "meeting_id": t.meeting_id,
+                            "turn_id": t.turn_id,
+                            "speaker_id": t.speaker_id,
+                            "text": t.text,
+                        })
+
+            claude_ans = self.claude_client.synthesize_answer(
+                question_id=plan.question_id,
+                question_text=plan.original_question,
+                team_id=plan.team_id,
+                evidence_turns=evidence_turns,
+            )
+            if claude_ans and claude_ans.citations:
+                return claude_ans
 
         # Collect keywords from plan
         all_keywords = []

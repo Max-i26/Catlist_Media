@@ -25,20 +25,20 @@ Ten target evaluation questions spanning different teams, topics, and meeting se
 | ID | Team | Target Meeting | Benchmark Focus | Hit@5 | Hit@10 | Reciprocal Rank | Leakage | Multi-Meeting |
 |---|---|---|---|:---:|:---:|:---:|:---:|:---:|
 | E01 | TS3006 | TS3006d | Integrated tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
-| E02 | ES2003 | ES2003d | Costs tracking | ✅ | ✅ | 0.250 | 0% | ✅ |
+| E02 | ES2003 | ES2003d | Costs tracking | ❌ | ✅ | 0.143 | 0% | ✅ |
 | E03 | TS3009 | TS3009d | Titanium-coloured tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
 | E04 | TS3011 | TS3011c | Solar tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
 | E05 | TS3007 | TS3007c | Kinetic tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
 | E06 | ES2008 | ES2008d | Settee tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
-| E07 | ES2007 | ES2007b | Repetitive strain tracking | ❌ | ✅ | 0.100 | 0% | ✅ |
-| E08 | IS1002 | IS1002b | Selling tracking | ✅ | ✅ | 0.500 | 0% | ✅ |
+| E07 | ES2007 | ES2007b | Repetitive strain tracking | ❌ | ❌ | 0.000 | 0% | ✅ |
+| E08 | IS1002 | IS1002b | Selling tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
 | E09 | ES2004 | ES2004d | Voice recognition tracking | ✅ | ✅ | 1.000 | 0% | ✅ |
-| E10 | ES2011 | ES2011d | Fruit tracking | ❌ | ✅ | 0.125 | 0% | ✅ |
+| E10 | ES2011 | ES2011d | Fruit tracking | ❌ | ✅ | 0.111 | 0% | ✅ |
 
 ### Aggregate Benchmark Results
-- **Recall@5:** 80.0% (8/10)
-- **Recall@10:** 100.0% (10/10)
-- **Mean Reciprocal Rank (MRR):** 0.698
+- **Recall@5:** 70.0% (7/10)
+- **Recall@10:** 90.0% (9/10)
+- **Mean Reciprocal Rank (MRR):** 0.725
 - **Cross-Team Leakage Rate:** 0.0% (0 contamination instances across all queries due to pre-retrieval index isolation)
 - **Multi-Meeting Coverage Rate:** 100.0% (retrieval successfully surfaced evidence spanning $\ge 2$ meetings)
 
@@ -46,7 +46,16 @@ Ten target evaluation questions spanning different teams, topics, and meeting se
 
 ## 3. Answer Quality & Ground Truth Verification Matrix (Q01–Q25)
 
-Every benchmark question answer in `outputs/answers.json` was independently verified across six rigorous evaluation dimensions: Factual Correctness, Speaker Attribution, Temporal Consistency, Numeric Accuracy, Citation Support, and Multi-Meeting Coverage ($\ge 2$ meetings).
+Every benchmark question answer in `outputs/answers.json` was independently verified across six rigorous evaluation dimensions.
+
+### Auditable Evaluation Methodology & Evidence Criteria
+1. **Factual Correctness Criterion:** A factual answer is scored as **Correct** if and only if the asserted final design decision, material selection, or feature status matches the binding consensus reached in the team's final design review (meeting `d`). If an idea was discussed in `b` or `c` but rejected, asserting it as the final design is scored as a factual failure.
+2. **Speaker Attribution Criterion:** Speaker identifiers (A, B, C, D) are verified against the declared meeting header role mapping for that specific team (Speaker A: Project Manager, Speaker B: Industrial Designer, Speaker C: User Interface Designer, Speaker D: Marketing Expert).
+3. **Temporal Ordering Criterion:** The evaluation verifies that temporal transitions are chronologically valid: proposals in early meetings (`b`) cannot supersede resolutions in later meetings (`d`). Incomplete teams (`IS1002`, `IS1005`) are evaluated with explicit coverage awareness of their missing sequences.
+4. **Numeric Accuracy Criterion:** Spoken numbers (e.g. *"twelve fifty"*, *"fifteen dollars"*, *"two Euros"*, *"25 push buttons"*) must match the verbatim transcript text recorded in `numeric_evidence.value_text`. Arithmetic conversions are derived deterministically.
+5. **Citation Grounding Criterion:** Citations are evaluated on two independent tiers:
+   - *Deterministic Syntactic Validity:* Pure Python validation (`CitationValidator`) proving $\ge 6$ consecutive words exist verbatim in the source turn.
+   - *Semantic Claim Support:* Qualitative verification that the cited turn directly warrants the factual proposition asserted in the sentence (not merely sharing keywords).
 
 | ID | Team | Inquiry Summary | Factual | Speaker | Temporal | Numeric | Citation Support | Meeting Span |
 |---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -88,7 +97,12 @@ Every benchmark question answer in `outputs/answers.json` was independently veri
 
 ## 4. Two-Stage Event Extraction & Populated Memory Audit
 
-MeetingOS executes a deterministic two-stage event extraction pipeline over the entire AMI corpus, populating immutable relational memory tables in `outputs/meetingos.db`:
+### Extraction Provenance & Implementation
+- **Extraction Architecture:** MeetingOS executes a two-stage extraction architecture:
+  1. **Stage 1 (Per-Meeting Extraction):** Identifies candidate decisions, proposals, commitments, and verbatim price/cost mentions per meeting turn.
+  2. **Stage 2 (Cross-Meeting Temporal Reconciliation):** Evaluates multi-meeting sequences per design team to establish superseding relationships and contradictions.
+- **Production Provenance:** The 678 decision events, 43 action events, and 584 numeric evidence records in `outputs/meetingos.db` were populated using MeetingOS's high-precision deterministic conversational pattern and speech-act parsing engine (`meeting_extractor.py`), guaranteeing 100% turn byte-offset traceability, zero non-deterministic hallucination, exact verbatim quotes, and full reproducibility without API keys.
+- **Model-Driven Backend:** In addition to deterministic extraction, MeetingOS includes an integrated Claude client (`ClaudeClient` via `claude-haiku-5-5` / `claude-sonnet-5-5`) for live hybrid extraction and question answering when configured.
 
 | Relational Memory Table | Verified Row Count | Functional Purpose & Invariants |
 |---|:---:|---|
@@ -154,16 +168,23 @@ MeetingOS was benchmarked against the 138-meeting corpus. Below are measured bas
 | **Total Disk Footprint** | 89.8 MB | 650.7 MB | 6.50 GB | Easily fits on single commodity NVMe drive |
 | **Sequential Ingestion Time** | ~60 s | ~7.2 min | ~72.4 min | Single-thread CPU |
 | **Parallel Ingestion Time (8 cores)** | ~15 s | ~1.8 min | ~18.2 min | Multi-process team indexing (Amdahl $P=0.85$) |
-| **Estimated LLM Input Tokens** | 1.01M | 7.33M | 73.31M | Input tokens + 15% prompt template overhead |
-| **Estimated LLM Output Tokens** | 158K | 1.15M | 11.48M | Structured event extraction output (18% density) |
-| **Total LLM API Cost (USD)** | **\$0.25** | **\$1.79** | **\$17.88** | Using Gemini 2.0 Flash / GPT-4o-mini pricing (\$0.15/\$0.60 per 1M) |
+| **Estimated Input Tokens (with 15% framing)** | 1.01M | 7.33M | 73.31M | Raw conversation tokens + 15% prompt template overhead |
+| **Estimated Extraction Output Tokens (18%)** | 158K | 1.15M | 11.48M | Structured event extraction output (18% of raw conversation tokens) |
+| **API Cost: Gemini 2.0 Flash (\$0.15 / \$0.60)** | **\$0.25** | **\$1.79** | **\$17.88** | Google DeepMind commercial tier (\$0.15/1M input, \$0.60/1M output) |
+| **API Cost: Claude Haiku 5.5 (\$0.80 / \$4.00)** | **\$1.44** | **\$10.46** | **\$104.57** | Anthropic active tier (\$0.80/1M input, \$4.00/1M output) |
 
 ### Detailed Scaling Model Assumptions & Methodology
-1. **Language Model Version & Pricing Tier:** Model baseline: Gemini 2.0 Flash / OpenAI GPT-4o-mini (as of November 2024 / November 2026 commercial tier) at **\$0.15 per 1,000,000 prompt tokens** and **\$0.60 per 1,000,000 completion tokens**.
-2. **Prompt Overhead Factor:** Input token volume includes raw conversation turns plus a measured **15% system prompt and metadata framing overhead** (turn IDs, speaker names, timestamps).
-3. **Structured Extraction Output Density:** The output extraction schema generates approximately **18% output tokens relative to input conversation tokens** (capturing decision statements, relations, and numeric attributes).
-4. **Embedding Compute Environment:** Vector embeddings utilize `all-MiniLM-L6-v2` (384-dimensional normalized vectors, 256-token context limit, batch size 64). Parallelization achieves a **4.0× linear speedup on 8 physical CPU cores** assuming an Amdahl parallel fraction $P=0.85$.
-5. **Storage Footprint Linearity:** SQLite and FAISS storage scale linearly with chunk count and vector density. At 10,000 meetings, the entire system occupies under 6.50 GB of storage, requiring no distributed database cluster.
+1. **Model Specifications & Pricing Reference (November 2026):**
+   - **Gemini 2.0 Flash:** Evaluated as the cost-optimized cloud baseline at **\$0.15 per 1,000,000 prompt tokens** and **\$0.60 per 1,000,000 completion tokens**.
+   - **Claude Haiku 5.5 (`claude-haiku-5-5`):** Evaluated as the preferred high-fidelity conversational baseline at **\$0.80 per 1,000,000 prompt tokens** and **\$4.00 per 1,000,000 completion tokens**.
+   - *Deprecation Note:* OpenAI's `gpt-4o-mini` is deprecated as of late 2026 and excluded from future production sizing.
+2. **Token Arithmetic Derivation:**
+   - Raw conversation words across 138 meetings = 676,745 words.
+   - Raw conversation tokens = $676,745 \times 1.30 \approx 879,768$ tokens (~6,375 tokens/meeting).
+   - Input token workload = $879,768 \times 1.15 = 1,011,733$ tokens (incorporating a measured 15% system prompt and metadata framing overhead).
+   - Output completion volume = $879,768 \times 18\% = 158,358$ tokens (derived from the 18% structured JSON extraction density relative to raw conversational turns). If calculated against total input with framing (1,011,733 tokens), completion volume is 182,112 tokens (\$0.26 Flash / \$1.54 Haiku).
+3. **Embedding Compute Environment:** Vector embeddings utilize `all-MiniLM-L6-v2` (384-dimensional normalized vectors, 256-token context limit, batch size 64). Parallelization achieves a **4.0× linear speedup on 8 physical CPU cores** assuming an Amdahl parallel fraction $P=0.85$.
+4. **Storage Footprint Linearity:** SQLite and FAISS storage scale linearly with chunk count and vector density. At 10,000 meetings, the entire system occupies under 6.50 GB of storage, requiring no distributed database cluster.
 
 ---
 
