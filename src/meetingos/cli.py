@@ -373,12 +373,19 @@ def extract_cmd(db_path: Path) -> None:
     default=False,
     help="Use mock embedder for sub-second retrieval.",
 )
+@click.option(
+    "--db-path",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Path to SQLite database (defaults to auto-detected DB_PATH).",
+)
 def ask_cmd(
     query: str,
     team: Optional[str],
     use_claude: bool,
     api_key: Optional[str],
     use_mock: bool,
+    db_path: Optional[Path],
 ) -> None:
     """Ask a question live against MeetingOS organizational memory."""
     import os
@@ -394,12 +401,23 @@ def ask_cmd(
     from meetingos.agent.claude_client import ClaudeClient
     from meetingos.agent.orchestrator import AgentOrchestrator
 
-    conn = get_connection(DB_PATH, readonly=False)
+    target_db = Path(db_path).resolve() if db_path else Path(DB_PATH).resolve()
+    if not target_db.exists():
+        click.echo(
+            f"Error: Database file not found at: {target_db}\n"
+            f"Please verify that outputs/meetingos.db exists or pass --db-path.",
+            err=True,
+        )
+        sys.exit(1)
+
+    target_faiss = target_db.parent / "faiss_indexes" if not FAISS_DIR.exists() else FAISS_DIR
+
+    conn = get_connection(target_db, readonly=False)
     try:
         memory = SourceMemory(conn)
         lexical = LexicalIndexer(conn)
         embedder = TextEmbedder(lazy_load=False, use_mock=use_mock)
-        vector = TeamVectorIndexer(conn, embedder, index_dir=FAISS_DIR)
+        vector = TeamVectorIndexer(conn, embedder, index_dir=target_faiss)
         retriever = HybridRetriever(lexical, vector, memory)
         tools = AgentTools(conn, retriever, source_memory=memory)
         planner = AgentPlanner(tools)

@@ -274,8 +274,13 @@ CREATE TABLE IF NOT EXISTS agent_runs (
 
 def get_connection(db_path: Path, *, readonly: bool = False) -> sqlite3.Connection:
     """Return a configured SQLite connection."""
-    uri = f"file:{db_path}{'?mode=ro' if readonly else ''}"
-    conn = sqlite3.connect(uri, uri=True, check_same_thread=False)
+    resolved = Path(db_path).resolve()
+    resolved.parent.mkdir(parents=True, exist_ok=True)
+    if readonly:
+        uri = f"{resolved.as_uri()}?mode=ro"
+        conn = sqlite3.connect(uri, uri=True, check_same_thread=False)
+    else:
+        conn = sqlite3.connect(str(resolved), check_same_thread=False)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode = WAL")
     conn.execute("PRAGMA foreign_keys = ON")

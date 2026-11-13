@@ -26,9 +26,9 @@ def _find_data_dir() -> Path:
         Path(r"D:\Catalist_Media\Catalist_AI_Intern_Build_Test_Data"),
     ]
     for c in candidates:
-        if (c / "transcripts").exists() or c.exists():
+        if (c / "transcripts").exists():
             return c
-    return candidates[0]
+    return PROJECT_ROOT / "data"
 
 def _find_outputs_dir() -> Path:
     if "MEETINGOS_OUTPUTS_DIR" in os.environ:
@@ -39,9 +39,9 @@ def _find_outputs_dir() -> Path:
         Path(r"D:\Catalist_Media\meetingos\outputs"),
     ]
     for c in candidates:
-        if (c / "meetingos.db").exists() or c.exists():
+        if (c / "meetingos.db").exists():
             return c
-    return candidates[0]
+    return PROJECT_ROOT / "outputs"
 
 DATA_DIR        = _find_data_dir()
 TRANSCRIPTS_DIR = DATA_DIR / "transcripts"
