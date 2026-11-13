@@ -1,0 +1,1864 @@
+{
+  "manifest_version": "1.1",
+  "generated_at": "2026-11-13T14:13:44.533692+00:00",
+  "corpus_source": "AMI Meeting Corpus (Catalist reformatted)",
+  "total_files": 138,
+  "total_meetings": 138,
+  "total_teams": 35,
+  "total_turns": 48148,
+  "total_words": 676745,
+  "expected_file_count": 138,
+  "incomplete_teams": {
+    "IS1002": [
+      "b",
+      "c",
+      "d"
+    ],
+    "IS1005": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "files": [
+    {
+      "filename": "ES2002a.txt",
+      "meeting_id": "ES2002a",
+      "team_id": "ES2002",
+      "meeting_sequence": "a",
+      "sha256": "f785ca8bd989c55be5875f6713ff7ce13ef90ca7f152f504534ba4821b178155",
+      "file_bytes": 17014,
+      "turn_count": 155,
+      "word_count": 2600
+    },
+    {
+      "filename": "ES2002b.txt",
+      "meeting_id": "ES2002b",
+      "team_id": "ES2002",
+      "meeting_sequence": "b",
+      "sha256": "b17341f043548fb740d24ac6bf98930a2c4081c6a9405e45cda8d63a4ff81d71",
+      "file_bytes": 42204,
+      "turn_count": 283,
+      "word_count": 6993
+    },
+    {
+      "filename": "ES2002c.txt",
+      "meeting_id": "ES2002c",
+      "team_id": "ES2002",
+      "meeting_sequence": "c",
+      "sha256": "6e24cc1a5fe680367942bd38d530b0e3ae91897324b17fa0fc168a5d16810338",
+      "file_bytes": 47338,
+      "turn_count": 369,
+      "word_count": 7774
+    },
+    {
+      "filename": "ES2002d.txt",
+      "meeting_id": "ES2002d",
+      "team_id": "ES2002",
+      "meeting_sequence": "d",
+      "sha256": "8e0600d9cb7780344a9e82235c3fd7de0dffd3824a653eba6d6d818a518328c3",
+      "file_bytes": 52316,
+      "turn_count": 602,
+      "word_count": 7722
+    },
+    {
+      "filename": "ES2003a.txt",
+      "meeting_id": "ES2003a",
+      "team_id": "ES2003",
+      "meeting_sequence": "a",
+      "sha256": "5ced683345ff1abf50ec7e3111149e8cd17ba8268a64cc3995da0a63914ce447",
+      "file_bytes": 12647,
+      "turn_count": 84,
+      "word_count": 2041
+    },
+    {
+      "filename": "ES2003b.txt",
+      "meeting_id": "ES2003b",
+      "team_id": "ES2003",
+      "meeting_sequence": "b",
+      "sha256": "eaf84a7cfe48d7080b5b93f1299ba61c2d262407821f7d0d3e525638c59b75db",
+      "file_bytes": 34091,
+      "turn_count": 202,
+      "word_count": 5694
+    },
+    {
+      "filename": "ES2003c.txt",
+      "meeting_id": "ES2003c",
+      "team_id": "ES2003",
+      "meeting_sequence": "c",
+      "sha256": "90627b85e49b85d31072d6b0da47dbf5e7c13673fab67f0ad72635cd6f8e25f3",
+      "file_bytes": 35332,
+      "turn_count": 217,
+      "word_count": 5988
+    },
+    {
+      "filename": "ES2003d.txt",
+      "meeting_id": "ES2003d",
+      "team_id": "ES2003",
+      "meeting_sequence": "d",
+      "sha256": "c89cdec0ccd8bd93b9b2222ec8be2e36f9bf7d74fb237acc612b7d29c005d09a",
+      "file_bytes": 38349,
+      "turn_count": 343,
+      "word_count": 6105
+    },
+    {
+      "filename": "ES2004a.txt",
+      "meeting_id": "ES2004a",
+      "team_id": "ES2004",
+      "meeting_sequence": "a",
+      "sha256": "913ef5bae99fedcbf35814ae6d2da70542b01f3fa2ffb3e22985b1623840fc4a",
+      "file_bytes": 17968,
+      "turn_count": 199,
+      "word_count": 2614
+    },
+    {
+      "filename": "ES2004b.txt",
+      "meeting_id": "ES2004b",
+      "team_id": "ES2004",
+      "meeting_sequence": "b",
+      "sha256": "a0115763d0f1a594416ed4d3c44ca97cb9808df88be82c1de178cbb05e1d752c",
+      "file_bytes": 42843,
+      "turn_count": 352,
+      "word_count": 6763
+    },
+    {
+      "filename": "ES2004c.txt",
+      "meeting_id": "ES2004c",
+      "team_id": "ES2004",
+      "meeting_sequence": "c",
+      "sha256": "d7e282c6545cd7b3d27a206c02c861a69bdc6b88ba0d0eebe569932e140966fc",
+      "file_bytes": 43876,
+      "turn_count": 379,
+      "word_count": 6969
+    },
+    {
+      "filename": "ES2004d.txt",
+      "meeting_id": "ES2004d",
+      "team_id": "ES2004",
+      "meeting_sequence": "d",
+      "sha256": "182b80a66c78c11599a8d1f0265ba2ba8f3b1c4164c4849d0e54eda4c5680dd6",
+      "file_bytes": 42277,
+      "turn_count": 496,
+      "word_count": 6141
+    },
+    {
+      "filename": "ES2005a.txt",
+      "meeting_id": "ES2005a",
+      "team_id": "ES2005",
+      "meeting_sequence": "a",
+      "sha256": "9bdaba3c8b7c6af9dd820d4bfede79cf630e89389304d16036e83b63e351085f",
+      "file_bytes": 5407,
+      "turn_count": 60,
+      "word_count": 747
+    },
+    {
+      "filename": "ES2005b.txt",
+      "meeting_id": "ES2005b",
+      "team_id": "ES2005",
+      "meeting_sequence": "b",
+      "sha256": "eb689f74fe6e43072dc00cc1eb40bc3848cad1eccdb1020b108834f1d098b931",
+      "file_bytes": 39993,
+      "turn_count": 380,
+      "word_count": 6190
+    },
+    {
+      "filename": "ES2005c.txt",
+      "meeting_id": "ES2005c",
+      "team_id": "ES2005",
+      "meeting_sequence": "c",
+      "sha256": "c9a7989ab825d1540112ecd66b11a5802cc5ed661755c4a780f68a709f1da98d",
+      "file_bytes": 44564,
+      "turn_count": 486,
+      "word_count": 6695
+    },
+    {
+      "filename": "ES2005d.txt",
+      "meeting_id": "ES2005d",
+      "team_id": "ES2005",
+      "meeting_sequence": "d",
+      "sha256": "07ee3f26bbccec0f1065d6b4a0b2d5424b2fef2c2fa90bd1c2a4b509e7f1ee0d",
+      "file_bytes": 26015,
+      "turn_count": 301,
+      "word_count": 3797
+    },
+    {
+      "filename": "ES2006a.txt",
+      "meeting_id": "ES2006a",
+      "team_id": "ES2006",
+      "meeting_sequence": "a",
+      "sha256": "b715444f7fc7d80ce079b3fb93bbc7003298f588b203f60a3dc3d100048a07b9",
+      "file_bytes": 18063,
+      "turn_count": 167,
+      "word_count": 2782
+    },
+    {
+      "filename": "ES2006b.txt",
+      "meeting_id": "ES2006b",
+      "team_id": "ES2006",
+      "meeting_sequence": "b",
+      "sha256": "871eaa1d1c75594e9bfb131538644c1e7d9f0f37e1c360d2440a92dd9e9ff50f",
+      "file_bytes": 38745,
+      "turn_count": 308,
+      "word_count": 6201
+    },
+    {
+      "filename": "ES2006c.txt",
+      "meeting_id": "ES2006c",
+      "team_id": "ES2006",
+      "meeting_sequence": "c",
+      "sha256": "21407703e45e3bea57a0a4b9c7af0ed560177ca599d4cb4779812fc707f29faa",
+      "file_bytes": 40790,
+      "turn_count": 399,
+      "word_count": 6338
+    },
+    {
+      "filename": "ES2006d.txt",
+      "meeting_id": "ES2006d",
+      "team_id": "ES2006",
+      "meeting_sequence": "d",
+      "sha256": "63c5618e6eb8fe556a8008b84fe8cee9dd2cdef9009d194379de967c39765018",
+      "file_bytes": 42655,
+      "turn_count": 571,
+      "word_count": 6035
+    },
+    {
+      "filename": "ES2007a.txt",
+      "meeting_id": "ES2007a",
+      "team_id": "ES2007",
+      "meeting_sequence": "a",
+      "sha256": "aedee326445521133ed346103b8895288977e5af399652f4adceee13e632871f",
+      "file_bytes": 18465,
+      "turn_count": 243,
+      "word_count": 2567
+    },
+    {
+      "filename": "ES2007b.txt",
+      "meeting_id": "ES2007b",
+      "team_id": "ES2007",
+      "meeting_sequence": "b",
+      "sha256": "458e54b61646785c36fbc7f1d05ec31ed816f15e38c2dc120071b5233ee62885",
+      "file_bytes": 26551,
+      "turn_count": 240,
+      "word_count": 4143
+    },
+    {
+      "filename": "ES2007c.txt",
+      "meeting_id": "ES2007c",
+      "team_id": "ES2007",
+      "meeting_sequence": "c",
+      "sha256": "6f303c18d835f8b7a886bed5b2f894aa8cb85fa98fcc668e6bbff359f142c9f1",
+      "file_bytes": 40121,
+      "turn_count": 401,
+      "word_count": 6090
+    },
+    {
+      "filename": "ES2007d.txt",
+      "meeting_id": "ES2007d",
+      "team_id": "ES2007",
+      "meeting_sequence": "d",
+      "sha256": "1d7465efe476b9c0fcbb068dba2809ef09b3a178b31b5bc5ceaf79dd35f3ecfa",
+      "file_bytes": 22653,
+      "turn_count": 294,
+      "word_count": 3193
+    },
+    {
+      "filename": "ES2008a.txt",
+      "meeting_id": "ES2008a",
+      "team_id": "ES2008",
+      "meeting_sequence": "a",
+      "sha256": "b3c20e341df8ae5f3b0a59af5ce606e0171730206b5e9d8e123f4250945027b5",
+      "file_bytes": 15805,
+      "turn_count": 117,
+      "word_count": 2506
+    },
+    {
+      "filename": "ES2008b.txt",
+      "meeting_id": "ES2008b",
+      "team_id": "ES2008",
+      "meeting_sequence": "b",
+      "sha256": "ca89209d8dd367a6cff45ece27c4d9e40aaa41fd78bf005a6f9d3250b4502170",
+      "file_bytes": 38622,
+      "turn_count": 330,
+      "word_count": 5956
+    },
+    {
+      "filename": "ES2008c.txt",
+      "meeting_id": "ES2008c",
+      "team_id": "ES2008",
+      "meeting_sequence": "c",
+      "sha256": "815d565aece1e20d05714ab41cfb77c2c2d9e5817597a782db313de18ca7fbbf",
+      "file_bytes": 37873,
+      "turn_count": 305,
+      "word_count": 6028
+    },
+    {
+      "filename": "ES2008d.txt",
+      "meeting_id": "ES2008d",
+      "team_id": "ES2008",
+      "meeting_sequence": "d",
+      "sha256": "d9bfe6ef31f09b216ee4f9ef5a3352220018369e7401e61354cd2bedb58fb364",
+      "file_bytes": 52884,
+      "turn_count": 595,
+      "word_count": 7863
+    },
+    {
+      "filename": "ES2009a.txt",
+      "meeting_id": "ES2009a",
+      "team_id": "ES2009",
+      "meeting_sequence": "a",
+      "sha256": "02562f3c03d1e065a7365148ce3adbf4a443852fb6ee04a25ec22a30eef74596",
+      "file_bytes": 27880,
+      "turn_count": 283,
+      "word_count": 4281
+    },
+    {
+      "filename": "ES2009b.txt",
+      "meeting_id": "ES2009b",
+      "team_id": "ES2009",
+      "meeting_sequence": "b",
+      "sha256": "f8f01795f5185f2d7debcf7a03f6f3c9f2e3ae541f3cba5a3ca4c7d290f3c42a",
+      "file_bytes": 25939,
+      "turn_count": 186,
+      "word_count": 4178
+    },
+    {
+      "filename": "ES2009c.txt",
+      "meeting_id": "ES2009c",
+      "team_id": "ES2009",
+      "meeting_sequence": "c",
+      "sha256": "cfca0ef710aabaf91a57221cc2d7c0eb864b30f0d832450a0a41103d772d0211",
+      "file_bytes": 37330,
+      "turn_count": 312,
+      "word_count": 5868
+    },
+    {
+      "filename": "ES2009d.txt",
+      "meeting_id": "ES2009d",
+      "team_id": "ES2009",
+      "meeting_sequence": "d",
+      "sha256": "53a377b609cef8d348076bd714689ab1e2dae73fd2ecb3fca2435a27e4645f9b",
+      "file_bytes": 42501,
+      "turn_count": 456,
+      "word_count": 6469
+    },
+    {
+      "filename": "ES2010a.txt",
+      "meeting_id": "ES2010a",
+      "team_id": "ES2010",
+      "meeting_sequence": "a",
+      "sha256": "ac27689322f748a9c062f6b5cc0cc10b2238e9e71fa426446d1d0875bd31e5b7",
+      "file_bytes": 10057,
+      "turn_count": 97,
+      "word_count": 1470
+    },
+    {
+      "filename": "ES2010b.txt",
+      "meeting_id": "ES2010b",
+      "team_id": "ES2010",
+      "meeting_sequence": "b",
+      "sha256": "1c3c37763233b755f0dd2048dcc04c8d3688741ee38f04c605dcd6b5d8de0bf2",
+      "file_bytes": 31185,
+      "turn_count": 295,
+      "word_count": 4672
+    },
+    {
+      "filename": "ES2010c.txt",
+      "meeting_id": "ES2010c",
+      "team_id": "ES2010",
+      "meeting_sequence": "c",
+      "sha256": "81a2a235f59a15c1006126b9e21034e61b5f50ec8b6db717c4d57a296c21e922",
+      "file_bytes": 35220,
+      "turn_count": 342,
+      "word_count": 5357
+    },
+    {
+      "filename": "ES2010d.txt",
+      "meeting_id": "ES2010d",
+      "team_id": "ES2010",
+      "meeting_sequence": "d",
+      "sha256": "843ee7e15dedf806f89802564098ad3c9d98c8d12e789081dd813ec91c64d598",
+      "file_bytes": 21315,
+      "turn_count": 283,
+      "word_count": 2891
+    },
+    {
+      "filename": "ES2011a.txt",
+      "meeting_id": "ES2011a",
+      "team_id": "ES2011",
+      "meeting_sequence": "a",
+      "sha256": "e23d13f559044c46b70fe5339d4d361f96678da4a2a8837ed194918dcf271eab",
+      "file_bytes": 15969,
+      "turn_count": 159,
+      "word_count": 2462
+    },
+    {
+      "filename": "ES2011b.txt",
+      "meeting_id": "ES2011b",
+      "team_id": "ES2011",
+      "meeting_sequence": "b",
+      "sha256": "72ee002ad21ffac832b4d81cf47c15286b97e8a3d5c6ce4e8842631c140d5847",
+      "file_bytes": 28228,
+      "turn_count": 253,
+      "word_count": 4533
+    },
+    {
+      "filename": "ES2011c.txt",
+      "meeting_id": "ES2011c",
+      "team_id": "ES2011",
+      "meeting_sequence": "c",
+      "sha256": "5293604664a8fdc31e11e5d1ac1f700d6716c3732dab9de407e203abe54dcab6",
+      "file_bytes": 30132,
+      "turn_count": 282,
+      "word_count": 4729
+    },
+    {
+      "filename": "ES2011d.txt",
+      "meeting_id": "ES2011d",
+      "team_id": "ES2011",
+      "meeting_sequence": "d",
+      "sha256": "c89207d4e1fb9831fa0ffdcb3d0d911eca4f8d01c196a937a38c3045bda0b5de",
+      "file_bytes": 31017,
+      "turn_count": 383,
+      "word_count": 4516
+    },
+    {
+      "filename": "ES2012a.txt",
+      "meeting_id": "ES2012a",
+      "team_id": "ES2012",
+      "meeting_sequence": "a",
+      "sha256": "97df1a16402cdcb17b8606033db3d0f0d6533473ea08eff5d296f2d1173eea27",
+      "file_bytes": 16301,
+      "turn_count": 91,
+      "word_count": 2784
+    },
+    {
+      "filename": "ES2012b.txt",
+      "meeting_id": "ES2012b",
+      "team_id": "ES2012",
+      "meeting_sequence": "b",
+      "sha256": "e8145f5358e59d84ddcd2890f35eda88bd5074b721096165b3b3f140de15d05f",
+      "file_bytes": 33912,
+      "turn_count": 241,
+      "word_count": 5601
+    },
+    {
+      "filename": "ES2012c.txt",
+      "meeting_id": "ES2012c",
+      "team_id": "ES2012",
+      "meeting_sequence": "c",
+      "sha256": "30847c91827db726bb50f05bb97cd13a2b1e67c24db4b4b659534da10586e893",
+      "file_bytes": 39592,
+      "turn_count": 330,
+      "word_count": 6505
+    },
+    {
+      "filename": "ES2012d.txt",
+      "meeting_id": "ES2012d",
+      "team_id": "ES2012",
+      "meeting_sequence": "d",
+      "sha256": "1f71dc34af6609c9d01674db3ad458055afc7b9e32d489b6be9c831d817a334f",
+      "file_bytes": 16604,
+      "turn_count": 174,
+      "word_count": 2600
+    },
+    {
+      "filename": "ES2013a.txt",
+      "meeting_id": "ES2013a",
+      "team_id": "ES2013",
+      "meeting_sequence": "a",
+      "sha256": "7354c017e81c3a68b3dbd8162804cdfb76f7ec6ef973582720f62d149de09ff5",
+      "file_bytes": 10064,
+      "turn_count": 91,
+      "word_count": 1542
+    },
+    {
+      "filename": "ES2013b.txt",
+      "meeting_id": "ES2013b",
+      "team_id": "ES2013",
+      "meeting_sequence": "b",
+      "sha256": "d94fff04ac34b0fb5892c8f3af5ecb5b7d58e4367932356d2ed7ef8d0e317c1f",
+      "file_bytes": 31813,
+      "turn_count": 268,
+      "word_count": 5014
+    },
+    {
+      "filename": "ES2013c.txt",
+      "meeting_id": "ES2013c",
+      "team_id": "ES2013",
+      "meeting_sequence": "c",
+      "sha256": "1a9cd3bb0fa92c6033962b40c86b2cf157a1eddaa8270c639d4e89357fc03a3d",
+      "file_bytes": 35502,
+      "turn_count": 261,
+      "word_count": 5685
+    },
+    {
+      "filename": "ES2013d.txt",
+      "meeting_id": "ES2013d",
+      "team_id": "ES2013",
+      "meeting_sequence": "d",
+      "sha256": "6ef1af2ad0b88f2fdf2f682ef5205064cf9e99cd4244bebeb5f8934eab0ab98e",
+      "file_bytes": 28690,
+      "turn_count": 298,
+      "word_count": 4296
+    },
+    {
+      "filename": "ES2014a.txt",
+      "meeting_id": "ES2014a",
+      "team_id": "ES2014",
+      "meeting_sequence": "a",
+      "sha256": "e8118a7abadffbcb9233c1d99642c6b2e2c66f5d427a638ce625be0ef87b446f",
+      "file_bytes": 14000,
+      "turn_count": 115,
+      "word_count": 2216
+    },
+    {
+      "filename": "ES2014b.txt",
+      "meeting_id": "ES2014b",
+      "team_id": "ES2014",
+      "meeting_sequence": "b",
+      "sha256": "7173f9fb925e3a364f927e44869bdaec3a35044c4625123133374bf6762b15fc",
+      "file_bytes": 38606,
+      "turn_count": 332,
+      "word_count": 6081
+    },
+    {
+      "filename": "ES2014c.txt",
+      "meeting_id": "ES2014c",
+      "team_id": "ES2014",
+      "meeting_sequence": "c",
+      "sha256": "8b2e06a90a7cdc74b23beabfbfd526fbc6077802222c9a5f86ff01b86eecc4be",
+      "file_bytes": 41528,
+      "turn_count": 382,
+      "word_count": 6443
+    },
+    {
+      "filename": "ES2014d.txt",
+      "meeting_id": "ES2014d",
+      "team_id": "ES2014",
+      "meeting_sequence": "d",
+      "sha256": "c5a700c95f7a0cb2b70dbfc8e9ffd6e7421d88af0b0c4306525628c828227b79",
+      "file_bytes": 51187,
+      "turn_count": 557,
+      "word_count": 7693
+    },
+    {
+      "filename": "ES2015a.txt",
+      "meeting_id": "ES2015a",
+      "team_id": "ES2015",
+      "meeting_sequence": "a",
+      "sha256": "0fe70feac81c33088f5532c40f7dccedb66eb88f4dea46e292cd18b60c2d3dad",
+      "file_bytes": 15345,
+      "turn_count": 124,
+      "word_count": 2384
+    },
+    {
+      "filename": "ES2015b.txt",
+      "meeting_id": "ES2015b",
+      "team_id": "ES2015",
+      "meeting_sequence": "b",
+      "sha256": "9c49dbe9fca962e1143aaac7752657b0cacce07e5798749267c600caec321162",
+      "file_bytes": 44389,
+      "turn_count": 382,
+      "word_count": 6685
+    },
+    {
+      "filename": "ES2015c.txt",
+      "meeting_id": "ES2015c",
+      "team_id": "ES2015",
+      "meeting_sequence": "c",
+      "sha256": "21dbaf0eb5b6e872081a0698484012d596a1045ca1410f9ff5208f1d00dfafde",
+      "file_bytes": 40192,
+      "turn_count": 412,
+      "word_count": 5888
+    },
+    {
+      "filename": "ES2015d.txt",
+      "meeting_id": "ES2015d",
+      "team_id": "ES2015",
+      "meeting_sequence": "d",
+      "sha256": "bd80c97619f9f39d9073338cfd39754bb17c476ae339f58bccd186a3b4f5e80b",
+      "file_bytes": 41728,
+      "turn_count": 602,
+      "word_count": 5650
+    },
+    {
+      "filename": "ES2016a.txt",
+      "meeting_id": "ES2016a",
+      "team_id": "ES2016",
+      "meeting_sequence": "a",
+      "sha256": "7646f1ba3f3ca00db433a1f72fc4fc77798cf98e5d1c225dfecade2aa0575780",
+      "file_bytes": 18758,
+      "turn_count": 165,
+      "word_count": 2967
+    },
+    {
+      "filename": "ES2016b.txt",
+      "meeting_id": "ES2016b",
+      "team_id": "ES2016",
+      "meeting_sequence": "b",
+      "sha256": "0d9e6fb55bf308e7b7ef0cf52efce11970a032d2ca27bf4dc5b4e980174485a3",
+      "file_bytes": 30497,
+      "turn_count": 209,
+      "word_count": 4981
+    },
+    {
+      "filename": "ES2016c.txt",
+      "meeting_id": "ES2016c",
+      "team_id": "ES2016",
+      "meeting_sequence": "c",
+      "sha256": "2b45052b188cca41cb0a6966b2e139a56602fb6c4d85d9ebb315aebac3f741d7",
+      "file_bytes": 28740,
+      "turn_count": 166,
+      "word_count": 4758
+    },
+    {
+      "filename": "ES2016d.txt",
+      "meeting_id": "ES2016d",
+      "team_id": "ES2016",
+      "meeting_sequence": "d",
+      "sha256": "9eede2df736b8a5ea8fb74c5d3e7813fb9e61e53c71458d37a69a5d2a1f95641",
+      "file_bytes": 25225,
+      "turn_count": 312,
+      "word_count": 3531
+    },
+    {
+      "filename": "IS1000a.txt",
+      "meeting_id": "IS1000a",
+      "team_id": "IS1000",
+      "meeting_sequence": "a",
+      "sha256": "a25840da46867a75183fb8cc288d2030c26bd07d664aa67d34baba614df4c644",
+      "file_bytes": 20452,
+      "turn_count": 297,
+      "word_count": 2893
+    },
+    {
+      "filename": "IS1000b.txt",
+      "meeting_id": "IS1000b",
+      "team_id": "IS1000",
+      "meeting_sequence": "b",
+      "sha256": "50485901245a13cabae8aa7c570e17632af260743128b05d81f3699d4feef171",
+      "file_bytes": 37014,
+      "turn_count": 394,
+      "word_count": 5779
+    },
+    {
+      "filename": "IS1000c.txt",
+      "meeting_id": "IS1000c",
+      "team_id": "IS1000",
+      "meeting_sequence": "c",
+      "sha256": "248f8c5f338957426a9b34ab4f017c4d0529d24d061be4e0120bde33441205a1",
+      "file_bytes": 35027,
+      "turn_count": 352,
+      "word_count": 5506
+    },
+    {
+      "filename": "IS1000d.txt",
+      "meeting_id": "IS1000d",
+      "team_id": "IS1000",
+      "meeting_sequence": "d",
+      "sha256": "4b21293433da80d0c9f19d5815eb7d7f135fa81311fa88e0d32243e115dc47de",
+      "file_bytes": 51495,
+      "turn_count": 747,
+      "word_count": 7250
+    },
+    {
+      "filename": "IS1001a.txt",
+      "meeting_id": "IS1001a",
+      "team_id": "IS1001",
+      "meeting_sequence": "a",
+      "sha256": "7b672972fd8f6378e8572cab6c8978f635f80b4772cc55faf91149958af79e31",
+      "file_bytes": 12128,
+      "turn_count": 142,
+      "word_count": 1790
+    },
+    {
+      "filename": "IS1001b.txt",
+      "meeting_id": "IS1001b",
+      "team_id": "IS1001",
+      "meeting_sequence": "b",
+      "sha256": "1184ab539ceabf7d6becc7c67e7fadb22f1db5f3252e4a6ae60d997f09713be3",
+      "file_bytes": 31910,
+      "turn_count": 365,
+      "word_count": 4868
+    },
+    {
+      "filename": "IS1001c.txt",
+      "meeting_id": "IS1001c",
+      "team_id": "IS1001",
+      "meeting_sequence": "c",
+      "sha256": "524177aaf08f1f3a293fa3a509e4687b2ff5c3be8c4bcfc00a4cad1077004b77",
+      "file_bytes": 22796,
+      "turn_count": 257,
+      "word_count": 3454
+    },
+    {
+      "filename": "IS1001d.txt",
+      "meeting_id": "IS1001d",
+      "team_id": "IS1001",
+      "meeting_sequence": "d",
+      "sha256": "18e81cafe227682e6d2bb0a0c23023bed3cc68fdf2c17f22b9ad2c7449d4a225",
+      "file_bytes": 12006,
+      "turn_count": 185,
+      "word_count": 1614
+    },
+    {
+      "filename": "IS1002b.txt",
+      "meeting_id": "IS1002b",
+      "team_id": "IS1002",
+      "meeting_sequence": "b",
+      "sha256": "e92892f92cb0b5f575939d3ab15117e94438f822a9582697e975a960b2efefa4",
+      "file_bytes": 45118,
+      "turn_count": 282,
+      "word_count": 7607
+    },
+    {
+      "filename": "IS1002c.txt",
+      "meeting_id": "IS1002c",
+      "team_id": "IS1002",
+      "meeting_sequence": "c",
+      "sha256": "a55eeaafce68b4cbe694619a221a7661b188e8dcdb3fe5a2e220c2219468eb5b",
+      "file_bytes": 41037,
+      "turn_count": 363,
+      "word_count": 6577
+    },
+    {
+      "filename": "IS1002d.txt",
+      "meeting_id": "IS1002d",
+      "team_id": "IS1002",
+      "meeting_sequence": "d",
+      "sha256": "776202ad0ad574944cf39fb29646af6df70826a35c209b72d0667b14a35dc0bc",
+      "file_bytes": 22947,
+      "turn_count": 247,
+      "word_count": 3477
+    },
+    {
+      "filename": "IS1003a.txt",
+      "meeting_id": "IS1003a",
+      "team_id": "IS1003",
+      "meeting_sequence": "a",
+      "sha256": "00988745e3a4f6b0f8d81b9f0e50a80bc103a17473a666c52cad73a23e9a564d",
+      "file_bytes": 11910,
+      "turn_count": 202,
+      "word_count": 1491
+    },
+    {
+      "filename": "IS1003b.txt",
+      "meeting_id": "IS1003b",
+      "team_id": "IS1003",
+      "meeting_sequence": "b",
+      "sha256": "480f0799419c2e4b02b19c03a0d4043caaf97399fb1ba8ae102fbf590a023d06",
+      "file_bytes": 25987,
+      "turn_count": 309,
+      "word_count": 3760
+    },
+    {
+      "filename": "IS1003c.txt",
+      "meeting_id": "IS1003c",
+      "team_id": "IS1003",
+      "meeting_sequence": "c",
+      "sha256": "45534780188e5e35ed09eacbaef4b97a6bf7090eb09fa47faaa237e575204b2e",
+      "file_bytes": 34729,
+      "turn_count": 412,
+      "word_count": 5014
+    },
+    {
+      "filename": "IS1003d.txt",
+      "meeting_id": "IS1003d",
+      "team_id": "IS1003",
+      "meeting_sequence": "d",
+      "sha256": "c4926b36bb63ff4f34ad7360cf8072291d9920a3ef931f12b86b347dcade6d89",
+      "file_bytes": 44458,
+      "turn_count": 682,
+      "word_count": 6020
+    },
+    {
+      "filename": "IS1004a.txt",
+      "meeting_id": "IS1004a",
+      "team_id": "IS1004",
+      "meeting_sequence": "a",
+      "sha256": "c1248fd96270501865eb081feeb952545469faf7ad5d64f07abc6734aa0009f4",
+      "file_bytes": 9069,
+      "turn_count": 51,
+      "word_count": 1537
+    },
+    {
+      "filename": "IS1004b.txt",
+      "meeting_id": "IS1004b",
+      "team_id": "IS1004",
+      "meeting_sequence": "b",
+      "sha256": "c569e66b54dd5e19b39e9682a6d6b7371a7f40f8df65d3030d2d2651afca9ff3",
+      "file_bytes": 38145,
+      "turn_count": 253,
+      "word_count": 6300
+    },
+    {
+      "filename": "IS1004c.txt",
+      "meeting_id": "IS1004c",
+      "team_id": "IS1004",
+      "meeting_sequence": "c",
+      "sha256": "8f776464a3adb8f2c765206d03f7d72460a765237559c0dd603fa2079ec73ad4",
+      "file_bytes": 42293,
+      "turn_count": 420,
+      "word_count": 6548
+    },
+    {
+      "filename": "IS1004d.txt",
+      "meeting_id": "IS1004d",
+      "team_id": "IS1004",
+      "meeting_sequence": "d",
+      "sha256": "b20ebab782284ab98b8608fefc6b5f062cc700a9687f9ffa4de9f98ec66ec87c",
+      "file_bytes": 37154,
+      "turn_count": 535,
+      "word_count": 5141
+    },
+    {
+      "filename": "IS1005a.txt",
+      "meeting_id": "IS1005a",
+      "team_id": "IS1005",
+      "meeting_sequence": "a",
+      "sha256": "f66d999aabf7f27bf718482578ee7020844141044003f22e49553bf801c67dc1",
+      "file_bytes": 10892,
+      "turn_count": 116,
+      "word_count": 1662
+    },
+    {
+      "filename": "IS1005b.txt",
+      "meeting_id": "IS1005b",
+      "team_id": "IS1005",
+      "meeting_sequence": "b",
+      "sha256": "da14d392cef48c3e5482c95333a36a664bf40ccef50ef3341e82360564f6d586",
+      "file_bytes": 32752,
+      "turn_count": 281,
+      "word_count": 5188
+    },
+    {
+      "filename": "IS1005c.txt",
+      "meeting_id": "IS1005c",
+      "team_id": "IS1005",
+      "meeting_sequence": "c",
+      "sha256": "e74be7737f1993b92d2bedabc670a0baeaa92cff1c6e2e79248617a0624b19dd",
+      "file_bytes": 29207,
+      "turn_count": 269,
+      "word_count": 4673
+    },
+    {
+      "filename": "IS1006a.txt",
+      "meeting_id": "IS1006a",
+      "team_id": "IS1006",
+      "meeting_sequence": "a",
+      "sha256": "b9da44151b3e7d0b6b69998f0dba508fd6cea8cf421ef79a195a4468a7cc9d18",
+      "file_bytes": 14592,
+      "turn_count": 235,
+      "word_count": 1865
+    },
+    {
+      "filename": "IS1006b.txt",
+      "meeting_id": "IS1006b",
+      "team_id": "IS1006",
+      "meeting_sequence": "b",
+      "sha256": "991b523994b4a48ff524138c9d159125ef1eb17f3125dc1fc2626acc7a2048bd",
+      "file_bytes": 34468,
+      "turn_count": 356,
+      "word_count": 5231
+    },
+    {
+      "filename": "IS1006c.txt",
+      "meeting_id": "IS1006c",
+      "team_id": "IS1006",
+      "meeting_sequence": "c",
+      "sha256": "7d54f311f0cb6648bbc8e810c116220f7389a6f08d76c4396f16dcd298df2381",
+      "file_bytes": 32089,
+      "turn_count": 394,
+      "word_count": 4670
+    },
+    {
+      "filename": "IS1006d.txt",
+      "meeting_id": "IS1006d",
+      "team_id": "IS1006",
+      "meeting_sequence": "d",
+      "sha256": "5f956ecad3916a2b538a7a7fdc2889ff77e9017adf032e19d9c381a609840833",
+      "file_bytes": 37726,
+      "turn_count": 631,
+      "word_count": 4806
+    },
+    {
+      "filename": "IS1007a.txt",
+      "meeting_id": "IS1007a",
+      "team_id": "IS1007",
+      "meeting_sequence": "a",
+      "sha256": "86c1c5a137ef4abaf3cec143bcc2565926a21f4b410599e3bc7db9fd6b544f18",
+      "file_bytes": 14488,
+      "turn_count": 191,
+      "word_count": 2032
+    },
+    {
+      "filename": "IS1007b.txt",
+      "meeting_id": "IS1007b",
+      "team_id": "IS1007",
+      "meeting_sequence": "b",
+      "sha256": "459d16df09e5a59cce80a1e6186594f34ff8baccff76118479d077f4f3901b4b",
+      "file_bytes": 20437,
+      "turn_count": 238,
+      "word_count": 3074
+    },
+    {
+      "filename": "IS1007c.txt",
+      "meeting_id": "IS1007c",
+      "team_id": "IS1007",
+      "meeting_sequence": "c",
+      "sha256": "983950bf6a94992c499ddf24cb0a931dcdaca29b98987dc9c2ef2342e44a0712",
+      "file_bytes": 33679,
+      "turn_count": 327,
+      "word_count": 5319
+    },
+    {
+      "filename": "IS1007d.txt",
+      "meeting_id": "IS1007d",
+      "team_id": "IS1007",
+      "meeting_sequence": "d",
+      "sha256": "e71a5a53f9817a7332bc7f324c919d0580c368a1e6ed0e3814e736dde3139d42",
+      "file_bytes": 34444,
+      "turn_count": 402,
+      "word_count": 5118
+    },
+    {
+      "filename": "IS1008a.txt",
+      "meeting_id": "IS1008a",
+      "team_id": "IS1008",
+      "meeting_sequence": "a",
+      "sha256": "f86553c2e8f95ed1ae97f1cc952f86772bd1d0a37c3f265afa8c3f437f1532d7",
+      "file_bytes": 15282,
+      "turn_count": 112,
+      "word_count": 2504
+    },
+    {
+      "filename": "IS1008b.txt",
+      "meeting_id": "IS1008b",
+      "team_id": "IS1008",
+      "meeting_sequence": "b",
+      "sha256": "6079a4f4ec4f82cbc0a091f18b57ed504d53517aa2615b814738c6e97970e508",
+      "file_bytes": 26242,
+      "turn_count": 170,
+      "word_count": 4314
+    },
+    {
+      "filename": "IS1008c.txt",
+      "meeting_id": "IS1008c",
+      "team_id": "IS1008",
+      "meeting_sequence": "c",
+      "sha256": "6441fd5b401d27ba0ab06ce69173cfcbee9c198d87f5755a7c3d45f06d135fb5",
+      "file_bytes": 24926,
+      "turn_count": 166,
+      "word_count": 4048
+    },
+    {
+      "filename": "IS1008d.txt",
+      "meeting_id": "IS1008d",
+      "team_id": "IS1008",
+      "meeting_sequence": "d",
+      "sha256": "592ae7ae0fb2597f43738006a193408bdd7f44a1934c918d38f7b5af33f668d7",
+      "file_bytes": 27191,
+      "turn_count": 264,
+      "word_count": 4124
+    },
+    {
+      "filename": "IS1009a.txt",
+      "meeting_id": "IS1009a",
+      "team_id": "IS1009",
+      "meeting_sequence": "a",
+      "sha256": "84bf37e197e88107eaa3f7cae736a1188cb713632ae593057c8df61d6ce22c31",
+      "file_bytes": 13849,
+      "turn_count": 158,
+      "word_count": 1986
+    },
+    {
+      "filename": "IS1009b.txt",
+      "meeting_id": "IS1009b",
+      "team_id": "IS1009",
+      "meeting_sequence": "b",
+      "sha256": "dd5e91ecd9e184b5c523a145ea7643cbb5a4c4662a03be294fab9112e9188028",
+      "file_bytes": 37746,
+      "turn_count": 295,
+      "word_count": 6091
+    },
+    {
+      "filename": "IS1009c.txt",
+      "meeting_id": "IS1009c",
+      "team_id": "IS1009",
+      "meeting_sequence": "c",
+      "sha256": "b48c7dbf8e9f22e471c929e347ea2e2d027cf30644b55dfc5b2e569873a5e66b",
+      "file_bytes": 28076,
+      "turn_count": 209,
+      "word_count": 4461
+    },
+    {
+      "filename": "IS1009d.txt",
+      "meeting_id": "IS1009d",
+      "team_id": "IS1009",
+      "meeting_sequence": "d",
+      "sha256": "d7f2392fb6dc9f1a4fd557d0ecc1570e00396cf9d1df11515c5ee6d186daa065",
+      "file_bytes": 32576,
+      "turn_count": 386,
+      "word_count": 4712
+    },
+    {
+      "filename": "TS3003a.txt",
+      "meeting_id": "TS3003a",
+      "team_id": "TS3003",
+      "meeting_sequence": "a",
+      "sha256": "3cca5d0cf99c89aa488c201f41cf983eeabf5ae4da77627ddc848aedb61f9326",
+      "file_bytes": 16489,
+      "turn_count": 163,
+      "word_count": 2519
+    },
+    {
+      "filename": "TS3003b.txt",
+      "meeting_id": "TS3003b",
+      "team_id": "TS3003",
+      "meeting_sequence": "b",
+      "sha256": "45c724841252cad7a042b09cfddba0a1daf25cfc40bd6d262e189b365881b86f",
+      "file_bytes": 30421,
+      "turn_count": 269,
+      "word_count": 4836
+    },
+    {
+      "filename": "TS3003c.txt",
+      "meeting_id": "TS3003c",
+      "team_id": "TS3003",
+      "meeting_sequence": "c",
+      "sha256": "a419d57b8d12487ed05b637f6b4ad4140316a76de6fccea8032c6a2b03b77dde",
+      "file_bytes": 28714,
+      "turn_count": 253,
+      "word_count": 4589
+    },
+    {
+      "filename": "TS3003d.txt",
+      "meeting_id": "TS3003d",
+      "team_id": "TS3003",
+      "meeting_sequence": "d",
+      "sha256": "81433a364481e2a77668a567c72740703fbf2ff8fc5cbfff5097e1abf8fd1b01",
+      "file_bytes": 38509,
+      "turn_count": 550,
+      "word_count": 5310
+    },
+    {
+      "filename": "TS3004a.txt",
+      "meeting_id": "TS3004a",
+      "team_id": "TS3004",
+      "meeting_sequence": "a",
+      "sha256": "dc552954889ff38e52cff9537ed2880b5766007462aca35701f423ccfdde256a",
+      "file_bytes": 20815,
+      "turn_count": 286,
+      "word_count": 3046
+    },
+    {
+      "filename": "TS3004b.txt",
+      "meeting_id": "TS3004b",
+      "team_id": "TS3004",
+      "meeting_sequence": "b",
+      "sha256": "65a84742c082445aed2f72a505d2b7d96e00957cdb86679040a2b342c352ef1f",
+      "file_bytes": 41504,
+      "turn_count": 474,
+      "word_count": 6462
+    },
+    {
+      "filename": "TS3004c.txt",
+      "meeting_id": "TS3004c",
+      "team_id": "TS3004",
+      "meeting_sequence": "c",
+      "sha256": "a6e4a6799498fe56522b4b9aee33c51be92841dd59f816f1cd27e7c4694a0fd0",
+      "file_bytes": 46589,
+      "turn_count": 606,
+      "word_count": 6890
+    },
+    {
+      "filename": "TS3004d.txt",
+      "meeting_id": "TS3004d",
+      "team_id": "TS3004",
+      "meeting_sequence": "d",
+      "sha256": "9de1fac238d104d1d118f4b9b4deed4d849bd37fc1122c12921f9e61083f2604",
+      "file_bytes": 46081,
+      "turn_count": 715,
+      "word_count": 6248
+    },
+    {
+      "filename": "TS3005a.txt",
+      "meeting_id": "TS3005a",
+      "team_id": "TS3005",
+      "meeting_sequence": "a",
+      "sha256": "a6dbb61b547fe083eb8c0d172d0889ba41c8df341d6f1eac9bae1706143d9f86",
+      "file_bytes": 20146,
+      "turn_count": 223,
+      "word_count": 3007
+    },
+    {
+      "filename": "TS3005b.txt",
+      "meeting_id": "TS3005b",
+      "team_id": "TS3005",
+      "meeting_sequence": "b",
+      "sha256": "2ed8afa404606a09253607fadaf9174a2076aa5b7fe35e1d2f7b2dde222154a3",
+      "file_bytes": 50326,
+      "turn_count": 576,
+      "word_count": 7519
+    },
+    {
+      "filename": "TS3005c.txt",
+      "meeting_id": "TS3005c",
+      "team_id": "TS3005",
+      "meeting_sequence": "c",
+      "sha256": "3a6eda1f7c542d56a13a2d3518b5e48ac91971f6636c92011e717029a5dbeaf8",
+      "file_bytes": 43782,
+      "turn_count": 514,
+      "word_count": 6566
+    },
+    {
+      "filename": "TS3005d.txt",
+      "meeting_id": "TS3005d",
+      "team_id": "TS3005",
+      "meeting_sequence": "d",
+      "sha256": "d460aa3743ae2f457ae2c00d61a4e94670f0ec3c6ceb6fbbcf95663f5ab5a3a5",
+      "file_bytes": 66467,
+      "turn_count": 1034,
+      "word_count": 9112
+    },
+    {
+      "filename": "TS3006a.txt",
+      "meeting_id": "TS3006a",
+      "team_id": "TS3006",
+      "meeting_sequence": "a",
+      "sha256": "6229baeabb180f0c3375d963cad9b73f433926df1e98cd075f029256e4f460d5",
+      "file_bytes": 20735,
+      "turn_count": 324,
+      "word_count": 2725
+    },
+    {
+      "filename": "TS3006b.txt",
+      "meeting_id": "TS3006b",
+      "team_id": "TS3006",
+      "meeting_sequence": "b",
+      "sha256": "d55948c3ff7bb05aa19873adc0bd1f14911a2507cd1e05f8dedf37d0ad7f9fff",
+      "file_bytes": 49457,
+      "turn_count": 694,
+      "word_count": 7002
+    },
+    {
+      "filename": "TS3006c.txt",
+      "meeting_id": "TS3006c",
+      "team_id": "TS3006",
+      "meeting_sequence": "c",
+      "sha256": "dd91c6e7abacea416bf37c73a27e06040e33c20436f7030d3b5e49c7f410d92c",
+      "file_bytes": 52498,
+      "turn_count": 729,
+      "word_count": 7425
+    },
+    {
+      "filename": "TS3006d.txt",
+      "meeting_id": "TS3006d",
+      "team_id": "TS3006",
+      "meeting_sequence": "d",
+      "sha256": "21d44a12c35246869c5751e9cc53fc91f826d2088d7a0093b61c39b130caf5ec",
+      "file_bytes": 62631,
+      "turn_count": 998,
+      "word_count": 8378
+    },
+    {
+      "filename": "TS3007a.txt",
+      "meeting_id": "TS3007a",
+      "team_id": "TS3007",
+      "meeting_sequence": "a",
+      "sha256": "e4b08a50f720f94609b8a559b7928e806c69180a23bead9ef6b7c209dd7aab9b",
+      "file_bytes": 22586,
+      "turn_count": 280,
+      "word_count": 3366
+    },
+    {
+      "filename": "TS3007b.txt",
+      "meeting_id": "TS3007b",
+      "team_id": "TS3007",
+      "meeting_sequence": "b",
+      "sha256": "5ee8c37728461fc2f7a106081a7cb50a9d3e395cecf477ce11e9476d658d8b8b",
+      "file_bytes": 40554,
+      "turn_count": 330,
+      "word_count": 6644
+    },
+    {
+      "filename": "TS3007c.txt",
+      "meeting_id": "TS3007c",
+      "team_id": "TS3007",
+      "meeting_sequence": "c",
+      "sha256": "b2be377dc7a24843125afce93df22ffa82e7d79d77249c8053dc79c7bc3e45bc",
+      "file_bytes": 44394,
+      "turn_count": 433,
+      "word_count": 7040
+    },
+    {
+      "filename": "TS3007d.txt",
+      "meeting_id": "TS3007d",
+      "team_id": "TS3007",
+      "meeting_sequence": "d",
+      "sha256": "8219ac6cde92be2a1f8bfc312839864a777c0e80dbda5c9f4756553eeadf068e",
+      "file_bytes": 54755,
+      "turn_count": 770,
+      "word_count": 7779
+    },
+    {
+      "filename": "TS3008a.txt",
+      "meeting_id": "TS3008a",
+      "team_id": "TS3008",
+      "meeting_sequence": "a",
+      "sha256": "3f841a580c9bd939b22c3fecbeca068c747dc3e64297290878914bee13ba5048",
+      "file_bytes": 19186,
+      "turn_count": 233,
+      "word_count": 2727
+    },
+    {
+      "filename": "TS3008b.txt",
+      "meeting_id": "TS3008b",
+      "team_id": "TS3008",
+      "meeting_sequence": "b",
+      "sha256": "92e47e9c9148c2ccfb52ee3d9fb67dd62b9d95312ef2e80974de036471014be3",
+      "file_bytes": 44891,
+      "turn_count": 431,
+      "word_count": 7150
+    },
+    {
+      "filename": "TS3008c.txt",
+      "meeting_id": "TS3008c",
+      "team_id": "TS3008",
+      "meeting_sequence": "c",
+      "sha256": "9482d1b7ed129df15df94c29d0c91e0e4772276ef5e442942c895cf5d1db080c",
+      "file_bytes": 45668,
+      "turn_count": 507,
+      "word_count": 7188
+    },
+    {
+      "filename": "TS3008d.txt",
+      "meeting_id": "TS3008d",
+      "team_id": "TS3008",
+      "meeting_sequence": "d",
+      "sha256": "35887fb04ab7aca4b52dae8f581c11721e067da7f9a7aa0c6b708acc9a39fceb",
+      "file_bytes": 58178,
+      "turn_count": 763,
+      "word_count": 8581
+    },
+    {
+      "filename": "TS3009a.txt",
+      "meeting_id": "TS3009a",
+      "team_id": "TS3009",
+      "meeting_sequence": "a",
+      "sha256": "8d71a92fbbf21bd00d12512ba7a4f1e6f5f5e0c424dca709ce722f2330728095",
+      "file_bytes": 28972,
+      "turn_count": 395,
+      "word_count": 4261
+    },
+    {
+      "filename": "TS3009b.txt",
+      "meeting_id": "TS3009b",
+      "team_id": "TS3009",
+      "meeting_sequence": "b",
+      "sha256": "5ba7882b23fd62933a951384d6e7956fc64c9afcf5638ff3b3dee2e1b76cf7de",
+      "file_bytes": 51531,
+      "turn_count": 614,
+      "word_count": 7779
+    },
+    {
+      "filename": "TS3009c.txt",
+      "meeting_id": "TS3009c",
+      "team_id": "TS3009",
+      "meeting_sequence": "c",
+      "sha256": "57b13e5a110f3fa3ca8bbec5a2433fb47bcd58ed4ebba640abb0eaccb81e4101",
+      "file_bytes": 50244,
+      "turn_count": 693,
+      "word_count": 7190
+    },
+    {
+      "filename": "TS3009d.txt",
+      "meeting_id": "TS3009d",
+      "team_id": "TS3009",
+      "meeting_sequence": "d",
+      "sha256": "ca9e3593d392c4240eb450c8216649bbf533012a51bde9d731e9f8011af0f25e",
+      "file_bytes": 47407,
+      "turn_count": 688,
+      "word_count": 6739
+    },
+    {
+      "filename": "TS3010a.txt",
+      "meeting_id": "TS3010a",
+      "team_id": "TS3010",
+      "meeting_sequence": "a",
+      "sha256": "dadd48f108586b2bd466c289ff3b87e200380c128c6c6b368043af73897daf05",
+      "file_bytes": 7502,
+      "turn_count": 94,
+      "word_count": 1114
+    },
+    {
+      "filename": "TS3010b.txt",
+      "meeting_id": "TS3010b",
+      "team_id": "TS3010",
+      "meeting_sequence": "b",
+      "sha256": "eccd712fc96c09e4fddbab42b0e597b31208bd8506876bc36254098b1c08023b",
+      "file_bytes": 21304,
+      "turn_count": 171,
+      "word_count": 3558
+    },
+    {
+      "filename": "TS3010c.txt",
+      "meeting_id": "TS3010c",
+      "team_id": "TS3010",
+      "meeting_sequence": "c",
+      "sha256": "d41fc5b02664fb533bf847dda99e9a43e51682f4ebc4577da635ab531c8d0f52",
+      "file_bytes": 26085,
+      "turn_count": 314,
+      "word_count": 3968
+    },
+    {
+      "filename": "TS3010d.txt",
+      "meeting_id": "TS3010d",
+      "team_id": "TS3010",
+      "meeting_sequence": "d",
+      "sha256": "fa9bae62e57730fad3c27fded8578781777da820014047506ea536acf695b367",
+      "file_bytes": 20940,
+      "turn_count": 298,
+      "word_count": 2974
+    },
+    {
+      "filename": "TS3011a.txt",
+      "meeting_id": "TS3011a",
+      "team_id": "TS3011",
+      "meeting_sequence": "a",
+      "sha256": "db834180da93acb6b761698108bb9639ca6f6f8d4230c2339418456e3361c262",
+      "file_bytes": 20227,
+      "turn_count": 162,
+      "word_count": 3251
+    },
+    {
+      "filename": "TS3011b.txt",
+      "meeting_id": "TS3011b",
+      "team_id": "TS3011",
+      "meeting_sequence": "b",
+      "sha256": "bd011072946fcf6042bbeb4bb5cb9f0894784d7b575d47bb894f09a21042c3e2",
+      "file_bytes": 38781,
+      "turn_count": 407,
+      "word_count": 5930
+    },
+    {
+      "filename": "TS3011c.txt",
+      "meeting_id": "TS3011c",
+      "team_id": "TS3011",
+      "meeting_sequence": "c",
+      "sha256": "ddcb91bc800a933eaf462d0f31c5732d12ec6bcdd3f646f9032a4440cb5e4923",
+      "file_bytes": 38760,
+      "turn_count": 396,
+      "word_count": 5971
+    },
+    {
+      "filename": "TS3011d.txt",
+      "meeting_id": "TS3011d",
+      "team_id": "TS3011",
+      "meeting_sequence": "d",
+      "sha256": "ba2cdc20ff009b0e4b73f411852ba8e90da48842c4ff5a88eddf75e901f1367b",
+      "file_bytes": 31888,
+      "turn_count": 423,
+      "word_count": 4649
+    },
+    {
+      "filename": "TS3012a.txt",
+      "meeting_id": "TS3012a",
+      "team_id": "TS3012",
+      "meeting_sequence": "a",
+      "sha256": "838eb182f0de46180ecfcc41c61a56ad5c54545a42aff0747ad292b017c463af",
+      "file_bytes": 12979,
+      "turn_count": 119,
+      "word_count": 1965
+    },
+    {
+      "filename": "TS3012b.txt",
+      "meeting_id": "TS3012b",
+      "team_id": "TS3012",
+      "meeting_sequence": "b",
+      "sha256": "df93894a62d5818d267e450adf924453b4eff34e72b92d61153b0de661817c8c",
+      "file_bytes": 54846,
+      "turn_count": 571,
+      "word_count": 8481
+    },
+    {
+      "filename": "TS3012c.txt",
+      "meeting_id": "TS3012c",
+      "team_id": "TS3012",
+      "meeting_sequence": "c",
+      "sha256": "0d825af26ab605210bfcd5e8ae93754b56339c86efc86eee3ca407a564a1b372",
+      "file_bytes": 55587,
+      "turn_count": 653,
+      "word_count": 8290
+    },
+    {
+      "filename": "TS3012d.txt",
+      "meeting_id": "TS3012d",
+      "team_id": "TS3012",
+      "meeting_sequence": "d",
+      "sha256": "b6916841e1994a55bb38d7ffd4d7ca3ef804112ae80558584195965ee1f4d9bf",
+      "file_bytes": 46417,
+      "turn_count": 579,
+      "word_count": 6747
+    }
+  ],
+  "teams": [
+    {
+      "team_id": "ES2002",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1409,
+      "total_words": 25089
+    },
+    {
+      "team_id": "ES2003",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 846,
+      "total_words": 19828
+    },
+    {
+      "team_id": "ES2004",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1426,
+      "total_words": 22487
+    },
+    {
+      "team_id": "ES2005",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1227,
+      "total_words": 17429
+    },
+    {
+      "team_id": "ES2006",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1445,
+      "total_words": 21356
+    },
+    {
+      "team_id": "ES2007",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1178,
+      "total_words": 15993
+    },
+    {
+      "team_id": "ES2008",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1347,
+      "total_words": 22353
+    },
+    {
+      "team_id": "ES2009",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1237,
+      "total_words": 20796
+    },
+    {
+      "team_id": "ES2010",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1017,
+      "total_words": 14390
+    },
+    {
+      "team_id": "ES2011",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1077,
+      "total_words": 16240
+    },
+    {
+      "team_id": "ES2012",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 836,
+      "total_words": 17490
+    },
+    {
+      "team_id": "ES2013",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 918,
+      "total_words": 16537
+    },
+    {
+      "team_id": "ES2014",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1386,
+      "total_words": 22433
+    },
+    {
+      "team_id": "ES2015",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1520,
+      "total_words": 20607
+    },
+    {
+      "team_id": "ES2016",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 852,
+      "total_words": 16237
+    },
+    {
+      "team_id": "IS1000",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1790,
+      "total_words": 21428
+    },
+    {
+      "team_id": "IS1001",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 949,
+      "total_words": 11726
+    },
+    {
+      "team_id": "IS1002",
+      "coverage_status": "partial",
+      "available_sequences": [
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [
+        "a"
+      ],
+      "total_turns": 892,
+      "total_words": 17661
+    },
+    {
+      "team_id": "IS1003",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1605,
+      "total_words": 16285
+    },
+    {
+      "team_id": "IS1004",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1259,
+      "total_words": 19526
+    },
+    {
+      "team_id": "IS1005",
+      "coverage_status": "partial",
+      "available_sequences": [
+        "a",
+        "b",
+        "c"
+      ],
+      "missing_sequences": [
+        "d"
+      ],
+      "total_turns": 666,
+      "total_words": 11523
+    },
+    {
+      "team_id": "IS1006",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1616,
+      "total_words": 16572
+    },
+    {
+      "team_id": "IS1007",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1158,
+      "total_words": 15543
+    },
+    {
+      "team_id": "IS1008",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 712,
+      "total_words": 14990
+    },
+    {
+      "team_id": "IS1009",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1048,
+      "total_words": 17250
+    },
+    {
+      "team_id": "TS3003",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1235,
+      "total_words": 17254
+    },
+    {
+      "team_id": "TS3004",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 2081,
+      "total_words": 22646
+    },
+    {
+      "team_id": "TS3005",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 2347,
+      "total_words": 26204
+    },
+    {
+      "team_id": "TS3006",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 2745,
+      "total_words": 25530
+    },
+    {
+      "team_id": "TS3007",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1813,
+      "total_words": 24829
+    },
+    {
+      "team_id": "TS3008",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1934,
+      "total_words": 25646
+    },
+    {
+      "team_id": "TS3009",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 2390,
+      "total_words": 25969
+    },
+    {
+      "team_id": "TS3010",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 877,
+      "total_words": 11614
+    },
+    {
+      "team_id": "TS3011",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1388,
+      "total_words": 19801
+    },
+    {
+      "team_id": "TS3012",
+      "coverage_status": "complete",
+      "available_sequences": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "missing_sequences": [],
+      "total_turns": 1922,
+      "total_words": 25483
+    }
+  ]
+}
