@@ -69,18 +69,61 @@ class TestAgentOrchestrator:
         assert latest_run.current_iteration <= 4
         assert len(latest_run.tool_call_history) > 0
 
-    def test_citation_verifiability_guarantee(self, orchestrator_fixture):
+    def test_coverage_guard_abstention_on_missing_kickoff(self, orchestrator_fixture):
+        orchestrator, _ = orchestrator_fixture
+        answer = orchestrator.run_question(
+            question_id="TEST_IS1002_KICKOFF",
+            question_text="What was decided during the kickoff meeting of Team IS1002?",
+            team_id="IS1002",
+        )
+        assert answer.abstained is True
+        assert len(answer.citations) == 0
+        assert "IS1002a" in answer.answer
+        assert "missing" in answer.answer.lower()
+        assert orchestrator.synthesizer.validate_answer_sentence_count(answer.answer) is True
+
+    def test_ts3006_dropped_feature_identified(self, orchestrator_fixture):
         orchestrator, conn = orchestrator_fixture
         answer = orchestrator.run_question(
-            question_id="Q02",
-            question_text="Team ES2003 leaned towards one material for the case and then switched to another. What did they lean towards first, what did they end with, and why did they switch?",
+            question_id="TEST_TS3006_DROP",
+            question_text="What feature did Team TS3006 drop when budget constraints hit?",
+            team_id="TS3006",
+        )
+        assert answer.abstained is False
+        assert "speech recognition" in answer.answer.lower()
+        assert "TS3006d" in answer.answer
+        assert len(answer.citations) >= 1
+        for c in answer.citations:
+            assert c.meeting_id == "TS3006d"
+            res = validate_citation(c.meeting_id, c.quote, conn)
+            assert res.result == CitationResult.VALID
+            assert len(c.quote.split()) >= 6
+        assert orchestrator.synthesizer.validate_answer_sentence_count(answer.answer) is True
+
+    def test_es2003_final_casing_material_identified(self, orchestrator_fixture):
+        orchestrator, conn = orchestrator_fixture
+        answer = orchestrator.run_question(
+            question_id="TEST_ES2003_CASING",
+            question_text="what remote casing material did Team ES2003 decide on in their final meeting?",
             team_id="ES2003",
         )
+        assert answer.abstained is False
+        assert "plastic" in answer.answer.lower()
+        assert "ES2003d" in answer.answer
+        assert len(answer.citations) >= 1
+        for c in answer.citations:
+            assert c.meeting_id == "ES2003d"
+            res = validate_citation(c.meeting_id, c.quote, conn)
+            assert res.result == CitationResult.VALID
+            assert len(c.quote.split()) >= 6
+        assert orchestrator.synthesizer.validate_answer_sentence_count(answer.answer) is True
 
-        assert answer.question_id == "Q02"
-        if not answer.abstained:
-            assert len(answer.citations) >= 1
-            for c in answer.citations:
-                res = validate_citation(c.meeting_id, c.quote, conn)
-                assert res.result == CitationResult.VALID, f"Citation failed validation: {c}"
-                assert len(c.quote.split()) >= 6
+    def test_rejected_proposal_never_overrides_later_accepted_decision(self, orchestrator_fixture):
+        orchestrator, conn = orchestrator_fixture
+        # Verify in decision memory that TS3006 speech_recognition ended in rejected state in TS3006d
+        events = orchestrator.tools.get_decision_history("TS3006", topic="speech_recognition")
+        assert len(events) >= 1
+        latest_event = events[-1]
+        assert latest_event["meeting_id"] == "TS3006d"
+        assert latest_event["event_type"] == "rejected"
+        assert "speech" in latest_event["description"].lower() or "speech" in str(latest_event["evidence_quotes"]).lower()

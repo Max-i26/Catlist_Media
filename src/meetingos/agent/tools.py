@@ -122,13 +122,94 @@ class AgentTools:
         self,
         team_id: str,
         topic: Optional[str] = None,
-    ) -> list[DecisionEvent]:
+    ) -> list[dict[str, Any]]:
         """Retrieve chronological decision events for a team/topic."""
-        return self.decision_memory.get_events_for_team(team_id, topic=topic)
+        query = """
+            SELECT d.event_id, d.decision_entity_id, d.team_id, d.meeting_id, d.turn_index,
+                   d.event_type, d.description, d.evidence_turn_ids, d.evidence_quotes,
+                   d.confidence, e.topic
+            FROM decision_events d
+            LEFT JOIN decision_entities e ON d.decision_entity_id = e.decision_entity_id
+            WHERE d.team_id = ?
+        """
+        params: list[Any] = [team_id]
+        if topic:
+            query += " AND (e.topic LIKE ? OR d.description LIKE ?)"
+            params.extend([f"%{topic}%", f"%{topic}%"])
+        query += " ORDER BY d.meeting_id ASC, d.turn_index ASC"
+
+        rows = self.conn.execute(query, params).fetchall()
+        results: list[dict[str, Any]] = []
+        for r in rows:
+            ev_turns = []
+            ev_quotes = []
+            try:
+                if r["evidence_turn_ids"]:
+                    ev_turns = json.loads(r["evidence_turn_ids"])
+            except Exception:
+                pass
+            try:
+                if r["evidence_quotes"]:
+                    ev_quotes = json.loads(r["evidence_quotes"])
+            except Exception:
+                pass
+
+            results.append({
+                "event_id": r["event_id"],
+                "decision_entity_id": r["decision_entity_id"],
+                "team_id": r["team_id"],
+                "meeting_id": r["meeting_id"],
+                "turn_index": r["turn_index"],
+                "event_type": r["event_type"],
+                "description": r["description"],
+                "evidence_turn_ids": ev_turns,
+                "evidence_quotes": ev_quotes,
+                "confidence": r["confidence"],
+                "topic": r["topic"],
+            })
+        return results
 
     def get_action_history(
         self,
         team_id: str,
-    ) -> list[ActionEvent]:
+    ) -> list[dict[str, Any]]:
         """Retrieve chronological action events for a team."""
-        return self.action_memory.get_events_for_team(team_id)
+        query = """
+            SELECT a.event_id, a.action_entity_id, a.team_id, a.meeting_id, a.turn_index,
+                   a.event_type, a.owner, a.deadline, a.evidence_turn_ids, a.evidence_quotes,
+                   e.description as entity_description
+            FROM action_events a
+            LEFT JOIN action_entities e ON a.action_entity_id = e.action_entity_id
+            WHERE a.team_id = ?
+            ORDER BY a.meeting_id ASC, a.turn_index ASC
+        """
+        rows = self.conn.execute(query, (team_id,)).fetchall()
+        results: list[dict[str, Any]] = []
+        for r in rows:
+            ev_turns = []
+            ev_quotes = []
+            try:
+                if r["evidence_turn_ids"]:
+                    ev_turns = json.loads(r["evidence_turn_ids"])
+            except Exception:
+                pass
+            try:
+                if r["evidence_quotes"]:
+                    ev_quotes = json.loads(r["evidence_quotes"])
+            except Exception:
+                pass
+
+            results.append({
+                "event_id": r["event_id"],
+                "action_entity_id": r["action_entity_id"],
+                "team_id": r["team_id"],
+                "meeting_id": r["meeting_id"],
+                "turn_index": r["turn_index"],
+                "event_type": r["event_type"],
+                "owner": r["owner"],
+                "deadline": r["deadline"],
+                "description": r["entity_description"],
+                "evidence_turn_ids": ev_turns,
+                "evidence_quotes": ev_quotes,
+            })
+        return results

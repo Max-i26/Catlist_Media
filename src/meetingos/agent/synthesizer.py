@@ -128,13 +128,17 @@ class EvidenceSynthesizer:
             take = min(len(words), 20)
             candidates.append(" ".join(words[:take]))
 
+        if not keywords:
+            return candidates
+
         # Sort candidates by keyword presence
         def score_candidate(cand: str) -> int:
             cand_lower = cand.lower()
             return sum(1 for kw in keywords if kw.lower() in cand_lower)
 
-        candidates.sort(key=score_candidate, reverse=True)
-        return candidates
+        matching = [c for c in candidates if score_candidate(c) > 0]
+        matching.sort(key=score_candidate, reverse=True)
+        return matching
 
     def find_verified_citations_for_team(
         self,
@@ -142,67 +146,75 @@ class EvidenceSynthesizer:
         keywords: list[str],
         max_citations: int = 3,
         prefer_multi_meeting: bool = True,
+        target_meeting_sequence: Optional[str] = None,
     ) -> list[Citation]:
         """
         Select 1 to 3 valid citations from the evidence set.
         Guarantees that every citation passes validate_citation() and
-        prioritizes multi-meeting coverage (>= 2 distinct meetings).
+        prioritizes multi-meeting coverage (>= 2 distinct meetings) or
+        the targeted meeting phase if specified.
         """
-        verified_by_meeting: dict[str, list[Citation]] = {}
+        scored_candidates: list[tuple[int, Citation]] = []
+        seen_quotes: set[str] = set()
 
         for ev in expanded_evidence:
             meeting_id = ev.meeting_id
-            if meeting_id not in verified_by_meeting:
-                verified_by_meeting[meeting_id] = []
-
-            # Check core turns
-            for turn in ev.core_turns:
+            for turn in ev.core_turns + ev.context_turns:
                 quotes = self.extract_candidate_quotes(turn, keywords)
                 for quote in quotes:
+                    if quote in seen_quotes:
+                        continue
                     val_res = validate_citation(meeting_id, quote, self.conn)
                     if val_res.result == CitationResult.VALID:
-                        # Prevent duplicate quotes
-                        existing_quotes = [
-                            c.quote for clist in verified_by_meeting.values() for c in clist
-                        ]
-                        if quote not in existing_quotes:
-                            verified_by_meeting[meeting_id].append(
-                                Citation(meeting_id=meeting_id, quote=quote)
-                            )
-                            if len(verified_by_meeting[meeting_id]) >= 2:
-                                break
-                if len(verified_by_meeting[meeting_id]) >= 2:
-                    break
+                        seen_quotes.add(quote)
+                        kw_score = sum(3 for kw in keywords if kw.lower() in quote.lower())
+                        bonus = 5 if (target_meeting_sequence and meeting_id.endswith(target_meeting_sequence)) else 0
+                        total_score = kw_score + bonus
+                        scored_candidates.append((total_score, Citation(meeting_id=meeting_id, quote=quote)))
 
-        # Assemble final citations
-        final_citations: list[Citation] = []
-        meetings = list(verified_by_meeting.keys())
+        if not scored_candidates:
+            return []
 
-        if prefer_multi_meeting and len(meetings) >= 2:
-            # Take at least one from meeting 1 and one from meeting 2
-            for m in meetings[:max_citations]:
-                if verified_by_meeting[m]:
-                    final_citations.append(verified_by_meeting[m][0])
-            # If room left and meetings have more
-            if len(final_citations) < max_citations:
-                for m in meetings:
-                    for c in verified_by_meeting[m][1:]:
-                        if len(final_citations) < max_citations:
-                            final_citations.append(c)
-        else:
-            # Single meeting or fallback
-            for m in meetings:
-                for c in verified_by_meeting[m]:
-                    if len(final_citations) < max_citations:
+        # Sort candidates by total_score descending
+        scored_candidates.sort(key=lambda x: x[0], reverse=True)
+
+        # 1. If a specific target meeting sequence was requested (e.g. 'd')
+        if target_meeting_sequence:
+            target_citations = [c for score, c in scored_candidates if c.meeting_id.endswith(target_meeting_sequence)]
+            if target_citations:
+                return target_citations[:max_citations]
+
+        # 2. Multi-meeting selection if prefer_multi_meeting and >= 2 meetings represented
+        if prefer_multi_meeting:
+            by_meeting: dict[str, list[Citation]] = {}
+            for score, c in scored_candidates:
+                if c.meeting_id not in by_meeting:
+                    by_meeting[c.meeting_id] = []
+                by_meeting[c.meeting_id].append(c)
+
+            if len(by_meeting) >= 2:
+                final_citations: list[Citation] = []
+                # Take top from each meeting
+                for m in list(by_meeting.keys())[:max_citations]:
+                    if by_meeting[m]:
+                        final_citations.append(by_meeting[m][0])
+                # Fill remaining slots from best available
+                for score, c in scored_candidates:
+                    if len(final_citations) >= max_citations:
+                        break
+                    if c not in final_citations:
                         final_citations.append(c)
+                return final_citations[:max_citations]
 
-        return final_citations
+        # 3. Default: take top by score
+        return [c for score, c in scored_candidates[:max_citations]]
 
     def build_abstention(self, question_id: str, reason: str) -> Answer:
         """Create an honest abstention answer with 0 citations."""
         # Ensure 1 to 3 plain sentences
+        reason_clean = reason.rstrip(".")
         answer_text = (
-            f"The meeting transcripts do not contain sufficient evidence to answer this question. {reason}."
+            f"The meeting transcripts do not contain sufficient evidence to answer this question. {reason_clean}."
         )
         return Answer(
             question_id=question_id,

@@ -32,6 +32,9 @@ class ExecutionPlan(BaseModel):
     coverage_warning: Optional[str] = None
     sub_questions: list[SubQuestion] = Field(max_length=MAX_SUB_QUESTIONS)
     team_meetings: list[str]
+    target_sequence: Optional[str] = None
+    requires_abstention: bool = False
+    abstention_reason: Optional[str] = None
 
 
 class AgentPlanner:
@@ -69,6 +72,10 @@ class AgentPlanner:
             raise ValueError(f"No coverage registry record for team {tid}")
 
         coverage_warning = None
+        requires_abstention = False
+        abstention_reason = None
+        q_lower = question_text.lower()
+
         if not coverage.is_complete:
             missing = ", ".join(coverage.missing_sequences)
             coverage_warning = (
@@ -76,9 +83,36 @@ class AgentPlanner:
                 f"Earliest available is {coverage.earliest_available}, "
                 f"latest available is {coverage.latest_available}."
             )
+            # Check if query targets a missing meeting phase
+            missing_seqs = coverage.missing_sequences
+            if "a" in missing_seqs and any(
+                w in q_lower for w in ["kickoff", "kick-off", "meeting a", "first meeting", "initial meeting"]
+            ):
+                requires_abstention = True
+                abstention_reason = (
+                    f"The actual kickoff meeting ({tid}a) is missing from the available corpus. "
+                    f"The earliest available meeting is {tid}{coverage.earliest_available}, "
+                    f"so MeetingOS cannot reliably establish what was decided during the kickoff."
+                )
+            elif "d" in missing_seqs and any(
+                w in q_lower for w in ["detailed design", "final meeting", "meeting d", "last meeting", "final design"]
+            ):
+                requires_abstention = True
+                abstention_reason = (
+                    f"The actual detailed design meeting ({tid}d) is missing from the available corpus. "
+                    f"The latest available meeting is {tid}{coverage.latest_available}, "
+                    f"so MeetingOS cannot reliably establish what was decided during the final meeting."
+                )
+
+        # Detect targeted meeting phase
+        target_seq = None
+        if any(w in q_lower for w in ["final meeting", "meeting d", "last meeting", "final design", "decide on in their final"]):
+            target_seq = "d"
+        elif any(w in q_lower for w in ["kickoff", "kick-off", "meeting a", "first meeting", "initial meeting"]):
+            target_seq = "a"
 
         team_meetings = self.tools.get_all_meetings_for_team(tid)
-        sub_questions = self._decompose_question(question_text, tid, team_meetings)
+        sub_questions = self._decompose_question(question_text, tid, team_meetings, target_seq)
 
         return ExecutionPlan(
             question_id=question_id,
@@ -88,6 +122,9 @@ class AgentPlanner:
             coverage_warning=coverage_warning,
             sub_questions=sub_questions[:MAX_SUB_QUESTIONS],
             team_meetings=team_meetings,
+            target_sequence=target_seq,
+            requires_abstention=requires_abstention,
+            abstention_reason=abstention_reason,
         )
 
     def _decompose_question(
@@ -95,6 +132,7 @@ class AgentPlanner:
         question_text: str,
         team_id: str,
         team_meetings: list[str],
+        target_sequence: Optional[str] = None,
     ) -> list[SubQuestion]:
         """
         Decompose the question into structured sub-goals based on linguistic patterns.
@@ -189,5 +227,10 @@ class AgentPlanner:
                 aspect="general",
             )
         )
+
+        if target_sequence == "d":
+            sub_questions.sort(key=lambda sq: 0 if sq.aspect == "final_decision" else (1 if sq.target_sequence == "d" else 2))
+        elif target_sequence == "a":
+            sub_questions.sort(key=lambda sq: 0 if sq.aspect == "initial_proposal" else (1 if sq.target_sequence == "a" else 2))
 
         return sub_questions
