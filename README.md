@@ -2,8 +2,20 @@
 
 > **Senior Systems Engineering Build for Catalist Agentic AI Intern Assessment**  
 > **Dataset:** AMI Meeting Corpus (138 meetings, 35 design teams, CC BY 4.0)  
-> **Author:** Antigravity Pair Programming Engineering Team  
+> **Repository:** [https://github.com/Max-i26/Catlist_Media.git](https://github.com/Max-i26/Catlist_Media.git)  
+> **Colab Demo:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Max-i26/Catlist_Media/blob/main/notebooks/MeetingOS_Demo.ipynb)  
 > **Date:** November 2026 · Spec Baseline: v1.1  
+
+---
+
+## Catalist Assessment Deliverables Index
+
+| Requirement | Deliverable Location | Description |
+|---|---|---|
+| **1. Code & README (Hosted / Colab)** | [`notebooks/MeetingOS_Demo.ipynb`](notebooks/MeetingOS_Demo.ipynb) & [`README.md`](README.md) | 1-Click Google Colab notebook + reproducible local CLI pipeline |
+| **2. Agent-Generated answers.json** | [`outputs/answers.json`](outputs/answers.json) | 25 Substantive answers, 75 verbatim citations, TS3012 brief |
+| **3. One-Page Engineering Write-Up** | [`WRITEUP.md`](WRITEUP.md) | Architecture, model-vs-code rationale, tool breakages & scale |
+| **4. 3–5 Min Walkthrough & Live Demo** | [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) | Timed presentation script + 5 live demo interview questions |
 
 ---
 
@@ -134,6 +146,21 @@ meetingos info
 ```bash
 # Run all 112 automated unit, integration, and synthetic sequence tests
 python -m pytest
+```
+
+### Interactive Live Query (Interview & Demo Mode)
+
+Ask any live question against MeetingOS organizational memory with automatic team detection, multi-meeting evidence expansion, and verbatim citation verification:
+
+```bash
+# Ask an arbitrary question live:
+meetingos ask "What remote casing material did Team ES2003 decide on?" --use-mock
+
+# Ask with explicit team target:
+meetingos ask "What battery did the team decide on?" --team TS3007 --use-mock
+
+# Ask with live Claude synthesis (requires ANTHROPIC_API_KEY):
+meetingos ask "What feature did Team TS3006 drop when budget constraints hit?" --use-claude
 ```
 
 ---

@@ -271,7 +271,7 @@ class Citation(BaseModel):
 
 
 class Answer(BaseModel):
-    question_id: str = Field(pattern=r"^Q\d{2}$")
+    question_id: str = Field(pattern=r"^[A-Za-z0-9_.-]+$")
     answer:      str
     citations:   list[Citation] = Field(min_length=0, max_length=3)
     # abstained: True when no supporting evidence found

@@ -347,5 +347,105 @@ def extract_cmd(db_path: Path) -> None:
         sys.exit(1)
 
 
+@main.command("ask")
+@click.argument("query", type=str)
+@click.option(
+    "--team",
+    type=str,
+    default=None,
+    help="Target team ID (e.g. TS3006, ES2003). Auto-detected if omitted.",
+)
+@click.option(
+    "--use-claude",
+    is_flag=True,
+    default=False,
+    help="Use Claude API for evidence synthesis.",
+)
+@click.option(
+    "--api-key",
+    type=str,
+    default=None,
+    help="Anthropic API key for Claude.",
+)
+@click.option(
+    "--use-mock",
+    is_flag=True,
+    default=False,
+    help="Use mock embedder for sub-second retrieval.",
+)
+def ask_cmd(
+    query: str,
+    team: Optional[str],
+    use_claude: bool,
+    api_key: Optional[str],
+    use_mock: bool,
+) -> None:
+    """Ask a question live against MeetingOS organizational memory."""
+    import os
+    from meetingos.memory.schema import get_connection
+    from meetingos.memory.source import SourceMemory
+    from meetingos.processing.indexer import LexicalIndexer, TeamVectorIndexer
+    from meetingos.processing.embedder import TextEmbedder
+    from meetingos.retrieval.hybrid import HybridRetriever
+    from meetingos.agent.tools import AgentTools
+    from meetingos.agent.planner import AgentPlanner
+    from meetingos.agent.synthesizer import EvidenceSynthesizer
+    from meetingos.agent.checkpoint import CheckpointManager
+    from meetingos.agent.claude_client import ClaudeClient
+    from meetingos.agent.orchestrator import AgentOrchestrator
+
+    conn = get_connection(DB_PATH, readonly=False)
+    try:
+        memory = SourceMemory(conn)
+        lexical = LexicalIndexer(conn)
+        embedder = TextEmbedder(lazy_load=False, use_mock=use_mock)
+        vector = TeamVectorIndexer(conn, embedder, index_dir=FAISS_DIR)
+        retriever = HybridRetriever(lexical, vector, memory)
+        tools = AgentTools(conn, retriever, source_memory=memory)
+        planner = AgentPlanner(tools)
+        synthesizer = EvidenceSynthesizer(conn)
+        checkpoint_mgr = CheckpointManager(conn)
+
+        claude_client = None
+        if use_claude or api_key or os.environ.get("ANTHROPIC_API_KEY"):
+            key = api_key or os.environ.get("ANTHROPIC_API_KEY")
+            if key:
+                claude_client = ClaudeClient(api_key=key)
+
+        orchestrator = AgentOrchestrator(
+            conn=conn,
+            tools=tools,
+            planner=planner,
+            synthesizer=synthesizer,
+            checkpoint_mgr=checkpoint_mgr,
+            claude_client=claude_client,
+        )
+
+        plan = planner.create_plan("LIVE", query, team_id=team)
+        click.echo(f"Query:       {query}")
+        click.echo(f"Target Team: {plan.team_id or 'Corpus-wide'}")
+        if plan.coverage_warning:
+            click.echo(f"Coverage:    {plan.coverage_warning}")
+
+        ans = orchestrator.run_question("LIVE", query, team_id=team)
+
+        click.echo("\n" + "=" * 60)
+        click.echo("ANSWER:")
+        click.echo("=" * 60)
+        click.echo(ans.answer)
+        click.echo("\n" + "=" * 60)
+        click.echo(f"VERIFIED CITATIONS ({len(ans.citations)}):")
+        click.echo("=" * 60)
+        if ans.citations:
+            for i, c in enumerate(ans.citations, 1):
+                click.echo(f"[{i}] Meeting: {c.meeting_id}")
+                click.echo(f"    Quote:   \"{c.quote}\"")
+        else:
+            click.echo("    (Honest abstention: no valid citations invented)")
+        click.echo("")
+    finally:
+        conn.close()
+
+
 if __name__ == "__main__":
     main()
