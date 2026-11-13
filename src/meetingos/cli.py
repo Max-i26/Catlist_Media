@@ -300,5 +300,28 @@ def evaluate_cmd(output_path: Path, use_mock: bool) -> None:
         sys.exit(1)
 
 
+@main.command("extract")
+@click.option(
+    "--db-path",
+    type=click.Path(exists=True, path_type=Path),
+    default=DB_PATH,
+    help="Target SQLite database path.",
+)
+def extract_cmd(db_path: Path) -> None:
+    """Run Stage 1 meeting extraction and Stage 2 temporal reconciliation."""
+    from meetingos.extraction.pipeline import run_corpus_extraction
+    click.echo(f"Running two-stage event extraction on {db_path}...")
+    try:
+        summary = run_corpus_extraction(db_path=db_path)
+        click.echo(f"Teams Processed:  {summary['teams_processed']}")
+        click.echo(f"Decisions Saved:  {summary['total_decisions']}")
+        click.echo(f"Actions Saved:    {summary['total_actions']}")
+        click.echo(f"Numerics Saved:   {summary['total_numerics']}")
+        click.echo("Extraction and temporal reconciliation complete.")
+    except Exception as exc:
+        click.echo(f"Extraction failed: {exc}", err=True)
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()

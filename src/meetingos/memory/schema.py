@@ -178,6 +178,32 @@ CREATE TABLE IF NOT EXISTS decision_relations (
     FOREIGN KEY(target_entity_id) REFERENCES decision_entities(decision_entity_id)
 );
 
+-- Derived view — NEVER the authoritative record
+CREATE VIEW IF NOT EXISTS decision_current_state AS
+SELECT
+    de.decision_entity_id,
+    de.team_id,
+    de.topic,
+    -- Latest event by turn_index
+    (SELECT event_type FROM decision_events
+     WHERE decision_entity_id = de.decision_entity_id
+     ORDER BY turn_index DESC LIMIT 1) AS latest_event_type,
+    -- Last accepted event (may differ from latest event)
+    (SELECT meeting_id FROM decision_events
+     WHERE decision_entity_id = de.decision_entity_id
+       AND event_type = 'accepted'
+     ORDER BY turn_index DESC LIMIT 1) AS last_accepted_in,
+    -- Is there a withdrawal or rejection after the last acceptance?
+    (SELECT COUNT(*) FROM decision_events e2
+     WHERE e2.decision_entity_id = de.decision_entity_id
+       AND e2.event_type IN ('withdrawn','rejected')
+       AND e2.turn_index > COALESCE(
+           (SELECT MAX(turn_index) FROM decision_events
+            WHERE decision_entity_id = de.decision_entity_id
+              AND event_type = 'accepted'), 0
+       )) AS post_acceptance_revocations
+FROM decision_entities de;
+
 -- -------------------------------------------------------------------------
 -- Action memory — event-sourced (append-only)
 -- -------------------------------------------------------------------------

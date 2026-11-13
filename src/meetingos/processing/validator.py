@@ -26,7 +26,7 @@ from meetingos.config import FAISS_DIR
 from meetingos.memory.actions import ActionMemory
 from meetingos.memory.decisions import DecisionMemory
 from meetingos.memory.source import SourceMemory
-from meetingos.models import DecisionEventType
+from meetingos.models import ActionEventType, DecisionEventType
 from meetingos.processing.chunker import count_chunks
 from meetingos.processing.indexer import LexicalIndexer, TeamVectorIndexer
 
