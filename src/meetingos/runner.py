@@ -8,12 +8,14 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import sqlite3
 from pathlib import Path
 from typing import Optional
 
 from meetingos.agent.brief_generator import TS3012BriefGenerator
 from meetingos.agent.checkpoint import CheckpointManager
+from meetingos.agent.claude_client import ClaudeClient
 from meetingos.agent.orchestrator import AgentOrchestrator
 from meetingos.agent.planner import AgentPlanner
 from meetingos.agent.synthesizer import EvidenceSynthesizer
@@ -42,6 +44,8 @@ def generate_answers_and_brief(
     db_path: Path = DB_PATH,
     faiss_dir: Path = FAISS_DIR,
     use_mock_embedder: bool = False,
+    use_claude: bool = False,
+    api_key: Optional[str] = None,
 ) -> AnswersFile:
     """
     Run agent orchestration over all 25 questions and generate answers.json.
@@ -58,12 +62,20 @@ def generate_answers_and_brief(
     synthesizer = EvidenceSynthesizer(conn)
     checkpoint_mgr = CheckpointManager(conn)
 
+    claude_client = None
+    if use_claude or api_key or os.environ.get("ANTHROPIC_API_KEY"):
+        key = api_key or os.environ.get("ANTHROPIC_API_KEY")
+        if key:
+            claude_client = ClaudeClient(api_key=key)
+            logger.info("Claude client initialized for evidence synthesis.")
+
     orchestrator = AgentOrchestrator(
         conn=conn,
         tools=tools,
         planner=planner,
         synthesizer=synthesizer,
         checkpoint_mgr=checkpoint_mgr,
+        claude_client=claude_client,
     )
 
     with open(questions_file, "r", encoding="utf-8") as f:

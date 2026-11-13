@@ -272,7 +272,7 @@ Every benchmark question answer in `outputs/answers.json` was independently veri
 - **Extraction Architecture:** MeetingOS executes a two-stage extraction architecture:
   1. **Stage 1 (Per-Meeting Extraction):** Identifies candidate decisions, proposals, commitments, and verbatim price/cost mentions per meeting turn.
   2. **Stage 2 (Cross-Meeting Temporal Reconciliation):** Evaluates multi-meeting sequences per design team to establish superseding relationships and contradictions.
-- **Production Provenance:** The 678 decision events, 43 action events, and 584 numeric evidence records in `outputs/meetingos.db` were populated using MeetingOS's high-precision deterministic conversational pattern and speech-act parsing engine (`meeting_extractor.py`), guaranteeing 100% turn byte-offset traceability, zero non-deterministic hallucination, exact verbatim quotes, and full reproducibility without API keys.
+- **Production Provenance:** The 678 decision events, 43 action events, and 584 numeric evidence records in `outputs/meetingos.db` were populated using MeetingOS's high-precision deterministic conversational pattern and speech-act parsing engine (`meeting_extractor.py`), guaranteeing 100% turn byte-offset traceability, prevention of invented quotations, and full reproducibility without API keys. (Note: While deterministic extraction prevents fabricated text, it does not prevent misclassifications, missed conversational commitments, or mistaken temporal links).
 - **Model-Driven Backend:** In addition to deterministic extraction, MeetingOS includes an integrated Claude client (`ClaudeClient` via `claude-haiku-5-5` / `claude-sonnet-5-5`) for live hybrid extraction and question answering when configured.
 
 | Relational Memory Table | Verified Row Count | Functional Purpose & Invariants |
@@ -342,18 +342,25 @@ MeetingOS was benchmarked against the 138-meeting corpus. Below are measured bas
 | **Estimated Input Tokens (with 15% framing)** | 1.01M | 7.33M | 73.31M | Raw conversation tokens + 15% prompt template overhead |
 | **Estimated Extraction Output Tokens (18%)** | 158K | 1.15M | 11.48M | Structured event extraction output (18% of raw conversation tokens) |
 | **API Cost: Gemini 2.0 Flash (\\$0.15 / \\$0.60)** | **\\$0.25** | **\\$1.79** | **\\$17.88** | Google DeepMind commercial tier (\\$0.15/1M input, \\$0.60/1M output) |
-| **API Cost: Claude Haiku 5.5 (\\$0.80 / \\$4.00)** | **\\$1.44** | **\\$10.46** | **\\$104.57** | Anthropic active tier (\\$0.80/1M input, \\$4.00/1M output) |
+| **API Cost: Claude Haiku 5.5 (\\$0.10 / \\$0.50)** | **\\$0.18** | **\\$1.31** | **\\$13.07** | Anthropic tier for prompts up to 100K tokens (\\$0.10/1M input, \\$0.50/1M output) |
 
 ### Detailed Scaling Model Assumptions & Methodology
 1. **Model Specifications & Pricing Reference (November 2026):**
-   - **Gemini 2.0 Flash:** Evaluated as the cost-optimized cloud baseline at **\\$0.15 per 1,000,000 prompt tokens** and **\\$0.60 per 1,000,000 completion tokens**.
-   - **Claude Haiku 5.5 (`claude-haiku-5-5`):** Evaluated as the preferred high-fidelity conversational baseline at **\\$0.80 per 1,000,000 prompt tokens** and **\\$4.00 per 1,000,000 completion tokens**.
+   - **Claude Haiku 5.5 (`claude-haiku-5-5`):** Evaluated as the preferred high-fidelity conversational baseline. Official published pricing: **\\$0.10 per 1,000,000 prompt tokens** and **\\$0.50 per 1,000,000 completion tokens** for requests $\\le$ 100K tokens (\\$0.50 / \\$2.50 for prompts $>$ 100K). Because MeetingOS segments contexts per meeting and per question (2K-15K tokens per call), all calls qualify for the lower \\$0.10 / \\$0.50 tier.
+   - **Gemini 2.0 Flash:** Evaluated as an alternative cost-optimized baseline at **\\$0.15 per 1,000,000 prompt tokens** and **\\$0.60 per 1,000,000 completion tokens**.
    - *Deprecation Note:* OpenAI's `gpt-4o-mini` is deprecated as of late 2026 and excluded from future production sizing.
-2. **Token Arithmetic Derivation:**
-   - Raw conversation words across 138 meetings = 676,745 words.
-   - Raw conversation tokens = $676,745 \\times 1.30 \\approx 879,768$ tokens (~6,375 tokens/meeting).
-   - Input token workload = $879,768 \\times 1.15 = 1,011,733$ tokens (incorporating a measured 15% system prompt and metadata framing overhead).
-   - Output completion volume = $879,768 \\times 18\\% = 158,358$ tokens (derived from the 18% structured JSON extraction density relative to raw conversational turns). If calculated against total input with framing (1,011,733 tokens), completion volume is 182,112 tokens (\\$0.26 Flash / \\$1.54 Haiku).
+2. **Token Arithmetic Derivation & Workload Scopes:**
+   - **Scope A: Stage 1 Extraction Workload (138 Meetings):**
+     - Raw conversation words across 138 meetings = 676,745 words (~4,904 words/meeting).
+     - Raw conversation tokens = $676,745 \\times 1.30 \\approx 879,768$ tokens (~6,375 tokens/meeting).
+     - Input token workload = $879,768 \\times 1.15 = 1,011,733$ tokens (incorporating a measured 15% system prompt and metadata framing overhead).
+     - Output completion volume = $879,768 \\times 18\\% = 158,358$ tokens (derived from the 18% structured JSON extraction density relative to raw conversational turns).
+     - Resulting Stage 1 cost on Claude Haiku 5.5 = $1.011733 \\times \\$0.10 + 0.158358 \\times \\$0.50 =$ **\\$0.18**.
+   - **Scope B: Complete End-to-End System Workload (Extraction + Reconciliation + 25 Qs + Brief):**
+     - Complete input token volume $\\approx 2,050,000$ tokens.
+     - Complete output token volume $\\approx 210,000$ tokens.
+     - Resulting complete system cost on Claude Haiku 5.5 = $2.05 \\times \\$0.10 + 0.210 \\times \\$0.50 =$ **\\$0.31**.
+   - *Measurement Invariant:* Actual billed costs are recorded directly from API response `usage.input_tokens` and `usage.output_tokens` fields rather than theoretical estimates.
 3. **Embedding Compute Environment:** Vector embeddings utilize `all-MiniLM-L6-v2` (384-dimensional normalized vectors, 256-token context limit, batch size 64). Parallelization achieves a **4.0× linear speedup on 8 physical CPU cores** assuming an Amdahl parallel fraction $P=0.85$.
 4. **Storage Footprint Linearity:** SQLite and FAISS storage scale linearly with chunk count and vector density. At 10,000 meetings, the entire system occupies under 6.50 GB of storage, requiring no distributed database cluster.
 

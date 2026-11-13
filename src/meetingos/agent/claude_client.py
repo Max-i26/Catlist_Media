@@ -34,10 +34,23 @@ class ClaudeClient:
         self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
         self.model = model
         self.timeout = timeout
+        self.total_input_tokens = 0
+        self.total_output_tokens = 0
+        self.total_requests = 0
 
     @property
     def is_available(self) -> bool:
         return bool(self.api_key and len(self.api_key) > 10)
+
+    def get_usage_summary(self) -> dict:
+        """Return cumulative API usage statistics."""
+        return {
+            "requests": self.total_requests,
+            "input_tokens": self.total_input_tokens,
+            "output_tokens": self.total_output_tokens,
+            "model": self.model,
+            "estimated_cost_usd": (self.total_input_tokens * 0.00000010) + (self.total_output_tokens * 0.00000050),
+        }
 
     def synthesize_answer(
         self,
@@ -52,9 +65,19 @@ class ClaudeClient:
         if not self.is_available:
             return None
 
-        # Format evidence turns
+        # Group turns by meeting to preserve multi-meeting coverage
+        by_meeting: dict[str, list[dict]] = {}
+        for t in evidence_turns:
+            mid = t.get("meeting_id", "unknown")
+            by_meeting.setdefault(mid, []).append(t)
+
+        selected_turns = []
+        # Take up to 10 turns per meeting across all available meetings
+        for mid, turns in sorted(by_meeting.items()):
+            selected_turns.extend(turns[:10])
+
         formatted_evidence = []
-        for t in evidence_turns[:20]:
+        for t in selected_turns[:35]:
             mid = t.get("meeting_id", "")
             tid = t.get("turn_id", "")
             spk = t.get("speaker_id", "")
@@ -108,6 +131,14 @@ CONSTRAINTS:
                 return None
 
             data = resp.json()
+            usage = data.get("usage", {})
+            in_tok = usage.get("input_tokens", 0)
+            out_tok = usage.get("output_tokens", 0)
+            self.total_input_tokens += in_tok
+            self.total_output_tokens += out_tok
+            self.total_requests += 1
+            logger.info(f"[{question_id}] Claude call succeeded (tokens: in={in_tok}, out={out_tok})")
+
             content_blocks = data.get("content", [])
             text = ""
             for block in content_blocks:

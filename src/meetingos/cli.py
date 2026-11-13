@@ -252,16 +252,40 @@ def info_cmd(db_path: Path) -> None:
     default=False,
     help="Use mock embedder for rapid testing.",
 )
-def generate_answers_cmd(questions_file: Path, output_path: Path, use_mock: bool) -> None:
+@click.option(
+    "--use-claude",
+    is_flag=True,
+    default=False,
+    help="Use Claude API for evidence synthesis.",
+)
+@click.option(
+    "--api-key",
+    type=str,
+    default=None,
+    help="Anthropic API key for Claude.",
+)
+def generate_answers_cmd(
+    questions_file: Path,
+    output_path: Path,
+    use_mock: bool,
+    use_claude: bool,
+    api_key: Optional[str],
+) -> None:
     """Run agent orchestrator to solve 25 questions and generate brief."""
     from meetingos.runner import generate_answers_and_brief
     click.echo(f"Solving questions from: {questions_file}")
     click.echo(f"Writing answers to:     {output_path}")
+    if use_claude or api_key:
+        click.echo("Mode: Model-driven synthesis via Anthropic Claude")
+    else:
+        click.echo("Mode: Deterministic evidence-grounded synthesis")
     try:
         answers_file = generate_answers_and_brief(
             questions_file=questions_file,
             output_path=output_path,
             use_mock_embedder=use_mock,
+            use_claude=use_claude,
+            api_key=api_key,
         )
         click.echo(f"Generated answers for {len(answers_file.answers)} questions.")
         click.echo("Pre-meeting brief generated successfully.")
