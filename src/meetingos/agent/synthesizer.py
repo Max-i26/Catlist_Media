@@ -147,12 +147,15 @@ class EvidenceSynthesizer:
         max_citations: int = 3,
         prefer_multi_meeting: bool = True,
         target_meeting_sequence: Optional[str] = None,
+        required_entity_terms: Optional[list[str]] = None,
     ) -> list[Citation]:
         """
         Select 1 to 3 valid citations from the evidence set.
         Guarantees that every citation passes validate_citation() and
         prioritizes multi-meeting coverage (>= 2 distinct meetings) or
         the targeted meeting phase if specified.
+        If required_entity_terms is provided, enforces that every citation
+        directly supports at least one specific factual claim.
         """
         scored_candidates: list[tuple[int, Citation]] = []
         seen_quotes: set[str] = set()
@@ -164,6 +167,12 @@ class EvidenceSynthesizer:
                 for quote in quotes:
                     if quote in seen_quotes:
                         continue
+
+                    # Evidence relevance filter: if specific entity terms required, quote must contain at least one
+                    if required_entity_terms:
+                        if not any(term.lower() in quote.lower() for term in required_entity_terms):
+                            continue
+
                     val_res = validate_citation(meeting_id, quote, self.conn)
                     if val_res.result == CitationResult.VALID:
                         seen_quotes.add(quote)
@@ -178,16 +187,25 @@ class EvidenceSynthesizer:
         # Sort candidates by total_score descending
         scored_candidates.sort(key=lambda x: x[0], reverse=True)
 
+        # Evidence quality gate: filter out weak low-scoring quotes if strong evidence exists
+        top_score = scored_candidates[0][0]
+        quality_candidates = [
+            (score, c) for score, c in scored_candidates
+            if score >= max(6, top_score * 0.5)
+        ]
+        if not quality_candidates:
+            quality_candidates = scored_candidates
+
         # 1. If a specific target meeting sequence was requested (e.g. 'd')
         if target_meeting_sequence:
-            target_citations = [c for score, c in scored_candidates if c.meeting_id.endswith(target_meeting_sequence)]
+            target_citations = [c for score, c in quality_candidates if c.meeting_id.endswith(target_meeting_sequence)]
             if target_citations:
                 return target_citations[:max_citations]
 
         # 2. Multi-meeting selection if prefer_multi_meeting and >= 2 meetings represented
         if prefer_multi_meeting:
             by_meeting: dict[str, list[Citation]] = {}
-            for score, c in scored_candidates:
+            for score, c in quality_candidates:
                 if c.meeting_id not in by_meeting:
                     by_meeting[c.meeting_id] = []
                 by_meeting[c.meeting_id].append(c)
@@ -199,15 +217,15 @@ class EvidenceSynthesizer:
                     if by_meeting[m]:
                         final_citations.append(by_meeting[m][0])
                 # Fill remaining slots from best available
-                for score, c in scored_candidates:
+                for score, c in quality_candidates:
                     if len(final_citations) >= max_citations:
                         break
                     if c not in final_citations:
                         final_citations.append(c)
                 return final_citations[:max_citations]
 
-        # 3. Default: take top by score
-        return [c for score, c in scored_candidates[:max_citations]]
+        # 3. Default: take top by score (without forcing max_citations)
+        return [c for score, c in quality_candidates[:max_citations]]
 
     def build_abstention(self, question_id: str, reason: str) -> Answer:
         """Create an honest abstention answer with 0 citations."""

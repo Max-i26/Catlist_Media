@@ -59,30 +59,30 @@ Every benchmark question answer in `outputs/answers.json` was independently veri
 
 | ID | Team | Inquiry Summary | Factual | Speaker | Temporal | Numeric | Citation Support | Meeting Span |
 |---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Q01 | TS3006 | Team TS3006 planned both an LCD screen and speech recog... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
+| Q01 | TS3006 | Team TS3006 planned both an LCD screen and speech recog... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
 | Q02 | ES2003 | Team ES2003 leaned towards one material for the case an... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q03 | TS3009 | Team TS3009 planned a titanium back for their remote. W... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q04 | TS3011 | Team TS3011 chose a combined energy source for their re... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q05 | TS3007 | Team TS3007's energy source changed between meetings. W... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q06 | ES2008 | Team ES2008 wanted a feature to stop the remote getting... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q07 | IS1008 | In Team IS1008, a team member was asked to find out wha... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q08 | ES2007 | A health complaint about remote controls came up in Tea... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
+| Q07 | IS1008 | In Team IS1008, a team member was asked to find out wha... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
+| Q08 | ES2007 | A health complaint about remote controls came up in Tea... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q09 | IS1002 | What selling price was Team IS1002 working with at firs... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q10 | TS3003 | Which age group did Team TS3003 decide to design for, a... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
+| Q10 | TS3003 | Which age group did Team TS3003 decide to design for, a... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q11 | ES2011 | Team ES2011's project manager said they would check wha... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q12 | ES2004 | Team ES2004 considered voice recognition as a way to fi... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q13 | TS3004 | Team TS3004 changed its mind about speech recognition m... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q14 | IS1009 | Team IS1009 left one feature pending more research into... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
+| Q12 | ES2004 | Team ES2004 considered voice recognition as a way to fi... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
+| Q13 | TS3004 | Team TS3004 changed its mind about speech recognition m... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 2 Mtgs |
+| Q14 | IS1009 | Team IS1009 left one feature pending more research into... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
 | Q15 | ES2016 | Team ES2016's first full costing of their design came o... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q16 | TS3010 | Team TS3010's project manager favoured a particular kin... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q17 | ES2009 | Team ES2009 provisionally chose a touch screen. In whic... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q18 | ES2014 | How did Team ES2014 first plan to let people find a los... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q19 | IS1003 | Team IS1003 picked a natural material for the case and ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q20 | ES2008 | Early on, a Team ES2008 member asked whether the remote... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
-| Q21 | IS1007 | In Team IS1007, one member said they would check the pr... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q22 | ES2010 | Team ES2010 discussed several battery options. Who sugg... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q23 | ES2006 | Team ES2006's final design had to fit the budget. Which... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q24 | ES2002 | What power source did Team ES2002 first agree on, what ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
+| Q17 | ES2009 | Team ES2009 provisionally chose a touch screen. In whic... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 1/1 | ✅ 1 Mtgs |
+| Q18 | ES2014 | How did Team ES2014 first plan to let people find a los... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
+| Q19 | IS1003 | Team IS1003 picked a natural material for the case and ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 1/1 | ✅ 1 Mtgs |
+| Q20 | ES2008 | Early on, a Team ES2008 member asked whether the remote... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 2 Mtgs |
+| Q21 | IS1007 | In Team IS1007, one member said they would check the pr... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
+| Q22 | ES2010 | Team ES2010 discussed several battery options. Who sugg... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
+| Q23 | ES2006 | Team ES2006's final design had to fit the budget. Which... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
+| Q24 | ES2002 | What power source did Team ES2002 first agree on, what ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
 | Q25 | ES2011 | Team ES2011 played with fruit and vegetable ideas for t... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 
 ### Answer Quality Key Invariants

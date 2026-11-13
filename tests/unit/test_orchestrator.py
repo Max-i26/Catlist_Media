@@ -92,12 +92,15 @@ class TestAgentOrchestrator:
         assert answer.abstained is False
         assert "speech recognition" in answer.answer.lower()
         assert "TS3006d" in answer.answer
-        assert len(answer.citations) >= 1
+        assert len(answer.citations) == 2
         for c in answer.citations:
             assert c.meeting_id == "TS3006d"
             res = validate_citation(c.meeting_id, c.quote, conn)
             assert res.result == CitationResult.VALID
             assert len(c.quote.split()) >= 6
+            # Evidence relevance: every citation directly supports the dropped speech recognition claim
+            assert "speech" in c.quote.lower()
+            assert "drop the price" not in c.quote.lower()
         assert orchestrator.synthesizer.validate_answer_sentence_count(answer.answer) is True
 
     def test_es2003_final_casing_material_identified(self, orchestrator_fixture):
@@ -110,12 +113,15 @@ class TestAgentOrchestrator:
         assert answer.abstained is False
         assert "plastic" in answer.answer.lower()
         assert "ES2003d" in answer.answer
-        assert len(answer.citations) >= 1
+        assert len(answer.citations) == 2
         for c in answer.citations:
             assert c.meeting_id == "ES2003d"
             res = validate_citation(c.meeting_id, c.quote, conn)
             assert res.result == CitationResult.VALID
             assert len(c.quote.split()) >= 6
+            # Evidence relevance: every citation directly establishes casing material
+            assert any(m in c.quote.lower() for m in ["plastic", "rubber"])
+            assert "recommend around the grip" not in c.quote.lower()
         assert orchestrator.synthesizer.validate_answer_sentence_count(answer.answer) is True
 
     def test_rejected_proposal_never_overrides_later_accepted_decision(self, orchestrator_fixture):

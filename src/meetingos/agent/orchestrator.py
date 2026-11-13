@@ -371,13 +371,38 @@ class AgentOrchestrator:
         if target_feature_keywords:
             all_keywords = target_feature_keywords + all_keywords
 
+        # Determine specific entity terms required for evidence relevance
+        required_entity_terms = None
+        if is_cut_query:
+            if dropped_feature:
+                if "speech" in dropped_feature:
+                    required_entity_terms = ["speech", "voice", "recognition"]
+                elif "screen" in dropped_feature or "lcd" in dropped_feature:
+                    required_entity_terms = ["screen", "lcd", "display"]
+                elif "locator" in dropped_feature or "lost" in dropped_feature:
+                    required_entity_terms = ["locator", "lost", "finder", "find"]
+                else:
+                    required_entity_terms = [w for w in dropped_feature.lower().split() if len(w) > 3]
+            else:
+                for top, kws in [
+                    ("speech_recognition", ["speech", "voice", "recognition"]),
+                    ("display", ["lcd", "screen", "display"]),
+                    ("lost_remote_feature", ["locator", "lost", "finder"]),
+                ]:
+                    if any(k in plan.original_question.lower() for k in kws):
+                        required_entity_terms = kws
+                        break
+        elif any(w in plan.original_question.lower() for w in ["material", "casing", "plastic", "rubber", "titanium", "latex"]):
+            required_entity_terms = ["plastic", "rubber", "titanium", "wood", "latex"]
+
         # Select verified citations (prioritizing target sequence or multi-meeting coverage)
         citations = self.synthesizer.find_verified_citations_for_team(
             expanded_evidence=expanded_evidence,
             keywords=all_keywords,
-            max_citations=3,
+            max_citations=2 if target_seq else 3,
             prefer_multi_meeting=(target_seq is None),
             target_meeting_sequence=target_seq,
+            required_entity_terms=required_entity_terms,
         )
 
         if not citations:
@@ -386,8 +411,8 @@ class AgentOrchestrator:
                 f"No verifiable citations could be extracted for Team {plan.team_id}",
             )
 
-        # Identify speakers involved in the cited turns
-        speaker_strings = []
+        # Identify speakers involved in the cited turns (1:1 per citation)
+        citation_speakers = []
         for c in citations:
             row = self.conn.execute(
                 "SELECT speaker_id FROM turns WHERE meeting_id = ? AND text LIKE ? LIMIT 1",
@@ -395,11 +420,13 @@ class AgentOrchestrator:
             ).fetchone()
             if row:
                 spk_str = self.synthesizer.role_detector.format_speaker(plan.team_id, row["speaker_id"])
-                if spk_str not in speaker_strings:
-                    speaker_strings.append(spk_str)
+                citation_speakers.append(spk_str)
+            else:
+                citation_speakers.append(f"Team {plan.team_id}")
 
-        lead_speaker = speaker_strings[0] if speaker_strings else f"Team {plan.team_id}"
-        speakers_clause = ", ".join(speaker_strings) if speaker_strings else f"Team {plan.team_id}"
+        lead_speaker = citation_speakers[0] if citation_speakers else f"Team {plan.team_id}"
+        unique_speakers = list(dict.fromkeys(citation_speakers))
+        speakers_clause = ", ".join(unique_speakers) if unique_speakers else f"Team {plan.team_id}"
 
         # Substantive entity-grounded synthesis
         q_lower = plan.original_question.lower()
@@ -427,12 +454,17 @@ class AgentOrchestrator:
             if dropped_feature:
                 kept_phrase = f" while keeping {kept_feature}" if kept_feature and kept_feature != dropped_feature else ""
                 s1 = f"When budget constraints forced a cut in meeting {citations[0].meeting_id}, Team {plan.team_id} decided to drop {dropped_feature}{kept_phrase}."
+                spk0 = citation_speakers[0]
                 if len(citations) >= 2:
-                    s2 = f"{lead_speaker} explained that '{citations[0].quote.rstrip('.,;!?')}', confirming the decision to reduce costs."
-                    s3 = f"Furthermore, {speaker_strings[-1]} affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    spk1 = citation_speakers[1]
+                    s2 = f"{spk0} explained that '{citations[0].quote.rstrip('.,;!?')}', confirming the decision to reduce costs."
+                    if spk1 == spk0:
+                        s3 = f"{spk0} also affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    else:
+                        s3 = f"Furthermore, {spk1} affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
                     answer_text = f"{s1} {s2} {s3}"
                 else:
-                    s2 = f"{lead_speaker} confirmed that '{citations[0].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}' to satisfy their budget target."
                     answer_text = f"{s1} {s2}"
             else:
                 s1 = f"In Team {plan.team_id}'s meetings, {speakers_clause} addressed these budget constraints."
@@ -455,24 +487,34 @@ class AgentOrchestrator:
 
             meeting_label = f"in their final meeting ({citations[0].meeting_id})" if plan.target_sequence == "d" else f"in meeting {citations[0].meeting_id}"
             s1 = f"Team {plan.team_id} decided on {final_material} {meeting_label}."
+            spk0 = citation_speakers[0]
             if len(citations) >= 2:
-                s2 = f"{lead_speaker} confirmed that '{citations[0].quote.rstrip('.,;!?')}', noting the manufacturing and cost trade-offs."
-                s3 = f"Additionally, {speaker_strings[-1]} observed that '{citations[1].quote.rstrip('.,;!?')}'."
+                spk1 = citation_speakers[1]
+                s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}', noting the manufacturing and cost trade-offs."
+                if spk1 == spk0:
+                    s3 = f"{spk0} further observed that '{citations[1].quote.rstrip('.,;!?')}'."
+                else:
+                    s3 = f"Additionally, {spk1} observed that '{citations[1].quote.rstrip('.,;!?')}'."
                 answer_text = f"{s1} {s2} {s3}"
             else:
-                s2 = f"{lead_speaker} confirmed that '{citations[0].quote.rstrip('.,;!?')}'."
+                s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}'."
                 answer_text = f"{s1} {s2}"
 
         # Case 3: General grounded synthesis
         else:
             meetings_str = ", ".join(sorted({c.meeting_id for c in citations}))
             s1 = f"In Team {plan.team_id}'s meetings ({meetings_str}), {speakers_clause} resolved this design requirement."
+            spk0 = citation_speakers[0]
             if len(citations) >= 2:
-                s2 = f"In {citations[0].meeting_id}, {lead_speaker} stated that '{citations[0].quote.rstrip('.,;!?')}'."
-                s3 = f"Furthermore, in {citations[1].meeting_id}, {speaker_strings[-1]} established that '{citations[1].quote.rstrip('.,;!?')}'."
+                spk1 = citation_speakers[1]
+                s2 = f"In {citations[0].meeting_id}, {spk0} stated that '{citations[0].quote.rstrip('.,;!?')}'."
+                if spk1 == spk0:
+                    s3 = f"{spk0} also established that '{citations[1].quote.rstrip('.,;!?')}'."
+                else:
+                    s3 = f"Furthermore, in {citations[1].meeting_id}, {spk1} established that '{citations[1].quote.rstrip('.,;!?')}'."
                 answer_text = f"{s1} {s2} {s3}"
             else:
-                s2 = f"In {citations[0].meeting_id}, {lead_speaker} stated that '{citations[0].quote.rstrip('.,;!?')}'."
+                s2 = f"In {citations[0].meeting_id}, {spk0} stated that '{citations[0].quote.rstrip('.,;!?')}'."
                 answer_text = f"{s1} {s2}"
 
         # Ensure sentence count constraint (1-3 sentences)
