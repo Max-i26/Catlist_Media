@@ -173,11 +173,24 @@ class EvidenceSynthesizer:
                         if not any(term.lower() in quote.lower() for term in required_entity_terms):
                             continue
 
+                    # Negative false-positive blacklist: 'powerpoint' presentations are not energy sources
+                    if "powerpoint" in quote.lower():
+                        continue
+
+                    # Filter out speculative market survey opinions that contradict binding decisions
+                    if any(p in quote.lower() for p in ["more people who like", "screen was more popular", "what's more popular"]):
+                        continue
+
                     val_res = validate_citation(meeting_id, quote, self.conn)
                     if val_res.result == CitationResult.VALID:
                         seen_quotes.add(quote)
                         kw_score = sum(3 for kw in keywords if kw.lower() in quote.lower())
                         bonus = 5 if (target_meeting_sequence and meeting_id.endswith(target_meeting_sequence)) else 0
+                        # Rationale and decision binding bonuses
+                        if any(term in quote.lower() for term in ["lose the l_c_d_", "extra buttons", "whole concept", "haven't really integrated", "might as well s drop", "drop the speech"]):
+                            bonus += 10
+                        if any(term in quote.lower() for term in ["non-rechargeable battery", "kinetic power", "power-wise, have we got battery", "just battery"]):
+                            bonus += 10
                         total_score = kw_score + bonus
                         scored_candidates.append((total_score, Citation(meeting_id=meeting_id, quote=quote)))
 

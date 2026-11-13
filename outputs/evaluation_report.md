@@ -62,7 +62,7 @@ Every benchmark question answer in `outputs/answers.json` was independently veri
 | Q01 | TS3006 | Team TS3006 planned both an LCD screen and speech recog... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
 | Q02 | ES2003 | Team ES2003 leaned towards one material for the case an... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q03 | TS3009 | Team TS3009 planned a titanium back for their remote. W... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
-| Q04 | TS3011 | Team TS3011 chose a combined energy source for their re... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
+| Q04 | TS3011 | Team TS3011 chose a combined energy source for their re... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 1 Mtgs |
 | Q05 | TS3007 | Team TS3007's energy source changed between meetings. W... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 | Q06 | ES2008 | Team ES2008 wanted a feature to stop the remote getting... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
 | Q07 | IS1008 | In Team IS1008, a team member was asked to find out wha... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
@@ -82,7 +82,7 @@ Every benchmark question answer in `outputs/answers.json` was independently veri
 | Q21 | IS1007 | In Team IS1007, one member said they would check the pr... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
 | Q22 | ES2010 | Team ES2010 discussed several battery options. Who sugg... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 3 Mtgs |
 | Q23 | ES2006 | Team ES2006's final design had to fit the budget. Which... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
-| Q24 | ES2002 | What power source did Team ES2002 first agree on, what ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 2/2 | ✅ 1 Mtgs |
+| Q24 | ES2002 | What power source did Team ES2002 first agree on, what ... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 1/1 | ✅ 1 Mtgs |
 | Q25 | ES2011 | Team ES2011 played with fruit and vegetable ideas for t... | ✅ Correct | ✅ Correct | ✅ Correct | ✅ Exact | ✅ 3/3 | ✅ 2 Mtgs |
 
 ### Answer Quality Key Invariants

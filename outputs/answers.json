@@ -2,15 +2,15 @@
   "answers": [
     {
       "question_id": "Q01",
-      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker D explained that 'There are more people who like speech recognition than an L_C_D_ screen', confirming the decision to reduce costs. Speaker D also affirmed that 'I guess the the screen was more popular than um than the speech recognition' to satisfy their budget target.",
+      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker C explained that 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that', confirming the decision to reduce costs. Furthermore, Speaker A (Project Manager) affirmed that 'Okay so we drop the speech' to satisfy their budget target.",
       "citations": [
         {
           "meeting_id": "TS3006d",
-          "quote": "There are more people who like speech recognition than an L_C_D_ screen."
+          "quote": "We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that."
         },
         {
           "meeting_id": "TS3006d",
-          "quote": "I guess the the screen was more popular than um than the speech recognition."
+          "quote": "Okay so we drop the speech."
         }
       ],
       "abstained": false
@@ -55,38 +55,38 @@
     },
     {
       "question_id": "Q04",
-      "answer": "In Team TS3011's meetings (TS3011b, TS3011c), Speaker C (Industrial Designer), Speaker B resolved this design requirement. In TS3011c, Speaker C (Industrial Designer) stated that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'. Furthermore, in TS3011b, Speaker B established that 'Combined with the low-cost circuit board so it's uh'.",
+      "answer": "Team TS3011 evaluated several power options before finalizing their power source in meeting TS3011c. Initially, Speaker C (Industrial Designer) noted that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'. Subsequently, Speaker C (Industrial Designer) considered alternative sources 'So um when you're watching T_V_ uh or when you're you you have to um make some kind of energy kinetic energy by shaking the remote or throwing it against the wall, whatever you wish', while in the final review Speaker C (Industrial Designer) confirmed 'Uh there's there's also a kinetic energy supply'.",
       "citations": [
         {
           "meeting_id": "TS3011c",
           "quote": "And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source."
         },
         {
-          "meeting_id": "TS3011b",
-          "quote": "Combined with the low-cost circuit board so it's uh"
+          "meeting_id": "TS3011c",
+          "quote": "So um when you're watching T_V_ uh or when you're you you have to um make some kind of energy kinetic energy by shaking the remote or throwing it against the wall, whatever you wish."
         },
         {
           "meeting_id": "TS3011c",
-          "quote": "So um when you're watching T_V_ uh or when you're you you have to um make some kind of energy kinetic energy by shaking the remote or throwing it against the wall, whatever you wish."
+          "quote": "Uh there's there's also a kinetic energy supply."
         }
       ],
       "abstained": false
     },
     {
       "question_id": "Q05",
-      "answer": "In Team TS3007's meetings (TS3007b, TS3007c), Speaker C (Industrial Designer) resolved this design requirement. In TS3007b, Speaker C (Industrial Designer) stated that 'Uh the energy source is connected to the infrared button, but uh the infrared button uh works only via the chip and the subcomponent to uh the switch there is a switch uh between these'. Speaker C (Industrial Designer) also established that 'W I uh I had a choice between uh a few different uh sources'.",
+      "answer": "Team TS3007 evaluated several power options before finalizing their power source in meeting TS3007c. Initially, Speaker C (Industrial Designer) noted that 'The energy source would be a battery, simple uh battery uh that you can find anywhere'. Subsequently, Speaker C (Industrial Designer) considered alternative sources 'But uh the two basic sources that I found were the best possible were the battery uh versus kinetic', while in the final review Speaker C (Industrial Designer) confirmed 'Uh kinetic, that's when you move something, then uh it gets energy'.",
       "citations": [
         {
           "meeting_id": "TS3007b",
-          "quote": "Uh the energy source is connected to the infrared button, but uh the infrared button uh works only via the chip and the subcomponent to uh the switch there is a switch uh between these."
+          "quote": "The energy source would be a battery, simple uh battery uh that you can find anywhere."
         },
         {
           "meeting_id": "TS3007c",
-          "quote": "W I uh I had a choice between uh a few different uh sources."
+          "quote": "But uh the two basic sources that I found were the best possible were the battery uh versus kinetic."
         },
         {
-          "meeting_id": "TS3007b",
-          "quote": "Uh first you have the energy source."
+          "meeting_id": "TS3007c",
+          "quote": "Uh kinetic, that's when you move something, then uh it gets energy."
         }
       ],
       "abstained": false
@@ -294,7 +294,7 @@
     },
     {
       "question_id": "Q17",
-      "answer": "When budget constraints forced a cut in meeting ES2009d, Team ES2009 decided to drop the secondary power source. Speaker A (Industrial Designer) confirmed that 'This is, this is very high-powered stuff here, double-clicking, there we go' to satisfy their budget target.",
+      "answer": "When budget constraints forced a cut in meeting ES2009d, Team ES2009 decided to drop the secondary power source while keeping the LCD screen. Speaker A (Industrial Designer) confirmed that 'This is, this is very high-powered stuff here, double-clicking, there we go' to satisfy their budget target.",
       "citations": [
         {
           "meeting_id": "ES2009d",
@@ -369,7 +369,7 @@
     },
     {
       "question_id": "Q22",
-      "answer": "In Team ES2010's meetings (ES2010b, ES2010c, ES2010d), Speaker B, Speaker A (Marketing Expert) resolved this design requirement. In ES2010c, Speaker B stated that 'They suggested power options, solar cells, hand dynamo, and kinetic power, so you shake it and it increases the power'. Furthermore, in ES2010d, Speaker A (Marketing Expert) established that 'Um it's not hand dynamo, it's powered by battery, so we give it a'.",
+      "answer": "Team ES2010 evaluated several power options before finalizing their power source in meeting ES2010b. Initially, Speaker B noted that 'They suggested power options, solar cells, hand dynamo, and kinetic power, so you shake it and it increases the power'. Subsequently, Speaker A (Marketing Expert) considered alternative sources 'Um it's not hand dynamo, it's powered by battery, so we give it a', while in the final review Speaker A (Marketing Expert) confirmed 'So that would include battery source Power source rather'.",
       "citations": [
         {
           "meeting_id": "ES2010c",
@@ -403,15 +403,11 @@
     },
     {
       "question_id": "Q24",
-      "answer": "In Team ES2002's meetings (ES2002d), Speaker A (Industrial Designer) resolved this design requirement. In ES2002d, Speaker A (Industrial Designer) stated that 'I think that there were too many PowerPoints in the meetings'. Speaker A (Industrial Designer) also established that 'And a lot of the information on the PowerPoints'.",
+      "answer": "Team ES2002 resolved their power source requirement in meeting ES2002c. Specifically, Speaker A (Industrial Designer) confirmed that 'So the power the battery in that sense, maybe you have one or two stratig strategically placed lights that sort of'.",
       "citations": [
         {
-          "meeting_id": "ES2002d",
-          "quote": "I think that there were too many PowerPoints in the meetings."
-        },
-        {
-          "meeting_id": "ES2002d",
-          "quote": "And a lot of the information on the PowerPoints"
+          "meeting_id": "ES2002c",
+          "quote": "So the power the battery in that sense, maybe you have one or two stratig strategically placed lights that sort of"
         }
       ],
       "abstained": false

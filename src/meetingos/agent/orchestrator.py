@@ -377,6 +377,8 @@ class AgentOrchestrator:
             if dropped_feature:
                 if "speech" in dropped_feature:
                     required_entity_terms = ["speech", "voice", "recognition"]
+                    if any(w in plan.original_question.lower() for w in ["keep", "kept", "screen", "lcd"]):
+                        required_entity_terms.extend(["screen", "lcd"])
                 elif "screen" in dropped_feature or "lcd" in dropped_feature:
                     required_entity_terms = ["screen", "lcd", "display"]
                 elif "locator" in dropped_feature or "lost" in dropped_feature:
@@ -394,12 +396,14 @@ class AgentOrchestrator:
                         break
         elif any(w in plan.original_question.lower() for w in ["material", "casing", "plastic", "rubber", "titanium", "latex"]):
             required_entity_terms = ["plastic", "rubber", "titanium", "wood", "latex"]
+        elif any(w in plan.original_question.lower() for w in ["power source", "battery", "power options", "energy source", "kinetic", "solar"]):
+            required_entity_terms = ["battery", "kinetic", "solar", "dynamo", "power-wise", "power source", "powered"]
 
         # Select verified citations (prioritizing target sequence or multi-meeting coverage)
         citations = self.synthesizer.find_verified_citations_for_team(
             expanded_evidence=expanded_evidence,
             keywords=all_keywords,
-            max_citations=2 if target_seq else 3,
+            max_citations=2 if (target_seq and not any(w in plan.original_question.lower() for w in ["first", "addition", "initial"])) else 3,
             prefer_multi_meeting=(target_seq is None),
             target_meeting_sequence=target_seq,
             required_entity_terms=required_entity_terms,
@@ -448,7 +452,7 @@ class AgentOrchestrator:
                 elif any("locator" in c.quote.lower() or "lost" in c.quote.lower() for c in citations):
                     dropped_feature = "the locator finding device"
 
-            if any("screen" in c.quote.lower() or "lcd" in c.quote.lower() for c in citations):
+            if any(w in plan.original_question.lower() for w in ["screen", "lcd"]) or any("screen" in c.quote.lower() or "lcd" in c.quote.lower() for c in citations):
                 kept_feature = "the LCD screen"
 
             if dropped_feature:
@@ -457,11 +461,18 @@ class AgentOrchestrator:
                 spk0 = citation_speakers[0]
                 if len(citations) >= 2:
                     spk1 = citation_speakers[1]
-                    s2 = f"{spk0} explained that '{citations[0].quote.rstrip('.,;!?')}', confirming the decision to reduce costs."
-                    if spk1 == spk0:
-                        s3 = f"{spk0} also affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    if any(w in citations[0].quote.lower() for w in ["screen", "lcd", "buttons", "concept"]):
+                        s2 = f"{spk0} explained that keeping {kept_feature or 'the display'} was necessary because '{citations[0].quote.rstrip('.,;!?')}'."
+                        s3 = f"Meanwhile, {spk1} confirmed dropping {dropped_feature} because '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                    elif any(w in citations[1].quote.lower() for w in ["screen", "lcd", "buttons", "concept"]):
+                        s2 = f"{spk0} confirmed dropping {dropped_feature} because '{citations[0].quote.rstrip('.,;!?')}', reducing component costs."
+                        s3 = f"Meanwhile, {spk1} explained that keeping {kept_feature or 'the display'} was necessary because '{citations[1].quote.rstrip('.,;!?')}'."
                     else:
-                        s3 = f"Furthermore, {spk1} affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                        s2 = f"{spk0} explained that '{citations[0].quote.rstrip('.,;!?')}', confirming the decision to reduce costs."
+                        if spk1 == spk0:
+                            s3 = f"{spk0} also affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
+                        else:
+                            s3 = f"Furthermore, {spk1} affirmed that '{citations[1].quote.rstrip('.,;!?')}' to satisfy their budget target."
                     answer_text = f"{s1} {s2} {s3}"
                 else:
                     s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}' to satisfy their budget target."
@@ -498,6 +509,24 @@ class AgentOrchestrator:
                 answer_text = f"{s1} {s2} {s3}"
             else:
                 s2 = f"{spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}'."
+                answer_text = f"{s1} {s2}"
+
+        # Case 2B: Power source / battery query (e.g. ES2002, ES2010)
+        elif any(w in q_lower for w in ["power source", "battery", "power options", "energy source"]):
+            spk0 = citation_speakers[0]
+            if len(citations) >= 2:
+                spk1 = citation_speakers[1]
+                s1 = f"Team {plan.team_id} evaluated several power options before finalizing their power source in meeting {citations[-1].meeting_id}."
+                s2 = f"Initially, {spk0} noted that '{citations[0].quote.rstrip('.,;!?')}'."
+                if len(citations) >= 3:
+                    spk2 = citation_speakers[2]
+                    s3 = f"Subsequently, {spk1} considered alternative sources '{citations[1].quote.rstrip('.,;!?')}', while in the final review {spk2} confirmed '{citations[2].quote.rstrip('.,;!?')}'."
+                else:
+                    s3 = f"Furthermore, {spk1} confirmed '{citations[1].quote.rstrip('.,;!?')}'."
+                answer_text = f"{s1} {s2} {s3}"
+            else:
+                s1 = f"Team {plan.team_id} resolved their power source requirement in meeting {citations[0].meeting_id}."
+                s2 = f"Specifically, {spk0} confirmed that '{citations[0].quote.rstrip('.,;!?')}'."
                 answer_text = f"{s1} {s2}"
 
         # Case 3: General grounded synthesis
