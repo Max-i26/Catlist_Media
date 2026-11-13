@@ -149,9 +149,10 @@ All generated submission artifacts are stored in `outputs/`:
   - 10 independently checked retrieval benchmark questions (`E01`–`E10`).
   - Analysis of 3 genuine system failure modes with layer classifications.
   - 1,000 and 10,000 meeting cost, storage, and throughput scaling models.
-- **[`outputs/meetingos.db`](file:///D:/Catalist_Media/meetingos/outputs/meetingos.db):** Authoritative SQLite source database (52.8 MB, 48,148 turns, 23,901 chunks, `chunks_fts`, `team_coverage`, `agent_runs`).
+- **[`outputs/meetingos.db`](file:///D:/Catalist_Media/meetingos/outputs/meetingos.db):** Authoritative SQLite source database (52.8 MB, 48,148 turns, 23,901 chunks, `chunks_fts`, `team_coverage`, `agent_runs`, 210 decision entities, 678 decision events, 378 decision relations, 43 action entities/events, 584 numeric evidence records, and `decision_current_state` view).
 - **[`outputs/ingestion_manifest.json`](file:///D:/Catalist_Media/meetingos/outputs/ingestion_manifest.json):** Deterministic Gate 1 audit manifest with SHA-256 hashes.
 - **[`outputs/faiss_indexes/`](file:///D:/Catalist_Media/meetingos/outputs/faiss_indexes/):** 35 team-isolated FAISS `IndexFlatIP` vector index files.
+- **`outputs/meetingos_submission.zip` / `meetingos_submission.zip`:** Complete submission package archive containing all code, test suites, database, deliverables, and documentation.
 
 ---
 
