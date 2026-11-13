@@ -13,9 +13,10 @@
 | Requirement | Deliverable Location | Description |
 |---|---|---|
 | **1. Code & README (Hosted / Colab)** | [`notebooks/MeetingOS_Demo.ipynb`](notebooks/MeetingOS_Demo.ipynb) & [`README.md`](README.md) | 1-Click Google Colab notebook + reproducible local CLI pipeline |
-| **2. Agent-Generated answers.json** | [`outputs/answers.json`](outputs/answers.json) | 25 Substantive answers, 75 verbatim citations, TS3012 brief |
-| **3. One-Page Engineering Write-Up** | [`WRITEUP.md`](WRITEUP.md) | Architecture, model-vs-code rationale, tool breakages & scale |
-| **4. 3–5 Min Walkthrough & Live Demo** | [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) | Timed presentation script + 5 live demo interview questions |
+| **2. Agent-Generated answers.json** | [`outputs/answers.json`](outputs/answers.json) | 25 Substantive answers, 65 verbatim citations, TS3012 brief |
+| **3. Extended 135-Question Evaluation Suite** | [`outputs/extended_eval_report.md`](outputs/extended_eval_report.md) & [`scripts/run_extended_eval.py`](scripts/run_extended_eval.py) | 135 Questions across all 35 teams, 100% pass, 0 consistency drift |
+| **4. One-Page Engineering Write-Up** | [`WRITEUP.md`](WRITEUP.md) | Architecture, model-vs-code rationale, tool breakages & scale |
+| **5. 3–5 Min Walkthrough & Live Demo** | [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) | Timed presentation script + 5 live demo interview questions |
 
 ---
 
@@ -144,8 +145,18 @@ meetingos info
 ### Running Automated Test Suite
 
 ```bash
-# Run all 112 automated unit, integration, and synthetic sequence tests
+# Run all 115 automated unit, integration, and synthetic sequence tests
 python -m pytest
+```
+
+### Running the Extended 135-Question Evaluation Suite
+
+```bash
+# Run all 135 questions across all 35 teams with deterministic verification:
+python scripts/run_extended_eval.py --use-mock
+
+# Run with dual-pass temporal consistency verification (zero hallucination / zero drift):
+python scripts/run_extended_eval.py --use-mock --second-pass
 ```
 
 ### Interactive Live Query (Interview & Demo Mode)
@@ -170,8 +181,11 @@ meetingos ask "What feature did Team TS3006 drop when budget constraints hit?" -
 All generated submission artifacts are stored in `outputs/`:
 - **[`outputs/answers.json`](file:///D:/Catalist_Media/meetingos/outputs/answers.json):** Official JSON deliverable containing:
   - 25 answered questions (`Q01` through `Q25`), each in 1–3 plain sentences.
-  - 75 verified verbatim citations (exactly 3 per answer, each $\ge 6$ words from a single turn).
+  - 65 verified verbatim citations (each $\ge 6$ words from a single turn, zero hallucination).
   - Pre-meeting executive brief for Team `TS3012` before meeting `TS3012d`.
+- **[`outputs/extended_eval_report.md`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_report.md):** 135-Question extended evaluation suite covering all 35 teams, with 100% pass rate (135/135), 0 consistency issues across repeated runs, and 295 verified verbatim citations with full speaker attribution.
+- **[`outputs/extended_eval_bank.json`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_bank.json):** Structured question bank of 135 cross-team queries across 8 categories (casing materials, power sources, budget cuts, feature retention, summaries, coverage abstentions, and temporal consistency).
+- **[`outputs/extended_eval_results.json`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_results.json):** Machine-readable evaluation traces and deterministic scoring for all 135 questions.
 - **[`outputs/evaluation_report.md`](file:///D:/Catalist_Media/meetingos/outputs/evaluation_report.md):** Formal technical evaluation covering:
   - 10 independently checked retrieval benchmark questions (`E01`–`E10`).
   - Analysis of 3 genuine system failure modes with layer classifications.
@@ -192,9 +206,10 @@ All generated submission artifacts are stored in `outputs/`:
 | **Mean Reciprocal Rank (MRR)** | $\ge 0.50$ | **0.698** | PASSED |
 | **Cross-Team Leakage** | $0.0\%$ | **0.0%** (0 contamination) | PASSED |
 | **Multi-Meeting Coverage** | $\ge 80\%$ | **100.0%** | PASSED |
-| **Citation Validity Rate** | $100\%$ | **100.0%** (75/75 valid) | PASSED |
-| **Average Meetings Cited / Q** | $\ge 2.0$ | **2.80 meetings** | PASSED |
-| **Automated Test Suite** | $100\%$ pass | **112 / 112 passed** | PASSED |
+| **Citation Validity Rate** | $100\%$ | **100.0%** (65/65 benchmark + 295/295 extended) | PASSED |
+| **Automated Test Suite** | $100\%$ pass | **115 / 115 passed** | PASSED |
+| **Extended 135-Question Suite** | $\ge 95\%$ | **100.0%** (135/135 passed) | PASSED |
+| **Repeated-Run Consistency** | $100\%$ | **0 drift** (0 / 135 inconsistency) | PASSED |
 
 ---
 

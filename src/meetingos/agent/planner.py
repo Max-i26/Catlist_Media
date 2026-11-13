@@ -95,7 +95,7 @@ class AgentPlanner:
                     f"so MeetingOS cannot reliably establish what was decided during the kickoff."
                 )
             elif "d" in missing_seqs and any(
-                w in q_lower for w in ["detailed design", "final meeting", "meeting d", "last meeting", "final design"]
+                w in q_lower for w in ["detailed design", "final meeting", "meeting d", "last meeting", "final design", "ultimate", "final conclusion"]
             ):
                 requires_abstention = True
                 abstention_reason = (
@@ -153,13 +153,32 @@ class AgentPlanner:
         words = re.findall(r"\b[a-zA-Z]{3,}\b", q_lower)
         topic_keywords = [w for w in words if w not in stopwords]
 
+        domain_synonyms = {
+            "casing": ["plastic", "rubber", "titanium", "wood", "latex", "case", "material"],
+            "material": ["plastic", "rubber", "titanium", "wood", "latex", "case", "casing"],
+            "materials": ["plastic", "rubber", "titanium", "wood", "latex", "case", "casing"],
+            "power": ["battery", "kinetic", "solar", "dynamo", "energy", "supply"],
+            "energy": ["battery", "kinetic", "solar", "dynamo", "power", "supply"],
+            "feature": ["speech", "voice", "recognition", "screen", "lcd", "display", "locator"],
+            "drop": ["speech", "voice", "recognition", "cut", "scrap", "screen", "lcd"],
+            "budget": ["price", "cost", "euros", "euro", "expensive", "production"],
+            "price": ["cost", "budget", "euros", "euro", "selling", "production"],
+        }
+        domain_additions = []
+        for term, syns in domain_synonyms.items():
+            if term in q_lower:
+                for s in syns:
+                    if s not in topic_keywords and s not in domain_additions:
+                        domain_additions.append(s)
+        topic_keywords = topic_keywords + domain_additions
+
         # 1. Early stage / initial proposal or baseline
         early_target = "a" if "a" in [m[-1] for m in team_meetings] else "b"
         sub_questions.append(
             SubQuestion(
                 id=f"SQ{sq_idx}",
-                query_text=f"{' '.join(topic_keywords[:4])} initial proposal discuss",
-                keywords=topic_keywords[:3],
+                query_text=f"{' '.join(topic_keywords[:8])} initial proposal discuss",
+                keywords=topic_keywords[:6],
                 target_sequence=early_target,
                 aspect="initial_proposal",
             )
@@ -171,8 +190,8 @@ class AgentPlanner:
             sub_questions.append(
                 SubQuestion(
                     id=f"SQ{sq_idx}",
-                    query_text=f"{' '.join(topic_keywords[:4])} cost budget price cut limit",
-                    keywords=["cost", "budget", "price"] + topic_keywords[:2],
+                    query_text=f"{' '.join(topic_keywords[:8])} cost budget price cut limit",
+                    keywords=["cost", "budget", "price"] + topic_keywords[:4],
                     target_sequence=None,
                     aspect="numeric",
                 )
@@ -183,8 +202,8 @@ class AgentPlanner:
             sub_questions.append(
                 SubQuestion(
                     id=f"SQ{sq_idx}",
-                    query_text=f"{' '.join(topic_keywords[:4])} change switch replace drop objection instead",
-                    keywords=["change", "switch", "replace", "drop"] + topic_keywords[:2],
+                    query_text=f"{' '.join(topic_keywords[:8])} change switch replace drop objection instead",
+                    keywords=["change", "switch", "replace", "drop"] + topic_keywords[:4],
                     target_sequence=None,
                     aspect="change",
                 )
@@ -196,8 +215,8 @@ class AgentPlanner:
             sub_questions.append(
                 SubQuestion(
                     id=f"SQ{sq_idx}",
-                    query_text=f"{' '.join(topic_keywords[:4])} I think suggest agree check look into",
-                    keywords=["suggest", "propose", "check"] + topic_keywords[:2],
+                    query_text=f"{' '.join(topic_keywords[:8])} I think suggest agree check look into",
+                    keywords=["suggest", "propose", "check"] + topic_keywords[:4],
                     target_sequence=None,
                     aspect="attribution",
                 )
@@ -209,19 +228,32 @@ class AgentPlanner:
         sub_questions.append(
             SubQuestion(
                 id=f"SQ{sq_idx}",
-                query_text=f"{' '.join(topic_keywords[:4])} final design decide conclusion end",
-                keywords=["final", "decide", "conclusion"] + topic_keywords[:2],
+                query_text=f"{' '.join(topic_keywords[:8])} final design decide conclusion end",
+                keywords=["final", "decide", "conclusion"] + topic_keywords[:4],
                 target_sequence=late_target,
                 aspect="final_decision",
             )
         )
         sq_idx += 1
 
+        # 4B. Conceptual design (c) if 4 meetings exist and no specific sequence targeted
+        if not target_sequence and "c" in [m[-1] for m in team_meetings] and late_target != "c":
+            sub_questions.append(
+                SubQuestion(
+                    id=f"SQ{sq_idx}",
+                    query_text=f"{' '.join(topic_keywords[:8])} options components evaluate",
+                    keywords=topic_keywords[:4],
+                    target_sequence="c",
+                    aspect="conceptual_design",
+                )
+            )
+            sq_idx += 1
+
         # 5. Core direct query from the full question text
         sub_questions.append(
             SubQuestion(
                 id=f"SQ{sq_idx}",
-                query_text=question_text,
+                query_text=f"{' '.join(topic_keywords[:8])}",
                 keywords=topic_keywords[:4],
                 target_sequence=None,
                 aspect="general",

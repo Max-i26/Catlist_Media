@@ -142,7 +142,7 @@ class TeamVectorIndexer:
     ):
         self.conn = conn
         self.embedder = embedder
-        self.index_dir = index_dir
+        self.index_dir = Path(index_dir) if index_dir is not None else Path(FAISS_DIR)
         self.indexes: dict[str, faiss.Index] = {}
 
     def build_team_index(

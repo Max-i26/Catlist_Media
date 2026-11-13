@@ -1,0 +1,1099 @@
+{
+  "metadata": {
+    "total_questions": 135,
+    "categories": {
+      "casing_material": 35,
+      "energy_source": 35,
+      "feature_drop": 15,
+      "feature_retained": 15,
+      "budget_pricing": 10,
+      "final_summary": 10,
+      "coverage_abstention": 5,
+      "consistency_temporal": 10
+    },
+    "teams_covered": 35,
+    "abstention_expected": 5
+  },
+  "questions": [
+    {
+      "question_id": "EQ001",
+      "team_id": "ES2002",
+      "question": "What casing material did Team ES2002 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ002",
+      "team_id": "ES2003",
+      "question": "What casing material did Team ES2003 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ003",
+      "team_id": "ES2004",
+      "question": "What casing material did Team ES2004 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ004",
+      "team_id": "ES2005",
+      "question": "What casing material did Team ES2005 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ005",
+      "team_id": "ES2006",
+      "question": "What casing material did Team ES2006 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ006",
+      "team_id": "ES2007",
+      "question": "What casing material did Team ES2007 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ007",
+      "team_id": "ES2008",
+      "question": "What casing material did Team ES2008 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ008",
+      "team_id": "ES2009",
+      "question": "What casing material did Team ES2009 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ009",
+      "team_id": "ES2010",
+      "question": "What casing material did Team ES2010 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ010",
+      "team_id": "ES2011",
+      "question": "What casing material did Team ES2011 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ011",
+      "team_id": "ES2012",
+      "question": "What casing material did Team ES2012 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ012",
+      "team_id": "ES2013",
+      "question": "What casing material did Team ES2013 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ013",
+      "team_id": "ES2014",
+      "question": "What casing material did Team ES2014 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ014",
+      "team_id": "ES2015",
+      "question": "What casing material did Team ES2015 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ015",
+      "team_id": "ES2016",
+      "question": "What casing material did Team ES2016 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ016",
+      "team_id": "IS1000",
+      "question": "What casing material did Team IS1000 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ017",
+      "team_id": "IS1001",
+      "question": "What casing material did Team IS1001 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ018",
+      "team_id": "IS1002",
+      "question": "What casing material did Team IS1002 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ019",
+      "team_id": "IS1003",
+      "question": "What casing material did Team IS1003 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ020",
+      "team_id": "IS1004",
+      "question": "What casing material did Team IS1004 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ021",
+      "team_id": "IS1005",
+      "question": "What casing material did Team IS1005 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ022",
+      "team_id": "IS1006",
+      "question": "What casing material did Team IS1006 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ023",
+      "team_id": "IS1007",
+      "question": "What casing material did Team IS1007 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ024",
+      "team_id": "IS1008",
+      "question": "What casing material did Team IS1008 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ025",
+      "team_id": "IS1009",
+      "question": "What casing material did Team IS1009 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ026",
+      "team_id": "TS3003",
+      "question": "What casing material did Team TS3003 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ027",
+      "team_id": "TS3004",
+      "question": "What casing material did Team TS3004 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ028",
+      "team_id": "TS3005",
+      "question": "What casing material did Team TS3005 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ029",
+      "team_id": "TS3006",
+      "question": "What casing material did Team TS3006 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ030",
+      "team_id": "TS3007",
+      "question": "What casing material did Team TS3007 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ031",
+      "team_id": "TS3008",
+      "question": "What casing material did Team TS3008 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ032",
+      "team_id": "TS3009",
+      "question": "What casing material did Team TS3009 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ033",
+      "team_id": "TS3010",
+      "question": "What casing material did Team TS3010 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ034",
+      "team_id": "TS3011",
+      "question": "What casing material did Team TS3011 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ035",
+      "team_id": "TS3012",
+      "question": "What casing material did Team TS3012 decide to use for their remote control?",
+      "category": "casing_material",
+      "expected_abstain": false,
+      "notes": "Must name specific material (plastic/rubber/titanium/wood/latex). Citation must be from final meeting if available."
+    },
+    {
+      "question_id": "EQ036",
+      "team_id": "ES2002",
+      "question": "What power source or energy supply did Team ES2002 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ037",
+      "team_id": "ES2003",
+      "question": "What power source or energy supply did Team ES2003 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ038",
+      "team_id": "ES2004",
+      "question": "What power source or energy supply did Team ES2004 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ039",
+      "team_id": "ES2005",
+      "question": "What power source or energy supply did Team ES2005 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ040",
+      "team_id": "ES2006",
+      "question": "What power source or energy supply did Team ES2006 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ041",
+      "team_id": "ES2007",
+      "question": "What power source or energy supply did Team ES2007 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ042",
+      "team_id": "ES2008",
+      "question": "What power source or energy supply did Team ES2008 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ043",
+      "team_id": "ES2009",
+      "question": "What power source or energy supply did Team ES2009 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ044",
+      "team_id": "ES2010",
+      "question": "What power source or energy supply did Team ES2010 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ045",
+      "team_id": "ES2011",
+      "question": "What power source or energy supply did Team ES2011 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ046",
+      "team_id": "ES2012",
+      "question": "What power source or energy supply did Team ES2012 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ047",
+      "team_id": "ES2013",
+      "question": "What power source or energy supply did Team ES2013 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ048",
+      "team_id": "ES2014",
+      "question": "What power source or energy supply did Team ES2014 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ049",
+      "team_id": "ES2015",
+      "question": "What power source or energy supply did Team ES2015 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ050",
+      "team_id": "ES2016",
+      "question": "What power source or energy supply did Team ES2016 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ051",
+      "team_id": "IS1000",
+      "question": "What power source or energy supply did Team IS1000 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ052",
+      "team_id": "IS1001",
+      "question": "What power source or energy supply did Team IS1001 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ053",
+      "team_id": "IS1002",
+      "question": "What power source or energy supply did Team IS1002 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ054",
+      "team_id": "IS1003",
+      "question": "What power source or energy supply did Team IS1003 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ055",
+      "team_id": "IS1004",
+      "question": "What power source or energy supply did Team IS1004 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ056",
+      "team_id": "IS1005",
+      "question": "What power source or energy supply did Team IS1005 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ057",
+      "team_id": "IS1006",
+      "question": "What power source or energy supply did Team IS1006 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ058",
+      "team_id": "IS1007",
+      "question": "What power source or energy supply did Team IS1007 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ059",
+      "team_id": "IS1008",
+      "question": "What power source or energy supply did Team IS1008 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ060",
+      "team_id": "IS1009",
+      "question": "What power source or energy supply did Team IS1009 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ061",
+      "team_id": "TS3003",
+      "question": "What power source or energy supply did Team TS3003 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ062",
+      "team_id": "TS3004",
+      "question": "What power source or energy supply did Team TS3004 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ063",
+      "team_id": "TS3005",
+      "question": "What power source or energy supply did Team TS3005 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ064",
+      "team_id": "TS3006",
+      "question": "What power source or energy supply did Team TS3006 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ065",
+      "team_id": "TS3007",
+      "question": "What power source or energy supply did Team TS3007 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ066",
+      "team_id": "TS3008",
+      "question": "What power source or energy supply did Team TS3008 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ067",
+      "team_id": "TS3009",
+      "question": "What power source or energy supply did Team TS3009 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ068",
+      "team_id": "TS3010",
+      "question": "What power source or energy supply did Team TS3010 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ069",
+      "team_id": "TS3011",
+      "question": "What power source or energy supply did Team TS3011 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ070",
+      "team_id": "TS3012",
+      "question": "What power source or energy supply did Team TS3012 select for their remote control design?",
+      "category": "energy_source",
+      "expected_abstain": false,
+      "notes": "Must name specific source (battery/kinetic/solar/dynamo). Temporal arc: initial proposal \u2192 final decision."
+    },
+    {
+      "question_id": "EQ071",
+      "team_id": "TS3006",
+      "question": "What feature did Team TS3006 drop when budget constraints hit in their final meeting?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Speech recognition cut confirmed by integration failure reasoning."
+    },
+    {
+      "question_id": "EQ072",
+      "team_id": "ES2014",
+      "question": "What feature did Team ES2014 decide to cut when their budget was finalized?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Voice/speech recognition cut or repurposed for lost-remote finding."
+    },
+    {
+      "question_id": "EQ073",
+      "team_id": "ES2006",
+      "question": "What features did Team ES2006 have to cut due to their budget limitations?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Team ES2006 acknowledged cuts near end of project."
+    },
+    {
+      "question_id": "EQ074",
+      "team_id": "ES2010",
+      "question": "What power option did Team ES2010 eliminate during their budget review?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Either kinetic or solar was dropped in favour of battery."
+    },
+    {
+      "question_id": "EQ075",
+      "team_id": "IS1009",
+      "question": "What feature did Team IS1009 choose to develop as a priority, dropping others due to cost?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Cost-constrained feature selection in IS1009."
+    },
+    {
+      "question_id": "EQ076",
+      "team_id": "TS3012",
+      "question": "What feature did Team TS3012 drop because it was too expensive to implement?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Titanium casing was explicitly rejected due to cost."
+    },
+    {
+      "question_id": "EQ077",
+      "team_id": "ES2009",
+      "question": "What did Team ES2009 decide to drop when their budget was reviewed?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "ES2009d should contain cut decisions."
+    },
+    {
+      "question_id": "EQ078",
+      "team_id": "ES2008",
+      "question": "What secondary feature did Team ES2008 cut to stay within budget?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "ES2008 had budget discussions."
+    },
+    {
+      "question_id": "EQ079",
+      "team_id": "ES2016",
+      "question": "What item did Team ES2016 have to remove once they finalized their budget numbers?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "ES2016d contains budget finalization."
+    },
+    {
+      "question_id": "EQ080",
+      "team_id": "TS3011",
+      "question": "What energy option did Team TS3011 ultimately not use, given their casing decision?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Latex/plastic casing precludes solar cells."
+    },
+    {
+      "question_id": "EQ081",
+      "team_id": "IS1003",
+      "question": "What alternative material did Team IS1003 consider but ultimately reject?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "IS1003 considered wood but may have changed."
+    },
+    {
+      "question_id": "EQ082",
+      "team_id": "TS3009",
+      "question": "What material upgrade did Team TS3009 consider but reject for their remote's back panel?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Metal/titanium considered then rejected for plastic."
+    },
+    {
+      "question_id": "EQ083",
+      "team_id": "ES2004",
+      "question": "What technology did Team ES2004 remain undecided or ambivalent about including?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Voice recognition was kept ambivalent."
+    },
+    {
+      "question_id": "EQ084",
+      "team_id": "TS3004",
+      "question": "How did Team TS3004 resolve the question of whether to include speech recognition?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Speech recognition was discussed across meetings b and c."
+    },
+    {
+      "question_id": "EQ085",
+      "team_id": "IS1007",
+      "question": "What constraints shaped Team IS1007's feature set for their remote control?",
+      "category": "feature_drop",
+      "expected_abstain": false,
+      "notes": "Budget constraints for IS1007 remote."
+    },
+    {
+      "question_id": "EQ086",
+      "team_id": "ES2003",
+      "question": "What was the primary innovation or distinctive design choice that Team ES2003 retained?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ087",
+      "team_id": "ES2007",
+      "question": "What unique design concept did Team ES2007 develop for their remote control?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ088",
+      "team_id": "ES2011",
+      "question": "What distinctive aesthetic theme did Team ES2011 build their remote control around?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ089",
+      "team_id": "ES2012",
+      "question": "What key feature or design approach did Team ES2012 prioritize?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ090",
+      "team_id": "ES2013",
+      "question": "What was Team ES2013's main design focus for their remote control?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ091",
+      "team_id": "ES2015",
+      "question": "What design decision remained constant across all of Team ES2015's meetings?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ092",
+      "team_id": "IS1000",
+      "question": "What was the central design philosophy Team IS1000 established for their remote?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ093",
+      "team_id": "IS1001",
+      "question": "What feature did Team IS1001 commit to including in their final design?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ094",
+      "team_id": "IS1004",
+      "question": "What key design element did Team IS1004 decide to keep throughout their project?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ095",
+      "team_id": "IS1006",
+      "question": "What was Team IS1006's primary functional requirement for their remote control?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ096",
+      "team_id": "TS3003",
+      "question": "What accessibility feature did Team TS3003 incorporate for their elderly target market?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ097",
+      "team_id": "TS3005",
+      "question": "What design approach did Team TS3005 adopt for their remote control prototype?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ098",
+      "team_id": "TS3007",
+      "question": "What feature did Team TS3007 decide was most important for their remote control?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ099",
+      "team_id": "TS3008",
+      "question": "What was Team TS3008's core design decision across their meetings?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ100",
+      "team_id": "TS3010",
+      "question": "What governance decision defined how Team TS3010 made their final design choices?",
+      "category": "feature_retained",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ101",
+      "team_id": "IS1002",
+      "question": "What was Team IS1002's target selling price and what production cost were they aiming for?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "25 Euros selling price, 15.8 Euros production cost."
+    },
+    {
+      "question_id": "EQ102",
+      "team_id": "IS1009",
+      "question": "What production cost ceiling was Team IS1009 working within?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "12.50 Euro production cost limit."
+    },
+    {
+      "question_id": "EQ103",
+      "team_id": "TS3012",
+      "question": "What was Team TS3012's target retail price for their remote control?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "25 Euros retail target."
+    },
+    {
+      "question_id": "EQ104",
+      "team_id": "ES2016",
+      "question": "How did budget constraints affect Team ES2016's decision-making in their final meeting?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Budget review in ES2016d."
+    },
+    {
+      "question_id": "EQ105",
+      "team_id": "TS3006",
+      "question": "How much did Team TS3006 manage to reduce their estimated price by in their final meeting?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Price reduction discussion in TS3006d."
+    },
+    {
+      "question_id": "EQ106",
+      "team_id": "ES2002",
+      "question": "What financial constraints shaped Team ES2002's component selection?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Battery and cost discussion in ES2002."
+    },
+    {
+      "question_id": "EQ107",
+      "team_id": "IS1007",
+      "question": "What budget did Team IS1007 have for producing their remote controller?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Budget constraint discussion."
+    },
+    {
+      "question_id": "EQ108",
+      "team_id": "ES2014",
+      "question": "What was Team ES2014's main cost-related concern when finalizing their design?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Cost vs feature trade-off."
+    },
+    {
+      "question_id": "EQ109",
+      "team_id": "TS3007",
+      "question": "How did Team TS3007 compare the costs of different energy sources?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Battery vs kinetic cost comparison."
+    },
+    {
+      "question_id": "EQ110",
+      "team_id": "ES2015",
+      "question": "What pricing guidance did Team ES2015 receive for their remote control design?",
+      "category": "budget_pricing",
+      "expected_abstain": false,
+      "notes": "Pricing constraints for ES2015."
+    },
+    {
+      "question_id": "EQ111",
+      "team_id": "TS3006",
+      "question": "What were the main decisions made by Team TS3006 in their final design meeting?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ112",
+      "team_id": "ES2003",
+      "question": "How did Team ES2003 conclude their design process in their final meeting?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ113",
+      "team_id": "ES2014",
+      "question": "What did Team ES2014 decide in their final meeting regarding the lost-remote feature?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ114",
+      "team_id": "IS1002",
+      "question": "What decisions were finalized by Team IS1002 in their last recorded meeting?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ115",
+      "team_id": "TS3012",
+      "question": "What did Team TS3012 finalize in their last meeting regarding their prototype?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ116",
+      "team_id": "ES2010",
+      "question": "What power source decision did Team ES2010 reach in their final review?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ117",
+      "team_id": "TS3009",
+      "question": "How did Team TS3009 describe their completed remote control design?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ118",
+      "team_id": "IS1003",
+      "question": "What material decision did Team IS1003 make in their final design meeting?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ119",
+      "team_id": "ES2011",
+      "question": "How did Team ES2011 describe their unique remote control concept in their final meeting?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ120",
+      "team_id": "TS3011",
+      "question": "What was the final energy source configuration that Team TS3011 settled on?",
+      "category": "final_summary",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ121",
+      "team_id": "IS1002",
+      "question": "What did Team IS1002 discuss in their kick-off meeting about remote control design requirements?",
+      "category": "coverage_abstention",
+      "expected_abstain": true,
+      "notes": "IS1002 is missing meeting 'a'. System must abstain \u2014 no kick-off data available."
+    },
+    {
+      "question_id": "EQ122",
+      "team_id": "IS1002",
+      "question": "Who were the members of Team IS1002 and what roles did they introduce in their first meeting?",
+      "category": "coverage_abstention",
+      "expected_abstain": true,
+      "notes": "IS1002 missing 'a'. Team introductions not in corpus."
+    },
+    {
+      "question_id": "EQ123",
+      "team_id": "IS1005",
+      "question": "What final material and feature decisions did Team IS1005 make in their last meeting?",
+      "category": "coverage_abstention",
+      "expected_abstain": true,
+      "notes": "IS1005 is missing meeting 'd'. Final decisions not in corpus."
+    },
+    {
+      "question_id": "EQ124",
+      "team_id": "IS1005",
+      "question": "What was Team IS1005's ultimate conclusion about their remote control design?",
+      "category": "coverage_abstention",
+      "expected_abstain": true,
+      "notes": "IS1005 missing 'd'. Final conclusion cannot be verified."
+    },
+    {
+      "question_id": "EQ125",
+      "team_id": "IS1005",
+      "question": "How did Team IS1005 finalize their power source choice in their last meeting?",
+      "category": "coverage_abstention",
+      "expected_abstain": true,
+      "notes": "IS1005 missing 'd'. Final power source decision not in corpus."
+    },
+    {
+      "question_id": "EQ126",
+      "team_id": "TS3006",
+      "question": "In what meeting did Team TS3006 first propose dropping speech recognition?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ127",
+      "team_id": "ES2003",
+      "question": "Did Team ES2003 ever consider a material other than plastic for their casing? If so, what?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ128",
+      "team_id": "IS1002",
+      "question": "What was the difference between Team IS1002's target selling price and estimated production cost?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ129",
+      "team_id": "TS3012",
+      "question": "Why did Team TS3012 reject titanium as a casing material?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ130",
+      "team_id": "ES2014",
+      "question": "What was the original intended purpose of voice recognition in Team ES2014's design?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ131",
+      "team_id": "ES2010",
+      "question": "How did Team ES2010 describe kinetic power as an energy option?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ132",
+      "team_id": "TS3009",
+      "question": "What made Team TS3009 opt for titanium-coloured plastic rather than actual titanium?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ133",
+      "team_id": "ES2011",
+      "question": "How did Team ES2011's design concept evolve across their meetings?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ134",
+      "team_id": "TS3011",
+      "question": "Why did Team TS3011's casing choice affect their energy source options?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    },
+    {
+      "question_id": "EQ135",
+      "team_id": "IS1009",
+      "question": "What marketing approach did Team IS1009 plan around their key remote control features?",
+      "category": "consistency_temporal",
+      "expected_abstain": false,
+      "notes": ""
+    }
+  ]
+}
