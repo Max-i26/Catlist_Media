@@ -183,7 +183,7 @@ All generated submission artifacts are stored in `outputs/`:
   - 25 answered questions (`Q01` through `Q25`), each in 1–3 plain sentences.
   - 65 verified verbatim citations (each $\ge 6$ words from a single turn, zero hallucination).
   - Pre-meeting executive brief for Team `TS3012` before meeting `TS3012d`.
-- **[`outputs/extended_eval_report.md`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_report.md):** 135-Question extended evaluation suite covering all 35 teams, with 100% pass rate (135/135), 0 consistency issues across repeated runs, and 295 verified verbatim citations with full speaker attribution.
+- **[`outputs/extended_eval_report.md`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_report.md):** 135-Question extended evaluation suite covering all 35 teams, with 100% pass rate (135/135), 0 consistency issues across repeated runs, and 291 verified verbatim citations (2.24 avg per answered question) with full speaker attribution.
 - **[`outputs/extended_eval_bank.json`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_bank.json):** Structured question bank of 135 cross-team queries across 8 categories (casing materials, power sources, budget cuts, feature retention, summaries, coverage abstentions, and temporal consistency).
 - **[`outputs/extended_eval_results.json`](file:///D:/Catalist_Media/meetingos/outputs/extended_eval_results.json):** Machine-readable evaluation traces and deterministic scoring for all 135 questions.
 - **[`outputs/evaluation_report.md`](file:///D:/Catalist_Media/meetingos/outputs/evaluation_report.md):** Formal technical evaluation covering:
@@ -206,7 +206,7 @@ All generated submission artifacts are stored in `outputs/`:
 | **Mean Reciprocal Rank (MRR)** | $\ge 0.50$ | **0.698** | PASSED |
 | **Cross-Team Leakage** | $0.0\%$ | **0.0%** (0 contamination) | PASSED |
 | **Multi-Meeting Coverage** | $\ge 80\%$ | **100.0%** | PASSED |
-| **Citation Validity Rate** | $100\%$ | **100.0%** (65/65 benchmark + 295/295 extended) | PASSED |
+| **Citation Validity Rate** | $100\%$ | **100.0%** (65/65 benchmark + 291/291 extended) | PASSED |
 | **Automated Test Suite** | $100\%$ pass | **115 / 115 passed** | PASSED |
 | **Extended 135-Question Suite** | $\ge 95\%$ | **100.0%** (135/135 passed) | PASSED |
 | **Repeated-Run Consistency** | $100\%$ | **0 drift** (0 / 135 inconsistency) | PASSED |
