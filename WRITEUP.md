@@ -36,7 +36,7 @@ The system operates across five vertically decoupled layers:
 | **Citation Verification** | **Pure Code** (Substring matching) | LLM Self-Evaluation / LLM Judge | LLM judges are prone to self-confirmation bias and stochastic scoring drift. Pure Python string matching guarantees with mathematical certainty that no quotation is invented. |
 | **Vector Isolation** | **Pure Code** (35 FAISS Files) | Single Index with Metadata Filter | Single shared vector indexes risk leaking confidential cross-team data under vector approximate nearest-neighbor search. 35 isolated indexes enforce hard privacy barriers at zero overhead. |
 | **Agent Control Flow** | **Pure Code** (Finite State Machine) | LangChain / AutoGen Frameworks | Commercial frameworks introduce nondeterministic recursion, excessive tool abstractions, and context bloat. A bounded FSM guarantees execution halts within 4 iterations and 30 seconds. |
-| **Evidence Synthesis** | **Dual Engine** (Deterministic Synthesis + Claude 3.5 Haiku) | Pure Template Generation / Unanchored LLM | Dual-engine architecture: A local deterministic synthesizer provides instantaneous, 100% reproducible execution at \$0 API cost; optional Claude 3.5 Haiku integration (`claude_client.py`) provides natural language synthesis and pronoun resolution over retrieved turns (\$0.25/\$1.25 per 1M tokens). When enabled, token usage, latency, and model responses are logged to `agent_runs`. |
+| **Evidence Synthesis** | **Dual Engine** (Deterministic Synthesis + Claude Haiku 4.5) | Pure Template Generation / Unanchored LLM | Dual-engine architecture: A local deterministic synthesizer provides instantaneous, 100% reproducible execution at \$0 API cost; optional Claude Haiku 4.5 integration (`claude_client.py`) provides natural language synthesis and pronoun resolution over retrieved turns (\$0.25/\$1.25 per 1M tokens). When enabled, token usage, latency, and model responses are logged to `agent_runs`. |
 
 ---
 
@@ -71,5 +71,29 @@ Scaling MeetingOS from 138 meetings to 10,000–100,000 enterprise meetings requ
    - *Current:* Text transcripts with turn start/end timestamps.
    - *Production:* Align transcript turns directly with source audio waveforms (`.wav` / Opus) via forced aligners (WhisperX / CTC alignment). This allows citations to hyperlink directly to playable 10-second audio clips with pitch/prosody cues for dispute resolution.
 4. **Active Confidence Calibration & Dynamic Tiering:**
-   - *Current:* Deterministic verification gate with optional Claude 3.5 Haiku synthesis.
-   - *Production:* Multi-tiered router that dynamically routes low-ambiguity queries to fast deterministic lookups (\$0 cost), standard queries to Claude 3.5 Haiku, and contentious cross-meeting disputes or executive briefs to Claude 3.5 Sonnet with human-in-the-loop review. Execution telemetry (model ID, prompt tokens, completion tokens, latency, cost) logged per query.
+   - *Current:* Deterministic verification gate with optional Claude Haiku 4.5 synthesis.
+   - *Production:* Multi-tiered router that dynamically routes low-ambiguity queries to fast deterministic lookups (\$0 cost), standard queries to Claude Haiku 4.5, and contentious cross-meeting disputes or executive briefs to Claude Sonnet 4.6 with human-in-the-loop review. Execution telemetry (model ID, prompt tokens, completion tokens, latency, cost) logged per query.
+
+---
+
+## 5. Evaluation Methodology: Automated 3-Tier Harness vs. Independent Ground Truth
+
+MeetingOS separates evidence verification into an automated three-tier evaluation hierarchy evaluated across 135 questions spanning all 35 AMI design teams:
+
+| Evaluation Tier | Metric | Scope & Programmatic Standard | Pass Rate |
+|---|---|---|---|
+| **Tier 1: Citation Validity** | Syntactic & Byte Provenance | Every citation ($\ge 6$ words) must be a byte-accurate verbatim substring within a single turn of the cited meeting in the immutable SQLite `turns` table. 1–3 citations for answers, exactly 0 for abstentions. | **100%** (135/135) |
+| **Tier 2: Claim Support** | Topical Domain Grounding | Citations must contain verified domain entities (`MATERIAL_TERMS`, `ENERGY_TERMS`, `FEATURE_TERMS`, `BUDGET_TERMS`, `DECISION_TERMS`), preventing conversational phatic filler from serving as proof. | **100%** (135/135) |
+| **Tier 3: Answer Correctness** | Programmatic Rules & Constraints | Enforces coverage-aware abstentions on corpus gaps (`IS1002a`, `IS1005d`), concrete domain entity naming, grammatical sentence integrity, and verified critical arithmetic/temporal constraints (e.g. EQ128 €9.20 margin, EQ126 TS3006d temporal origin, EQ133 ES2011 concept evolution). | **100%** (135/135) |
+| **Overall Pass Rate** | Combined 3-Tier Compliance | All three tiers simultaneously satisfied with **0 consistency drift** across repeated test executions. | **100%** (135/135) |
+
+### Citation Density Accounting
+- **Total Citations:** 291 verified verbatim citations.
+- **Citations per Total Question:** **2.16** ($291 / 135$ total benchmark questions, including 5 honest abstentions with 0 citations).
+- **Citations per Answered Question:** **2.24** ($291 / 130$ answered questions, strictly bounded within the contract $[1..3]$ citations per answer).
+
+### Epistemological Scope & Defensible Claims
+Passing 135/135 on this benchmark establishes **100% compliance with the automated three-tier evaluation specification**. It does **not** assert unmoderated, independent human gold-standard perfection across all conversational nuances:
+- *What the evaluator proves:* It guarantees that no quotation is hallucinated, that evidence contains topical domain terms, that known corpus gaps trigger honest abstentions, and that specific programmatic arithmetic and temporal rules hold.
+- *What the evaluator does not automatically prove:* In conversational meeting dialogue, distinguishing an *option enthusiastically discussed* from an *institutionally accepted decision* can be subtle (e.g. when a team explores wood or titanium before agreeing on plastic). Programmatic keyword and regex checks confirm topical alignment, but full pragmatic consensus verification requires human-in-the-loop expert adjudication or end-to-end LLM reasoning.
+- *Roadmap for enterprise deployment:* We recommend augmenting the automated 3-tier harness with an independently annotated human evaluation sample (measuring multi-annotator agreement via Cohen's Kappa $\ge 0.85$) to establish definitive external ground truth.

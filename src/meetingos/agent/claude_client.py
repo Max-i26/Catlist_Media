@@ -1,7 +1,7 @@
 """Claude API Client for MeetingOS.
 
-Provides structured integration with Anthropic Claude models (e.g. claude-haiku-5-5,
-claude-sonnet-5-5) for evidence-grounded answer synthesis and extraction.
+Provides structured integration with Anthropic Claude models (e.g. claude-haiku-4-5,
+claude-sonnet-4-6) for evidence-grounded answer synthesis and extraction.
 """
 from __future__ import annotations
 
@@ -13,11 +13,12 @@ from typing import Optional
 
 import requests
 
+from meetingos.config import DEFAULT_CLAUDE_SYNTHESIS_MODEL
 from meetingos.models import Answer, Citation
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_CLAUDE_MODEL = "claude-haiku-5-5"
+DEFAULT_CLAUDE_MODEL = DEFAULT_CLAUDE_SYNTHESIS_MODEL  # Active model: claude-haiku-4-5
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 

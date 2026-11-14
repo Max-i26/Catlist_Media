@@ -139,6 +139,15 @@ MAX_CITATIONS        = 3
 MIN_QUOTE_WORDS      = 6  # "at least six words" per questions.json instructions
 
 # ---------------------------------------------------------------------------
+# Model Synthesis & Routing (Anthropic Claude Active Models)
+# ---------------------------------------------------------------------------
+# Claude Haiku 4.5 is the active cost-efficient synthesis tier ($0.25 / $1.25 per 1M)
+DEFAULT_CLAUDE_SYNTHESIS_MODEL = "claude-haiku-4-5"
+
+# Claude Sonnet 4.6 is the active escalation tier for complex multi-meeting arbitration
+DEFAULT_CLAUDE_ESCALATION_MODEL = "claude-sonnet-4-6"
+
+# ---------------------------------------------------------------------------
 # Evaluation
 # ---------------------------------------------------------------------------
 RECALL_AT_K = [5, 10]  # Recall@5 and Recall@10

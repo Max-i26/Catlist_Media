@@ -11,7 +11,21 @@
 | **Tier 3: Answer Correctness** | **135** | 135 | 100% | Substantive factual accuracy, arithmetic margins, temporal order & honest abstentions |
 | **Overall 3-Tier Pass Rate** | **135** | 135 | **100%** | Meets all Tier 1, Tier 2, and Tier 3 requirements simultaneously |
 | Honest Abstentions | 5 | 5 | 100% | Correctly abstained on known corpus omissions (IS1002 'a', IS1005 'd') |
-| Total Citations | 291 | — | 2.24 / ans | Exact contract bound [1..3] citations per answered question |
+| Total Citations | 291 | — | — | Exact contract bound [1..3] citations per answered question |
+| Citations / Total Questions | 291 | 135 | 2.16 / question | All 135 benchmark questions including 5 honest abstentions (291/135) |
+| Citations / Answered Question | 291 | 130 | 2.24 / answered | Excluding 5 honest abstentions with 0 citations (291/130) |
+
+## Evaluation Methodology & Epistemological Scope
+
+The 3-tier evaluation harness enforces strict programmatic guarantees across every generated answer:
+
+1. **Tier 1 (Citation Validity — Syntactic & Byte Provenance):** Validates with mathematical certainty that every quotation (≥6 words) is an exact verbatim substring within a single turn of the immutable SQLite `turns` table for the specified `meeting_id`. Guarantees 0 invented quotes or transcript hallucinations.
+2. **Tier 2 (Claim Support — Topical Domain Relevance):** Validates that citations contain domain-relevant entities (materials, power sources, remote components, pricing units, decision verbs) rather than conversational filler.
+3. **Tier 3 (Answer Correctness — Programmatic Contract & Constraints):** Validates that coverage abstentions trigger on genuine corpus omissions, that concrete domain categories name valid entities, that no sentence truncation occurs, and that targeted critical questions satisfy specific arithmetic (€25.0 - €15.8 = €9.20), temporal origin (`TS3006d`), and multi-meeting evolution (`ES2011`) constraints.
+
+> [!IMPORTANT]
+> **Distinction Between Automated Verification and Independent Human Adjudication:**  
+> Passing 135/135 on this 3-tier harness establishes **100% compliance with the programmatic evaluation specification**. In conversational meeting corpora, however, distinguishing an option under discussion from an accepted team consensus in complex multi-meeting transitions requires human or end-to-end model adjudication. Therefore, this benchmark demonstrates rigorous verification of implemented constraints rather than an unmoderated claim of complete human-adjudicated ground truth.
 
 ## Results by Category
 

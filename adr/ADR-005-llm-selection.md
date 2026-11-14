@@ -22,7 +22,7 @@ Each task has different requirements:
 
 Candidates to evaluate:
 - `gemini-2.0-flash` / `gemini-1.5-pro`
-- `claude-3-5-haiku` / `claude-3-5-sonnet`
+- `claude-haiku-4-5` / `claude-sonnet-4-6`
 - `gpt-4o-mini` / `gpt-4o`
 - Local: `llama-3.1-8b` via Ollama (for cost comparison)
 

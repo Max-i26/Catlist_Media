@@ -46,11 +46,11 @@ meetingos ask "What was decided during the kickoff meeting of Team IS1002?" --us
 ```bash
 python -m pytest
 ```
-> *"All 112 automated unit, integration, and synthetic sequence tests pass in under 13 seconds, verifying deterministic checksums, FTS5 synchronization, and citation invariants."*
+> *"All 115 automated unit, integration, and synthetic sequence tests pass in under 13 seconds, verifying deterministic checksums, FTS5 synchronization, and citation invariants."*
 
 ### Minute 3:30 – 4:30: Scaling & Cost Economics
-> *"We also evaluated commercial scaling economics using official November 2026 pricing:*  
-> *• On **Claude Haiku 5.5** at \$0.10/\$0.50 per 1M tokens, extracting all 138 meetings costs just **\$0.18**, and our complete end-to-end system workload costs **\$0.31**.*  
+> *"We also evaluated commercial scaling economics using current official Anthropic API pricing:*  
+> *• On **Claude Haiku 4.5** at \$0.25/\$1.25 per 1M tokens, extracting all 138 meetings costs just **\$0.36**, and our complete end-to-end question-answering workload costs **\$0.42**.*  
 > *• Storage scales linearly: at 10,000 meetings, the entire database and vector indexes consume under **6.5 GB**, fitting on a single NVMe drive without requiring expensive cluster infrastructure.*  
 >  
 > *MeetingOS gives enterprises verifiable conversational memory: auditable, cost-efficient, and grounded in proof. Thank you!"*

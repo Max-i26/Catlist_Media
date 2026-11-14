@@ -38,7 +38,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.71
     },
     {
       "question_id": "EQ002",
@@ -54,7 +54,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ003",
@@ -70,7 +70,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ004",
@@ -86,7 +86,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ005",
@@ -166,7 +166,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ010",
@@ -182,7 +182,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ011",
@@ -198,7 +198,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ012",
@@ -214,7 +214,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ013",
@@ -230,7 +230,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ014",
@@ -246,7 +246,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.18
     },
     {
       "question_id": "EQ015",
@@ -262,7 +262,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.2
     },
     {
       "question_id": "EQ016",
@@ -278,7 +278,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ017",
@@ -294,7 +294,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ018",
@@ -310,7 +310,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ019",
@@ -326,7 +326,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ020",
@@ -342,7 +342,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ021",
@@ -406,7 +406,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ025",
@@ -422,7 +422,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ026",
@@ -438,7 +438,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.18
     },
     {
       "question_id": "EQ027",
@@ -454,7 +454,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ028",
@@ -470,7 +470,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.2
     },
     {
       "question_id": "EQ029",
@@ -486,7 +486,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ030",
@@ -502,7 +502,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ031",
@@ -518,7 +518,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.18
     },
     {
       "question_id": "EQ032",
@@ -534,7 +534,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.27
     },
     {
       "question_id": "EQ033",
@@ -550,7 +550,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ034",
@@ -566,7 +566,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ035",
@@ -582,7 +582,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ036",
@@ -602,7 +602,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ037",
@@ -622,7 +622,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ038",
@@ -670,7 +670,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ041",
@@ -710,7 +710,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ043",
@@ -770,7 +770,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ046",
@@ -782,7 +782,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ047",
@@ -862,7 +862,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ051",
@@ -1002,7 +1002,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ059",
@@ -1034,7 +1034,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ061",
@@ -1054,7 +1054,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ062",
@@ -1070,7 +1070,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ063",
@@ -1106,7 +1106,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ065",
@@ -1126,7 +1126,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ066",
@@ -1146,7 +1146,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ067",
@@ -1182,7 +1182,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ069",
@@ -1202,7 +1202,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ070",
@@ -1222,7 +1222,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ071",
@@ -1242,7 +1242,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.21
+      "elapsed_s": 0.2
     },
     {
       "question_id": "EQ072",
@@ -1274,7 +1274,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ074",
@@ -1286,7 +1286,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ075",
@@ -1298,7 +1298,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ076",
@@ -1310,7 +1310,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.19
+      "elapsed_s": 0.25
     },
     {
       "question_id": "EQ077",
@@ -1322,7 +1322,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ078",
@@ -1342,7 +1342,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ079",
@@ -1362,7 +1362,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ080",
@@ -1374,7 +1374,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.17
+      "elapsed_s": 0.19
     },
     {
       "question_id": "EQ081",
@@ -1386,7 +1386,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ082",
@@ -1414,7 +1414,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ084",
@@ -1434,7 +1434,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ085",
@@ -1490,7 +1490,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ088",
@@ -1502,7 +1502,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.05
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ089",
@@ -1522,7 +1522,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ090",
@@ -1538,7 +1538,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ091",
@@ -1550,7 +1550,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ092",
@@ -1590,7 +1590,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ095",
@@ -1630,7 +1630,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ097",
@@ -1650,7 +1650,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.29
+      "elapsed_s": 0.31
     },
     {
       "question_id": "EQ098",
@@ -1670,7 +1670,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ099",
@@ -1690,7 +1690,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.33
+      "elapsed_s": 0.28
     },
     {
       "question_id": "EQ100",
@@ -1718,7 +1718,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ102",
@@ -1738,7 +1738,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ103",
@@ -1758,7 +1758,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ104",
@@ -1778,7 +1778,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ105",
@@ -1794,7 +1794,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ106",
@@ -1814,7 +1814,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ107",
@@ -1826,7 +1826,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ108",
@@ -1846,7 +1846,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ109",
@@ -1886,7 +1886,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ111",
@@ -1898,7 +1898,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.29
+      "elapsed_s": 0.26
     },
     {
       "question_id": "EQ112",
@@ -1918,7 +1918,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ113",
@@ -1934,7 +1934,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ114",
@@ -1954,7 +1954,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ115",
@@ -1970,7 +1970,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.05
+      "elapsed_s": 0.04
     },
     {
       "question_id": "EQ116",
@@ -1990,7 +1990,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ117",
@@ -2010,7 +2010,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ118",
@@ -2026,7 +2026,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ119",
@@ -2069,7 +2069,7 @@
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual kickoff meeting (IS1002a) is missing from the available corpus. The earliest available meeting is IS1002b, so MeetingOS cannot reliably establish what was decided during the kickoff.",
       "citations": [],
       "abstained": true,
-      "elapsed_s": 0.01
+      "elapsed_s": 0.0
     },
     {
       "question_id": "EQ122",
@@ -2090,7 +2090,7 @@
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual detailed design meeting (IS1005d) is missing from the available corpus. The latest available meeting is IS1005c, so MeetingOS cannot reliably establish what was decided during the final meeting.",
       "citations": [],
       "abstained": true,
-      "elapsed_s": 0.01
+      "elapsed_s": 0.0
     },
     {
       "question_id": "EQ125",
@@ -2113,7 +2113,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.17
+      "elapsed_s": 0.2
     },
     {
       "question_id": "EQ127",
@@ -2129,7 +2129,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ128",
@@ -2161,7 +2161,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ130",
@@ -2177,7 +2177,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ131",
@@ -2193,7 +2193,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ132",
@@ -2209,7 +2209,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.26
     },
     {
       "question_id": "EQ133",
