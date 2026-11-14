@@ -1,6 +1,6 @@
 # MeetingOS: Architecture & Engineering Write-Up
 
-> **Author:** Antigravity Engineering Team · **Submission:** Catalist Agentic AI Intern Assessment  
+> **Author:** Harol Maxilan · **Submission:** Catalist Agentic AI Intern Assessment  
 > **Repository:** [https://github.com/Max-i26/Catlist_Media.git](https://github.com/Max-i26/Catlist_Media.git) · **Spec Baseline:** v1.1  
 
 ---
@@ -36,7 +36,7 @@ The system operates across five vertically decoupled layers:
 | **Citation Verification** | **Pure Code** (Substring matching) | LLM Self-Evaluation / LLM Judge | LLM judges are prone to self-confirmation bias and stochastic scoring drift. Pure Python string matching guarantees with mathematical certainty that no quotation is invented. |
 | **Vector Isolation** | **Pure Code** (35 FAISS Files) | Single Index with Metadata Filter | Single shared vector indexes risk leaking confidential cross-team data under vector approximate nearest-neighbor search. 35 isolated indexes enforce hard privacy barriers at zero overhead. |
 | **Agent Control Flow** | **Pure Code** (Finite State Machine) | LangChain / AutoGen Frameworks | Commercial frameworks introduce nondeterministic recursion, excessive tool abstractions, and context bloat. A bounded FSM guarantees execution halts within 4 iterations and 30 seconds. |
-| **Evidence Synthesis** | **Bounded LLM** (Claude Haiku 5.5) | Pure Template Generation | Conversational question-answering requires natural language synthesis, pronoun resolution, and role summarization across multi-meeting contexts, where Haiku 5.5 provides high fidelity at \$0.10/\$0.50 per 1M tokens. |
+| **Evidence Synthesis** | **Dual Engine** (Deterministic Synthesis + Claude 3.5 Haiku) | Pure Template Generation / Unanchored LLM | Dual-engine architecture: A local deterministic synthesizer provides instantaneous, 100% reproducible execution at \$0 API cost; optional Claude 3.5 Haiku integration (`claude_client.py`) provides natural language synthesis and pronoun resolution over retrieved turns (\$0.25/\$1.25 per 1M tokens). When enabled, token usage, latency, and model responses are logged to `agent_runs`. |
 
 ---
 
@@ -50,10 +50,10 @@ The system operates across five vertically decoupled layers:
    - *Fix:* Implemented automated SQLite database triggers (`chunks_ai`, `chunks_ad`, `chunks_au`) that maintain real-time bi-directional synchronization between the relational table and FTS5 index.
 3. **Colloquial Spoken Number Representation:**
    - *Failure:* Team members express currency informally (e.g. *"twelve fifty"*, *"fifteen point eight Euros"*). Unconstrained generative models frequently hallucinated arithmetic totals (e.g. converting "twelve fifty" to €1250).
-   - *Fix:* Created the `numeric_evidence` table that preserves exact verbatim transcript tokens (`value_text`) alongside parsed numbers, forcing the synthesizer to cite the literal spoken phrase.
+   - *Fix:* Created the `numeric_evidence` table that preserves exact verbatim transcript tokens (`value_text`) alongside parsed numbers, forcing the synthesizer to cite the literal spoken phrase and perform exact numeric reconciliation.
 4. **Third-Party Agent Framework Overhead:**
    - *Failure:* Early prototyping with heavy multi-agent frameworks suffered from unpredictable prompt stuffing, recursion loops, and high latency (>60s per question).
-   - *Fix:* Replaced third-party frameworks with a custom 250-line bounded orchestrator with explicit SQLite checkpointing (`agent_runs`).
+   - *Fix:* Replaced third-party frameworks with a custom bounded orchestrator with explicit SQLite checkpointing (`agent_runs`).
 
 ---
 
@@ -71,5 +71,5 @@ Scaling MeetingOS from 138 meetings to 10,000–100,000 enterprise meetings requ
    - *Current:* Text transcripts with turn start/end timestamps.
    - *Production:* Align transcript turns directly with source audio waveforms (`.wav` / Opus) via forced aligners (WhisperX / CTC alignment). This allows citations to hyperlink directly to playable 10-second audio clips with pitch/prosody cues for dispute resolution.
 4. **Active Confidence Calibration & Dynamic Tiering:**
-   - *Current:* Binary citation pass/fail gate.
-   - *Production:* Confidence scoring tier that dynamically routes low-ambiguity queries to fast deterministic lookups (\$0 cost), standard queries to Claude Haiku 5.5, and contentious cross-meeting disputes to Claude 3.5 Sonnet with human-in-the-loop review.
+   - *Current:* Deterministic verification gate with optional Claude 3.5 Haiku synthesis.
+   - *Production:* Multi-tiered router that dynamically routes low-ambiguity queries to fast deterministic lookups (\$0 cost), standard queries to Claude 3.5 Haiku, and contentious cross-meeting disputes or executive briefs to Claude 3.5 Sonnet with human-in-the-loop review. Execution telemetry (model ID, prompt tokens, completion tokens, latency, cost) logged per query.

@@ -16,6 +16,9 @@
   },
   "run_info": {
     "questions_run": 135,
+    "tier1_citation_validity": 135,
+    "tier2_claim_support": 135,
+    "tier3_answer_correctness": 135,
     "passed": 135,
     "failed": 0,
     "abstained": 5
@@ -51,7 +54,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ003",
@@ -67,7 +70,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ004",
@@ -99,7 +102,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ006",
@@ -115,7 +118,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ007",
@@ -211,7 +214,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ013",
@@ -227,7 +230,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ014",
@@ -243,7 +246,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.19
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ015",
@@ -259,7 +262,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.2
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ016",
@@ -275,7 +278,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ017",
@@ -291,7 +294,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ018",
@@ -307,7 +310,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ019",
@@ -323,7 +326,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ020",
@@ -339,7 +342,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ021",
@@ -355,7 +358,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ022",
@@ -371,7 +374,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ023",
@@ -387,7 +390,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ024",
@@ -403,7 +406,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ025",
@@ -419,7 +422,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ026",
@@ -435,7 +438,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.19
+      "elapsed_s": 0.15
     },
     {
       "question_id": "EQ027",
@@ -451,7 +454,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ028",
@@ -467,7 +470,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ029",
@@ -483,7 +486,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ030",
@@ -499,7 +502,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ031",
@@ -515,7 +518,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ032",
@@ -531,7 +534,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.3
+      "elapsed_s": 0.22
     },
     {
       "question_id": "EQ033",
@@ -547,7 +550,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ034",
@@ -563,7 +566,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.2
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ035",
@@ -579,7 +582,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ036",
@@ -599,7 +602,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ037",
@@ -619,7 +622,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ038",
@@ -639,7 +642,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ039",
@@ -655,7 +658,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ040",
@@ -667,7 +670,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ041",
@@ -687,7 +690,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ042",
@@ -707,7 +710,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ043",
@@ -727,7 +730,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ044",
@@ -747,7 +750,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ045",
@@ -767,7 +770,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ046",
@@ -779,7 +782,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ047",
@@ -799,7 +802,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ048",
@@ -819,7 +822,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ049",
@@ -839,7 +842,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ050",
@@ -859,7 +862,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ051",
@@ -879,7 +882,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ052",
@@ -891,7 +894,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ053",
@@ -911,7 +914,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ054",
@@ -927,7 +930,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ055",
@@ -947,7 +950,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ056",
@@ -967,7 +970,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ057",
@@ -979,7 +982,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ058",
@@ -999,7 +1002,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.15
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ059",
@@ -1011,7 +1014,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ060",
@@ -1031,7 +1034,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ061",
@@ -1051,7 +1054,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ062",
@@ -1067,7 +1070,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ063",
@@ -1083,7 +1086,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ064",
@@ -1103,7 +1106,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ065",
@@ -1123,7 +1126,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ066",
@@ -1143,7 +1146,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.22
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ067",
@@ -1159,7 +1162,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ068",
@@ -1179,7 +1182,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ069",
@@ -1199,7 +1202,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ070",
@@ -1219,7 +1222,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ071",
@@ -1239,7 +1242,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.28
+      "elapsed_s": 0.21
     },
     {
       "question_id": "EQ072",
@@ -1259,7 +1262,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.12
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ073",
@@ -1271,7 +1274,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.2
+      "elapsed_s": 0.12
     },
     {
       "question_id": "EQ074",
@@ -1283,7 +1286,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ075",
@@ -1295,7 +1298,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ076",
@@ -1307,7 +1310,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.3
+      "elapsed_s": 0.19
     },
     {
       "question_id": "EQ077",
@@ -1319,7 +1322,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ078",
@@ -1339,7 +1342,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ079",
@@ -1359,23 +1362,19 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ080",
-      "answer": "Team TS3011 decided on a plastic casing with a rubber grip in meeting TS3011c. Speaker C (Industrial Designer) confirmed that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source', noting the manufacturing and cost trade-offs. Speaker C (Industrial Designer) further observed that 'We can use plastic, which is uh very slippery and maybe not so nice, but you can give it any colour, uh which is the same for rubber, but it's not slippery'.",
+      "answer": "Team TS3011's casing choice ruled out solar energy because their plastic and latex enclosure could not accommodate solar cells. In meeting TS3011c, Speaker C confirmed that 'these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
       "citations": [
         {
           "meeting_id": "TS3011c",
           "quote": "And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source."
-        },
-        {
-          "meeting_id": "TS3011c",
-          "quote": "We can use plastic, which is uh very slippery and maybe not so nice, but you can give it any colour, uh which is the same for rubber, but it's not slippery."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.24
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ081",
@@ -1387,7 +1386,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ082",
@@ -1403,7 +1402,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.38
+      "elapsed_s": 0.25
     },
     {
       "question_id": "EQ083",
@@ -1415,7 +1414,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ084",
@@ -1435,7 +1434,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ085",
@@ -1455,7 +1454,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ086",
@@ -1471,7 +1470,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.19
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ087",
@@ -1491,7 +1490,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ088",
@@ -1523,7 +1522,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ090",
@@ -1539,7 +1538,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.17
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ091",
@@ -1551,7 +1550,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.21
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ092",
@@ -1563,7 +1562,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.18
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ093",
@@ -1575,7 +1574,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.06
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ094",
@@ -1591,7 +1590,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.2
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ095",
@@ -1611,7 +1610,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ096",
@@ -1631,7 +1630,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ097",
@@ -1651,7 +1650,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.38
+      "elapsed_s": 0.29
     },
     {
       "question_id": "EQ098",
@@ -1671,7 +1670,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.1
     },
     {
       "question_id": "EQ099",
@@ -1691,7 +1690,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.42
+      "elapsed_s": 0.33
     },
     {
       "question_id": "EQ100",
@@ -1703,23 +1702,23 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.26
+      "elapsed_s": 0.16
     },
     {
       "question_id": "EQ101",
-      "answer": "In Team IS1002's meetings (IS1002d), Speaker C, Speaker B (User Interface Designer) resolved this design requirement. In IS1002d, Speaker C stated that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'. Furthermore, in IS1002d, Speaker B (User Interface Designer) established that 'Well, that was just just our technical team added up the um production costs of the individual units'.",
+      "answer": "Team IS1002 targeted a selling price of 25 Euros while aiming for an estimated production cost of 15.8 Euros. In meeting IS1002b, Speaker A confirmed that 'Twenty-five Euros is the selling price, we really have to innovate here I guess'. In meeting IS1002d, Speaker C reported that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'.",
       "citations": [
         {
-          "meeting_id": "IS1002d",
-          "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
+          "meeting_id": "IS1002b",
+          "quote": "Twenty-five Euros is the selling price, we really have to innovate here I guess."
         },
         {
           "meeting_id": "IS1002d",
-          "quote": "Well, that was just just our technical team added up the um production costs of the individual units."
+          "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ102",
@@ -1739,7 +1738,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ103",
@@ -1759,7 +1758,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ104",
@@ -1779,27 +1778,23 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ105",
-      "answer": "In Team TS3006's meetings (TS3006d), Speaker A (Project Manager), Speaker D resolved this design requirement. In TS3006d, Speaker A (Project Manager) stated that 'Ah, I don't think I can s uh persuade the management to say, this is better for the market so you sell more than'. Furthermore, in TS3006d, Speaker D established that 'It s it saves us four Euros and it costs us two and a half'.",
+      "answer": "In meeting TS3006d, Team TS3006 managed to reduce their estimated price by 1.5 Euros. Speaker D confirmed the price drop: 'So let's see, we we drop the price by one and a half'. Speaker D explained the net component savings: 'It s it saves us four Euros and it costs us two and a half'.",
       "citations": [
         {
           "meeting_id": "TS3006d",
-          "quote": "Ah, I don't think I can s uh persuade the management to say, this is better for the market so you sell more than"
+          "quote": "So let's see, we we drop the price by one and a half."
         },
         {
           "meeting_id": "TS3006d",
           "quote": "It s it saves us four Euros and it costs us two and a half."
-        },
-        {
-          "meeting_id": "TS3006d",
-          "quote": "So let's see, we we drop the price by one and a half."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ106",
@@ -1819,7 +1814,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ107",
@@ -1831,7 +1826,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.21
+      "elapsed_s": 0.14
     },
     {
       "question_id": "EQ108",
@@ -1851,7 +1846,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ109",
@@ -1871,7 +1866,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ110",
@@ -1891,7 +1886,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.06
     },
     {
       "question_id": "EQ111",
@@ -1903,7 +1898,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.32
+      "elapsed_s": 0.29
     },
     {
       "question_id": "EQ112",
@@ -1939,7 +1934,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.11
     },
     {
       "question_id": "EQ114",
@@ -1975,7 +1970,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.05
     },
     {
       "question_id": "EQ116",
@@ -2015,7 +2010,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ118",
@@ -2031,7 +2026,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.17
+      "elapsed_s": 0.18
     },
     {
       "question_id": "EQ119",
@@ -2047,7 +2042,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.05
+      "elapsed_s": 0.04
     },
     {
       "question_id": "EQ120",
@@ -2067,7 +2062,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.2
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ121",
@@ -2081,7 +2076,7 @@
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual kickoff meeting (IS1002a) is missing from the available corpus. The earliest available meeting is IS1002b, so MeetingOS cannot reliably establish what was decided during the kickoff.",
       "citations": [],
       "abstained": true,
-      "elapsed_s": 0.01
+      "elapsed_s": 0.0
     },
     {
       "question_id": "EQ123",
@@ -2095,7 +2090,7 @@
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual detailed design meeting (IS1005d) is missing from the available corpus. The latest available meeting is IS1005c, so MeetingOS cannot reliably establish what was decided during the final meeting.",
       "citations": [],
       "abstained": true,
-      "elapsed_s": 0.0
+      "elapsed_s": 0.01
     },
     {
       "question_id": "EQ125",
@@ -2106,7 +2101,7 @@
     },
     {
       "question_id": "EQ126",
-      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker C confirmed dropping speech recognition because 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that'. Speaker D established that keeping the LCD screen was essential: 'Uh the the remote control makes use of technolog technological innovation like L_C_D_ screen and speech recognition'.",
+      "answer": "Team TS3006 first proposed dropping speech recognition in meeting TS3006d during their final budget review. Prior to meeting TS3006d, speech recognition was actively maintained across meetings TS3006b and TS3006c. Speaker C confirmed the cut because 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that'.",
       "citations": [
         {
           "meeting_id": "TS3006d",
@@ -2114,19 +2109,15 @@
         },
         {
           "meeting_id": "TS3006d",
-          "quote": "Uh the the remote control makes use of technolog technological innovation like L_C_D_ screen and speech recognition."
-        },
-        {
-          "meeting_id": "TS3006d",
-          "quote": "Well yeah but we dropped the speech recognition."
+          "quote": "Okay so we drop the speech. And drop it yeah? Okay. S Fo Four less Euros."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.29
+      "elapsed_s": 0.17
     },
     {
       "question_id": "EQ127",
-      "answer": "Team ES2003 decided on a plastic casing with a rubber grip in meeting ES2003c. Speaker B (User Interface Designer) confirmed that 'but plastic or rubber as a traditional form of casing would seem to be a good way forward', noting the manufacturing and cost trade-offs. Speaker B (User Interface Designer) further observed that 'Um plastic for some reason incurs no cost, which I've had to very much make advantage of, despite the fact that rubber's only got a value of two Euros per unit'.",
+      "answer": "Team ES2003 actively considered rubber as an alternative casing material alongside traditional plastic. In meeting ES2003c, Speaker B stated that 'plastic or rubber as a traditional form of casing would seem to be a good way forward'. In meeting ES2003d, Speaker B evaluated the cost difference: 'despite the fact that rubber's only got a value of two Euros per unit', settling on plastic casing with a rubber grip.",
       "citations": [
         {
           "meeting_id": "ES2003c",
@@ -2138,63 +2129,55 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.14
+      "elapsed_s": 0.09
     },
     {
       "question_id": "EQ128",
-      "answer": "In Team IS1002's meetings (IS1002b, IS1002c, IS1002d), Speaker C, Speaker D, Speaker A (Marketing Expert) resolved this design requirement. In IS1002d, Speaker C stated that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'. Furthermore, in IS1002b, Speaker D established that 'Are we gonna make this selling selling the cost as a high high-tech uh um environmentally sensitive whatever, or are we gonna go to the lower side of the range'.",
+      "answer": "Team IS1002 established a target selling price of 25.0 Euros in meeting IS1002b and an estimated production cost of 15.8 Euros in meeting IS1002d. Speaker A confirmed the retail target: 'Twenty-five Euros is the selling price, we really have to innovate here I guess'. With Speaker C confirming production at 15.8 Euros, the resulting margin difference is 9.20 Euros per unit.",
       "citations": [
+        {
+          "meeting_id": "IS1002b",
+          "quote": "Twenty-five Euros is the selling price, we really have to innovate here I guess."
+        },
         {
           "meeting_id": "IS1002d",
           "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
+        }
+      ],
+      "abstained": false,
+      "elapsed_s": 0.08
+    },
+    {
+      "question_id": "EQ129",
+      "answer": "Team TS3012 rejected titanium because it was more expensive, difficult to manufacture, and constrained the remote to a single curve. In meeting TS3012c, Speaker C (Industrial Designer) confirmed that titanium was 'More expensive. More difficult to make. Exactly'.",
+      "citations": [
+        {
+          "meeting_id": "TS3012c",
+          "quote": "More expensive. More difficult to make. Exactly."
         },
         {
-          "meeting_id": "IS1002b",
-          "quote": "Are we gonna make this selling selling the cost as a high high-tech uh um environmentally sensitive whatever, or are we gonna go to the lower side of the range?"
-        },
-        {
-          "meeting_id": "IS1002c",
-          "quote": "So we really need to be sure as to what we can push the cost up to, though we haven't got to a stage where we're ready to pin down the price of components."
+          "meeting_id": "TS3012c",
+          "quote": "But let's see, titanium would give us only one curve. So but we're not d we're not using titanium."
         }
       ],
       "abstained": false,
       "elapsed_s": 0.1
     },
     {
-      "question_id": "EQ129",
-      "answer": "Team TS3012 decided on a plastic casing with a rubber grip in meeting TS3012c. Speaker C (Industrial Designer) confirmed that 'I have to offer a plastic, rubber, wood or titanium', noting the manufacturing and cost trade-offs. Additionally, Speaker A (Marketing Expert) observed that 'The case, it will be the material will be rubber, suppose'.",
-      "citations": [
-        {
-          "meeting_id": "TS3012c",
-          "quote": "I have to offer a plastic, rubber, wood or titanium."
-        },
-        {
-          "meeting_id": "TS3012c",
-          "quote": "The case, it will be the material will be rubber, suppose."
-        }
-      ],
-      "abstained": false,
-      "elapsed_s": 0.15
-    },
-    {
       "question_id": "EQ130",
-      "answer": "In Team ES2014's meetings (ES2014c, ES2014d), Speaker B (Industrial Designer) resolved this design requirement. In ES2014d, Speaker B (Industrial Designer) stated that 'So uh maybe if we got rid of like the maybe one of the special colours, kept them all the same colour, then we could have the voice recognition without'. Speaker B (Industrial Designer) also established that 'So if we wanted the scroll wheel and wanted the voice recognition, um then we'd have to get a a more costly circuit board'.",
+      "answer": "Team ES2014 originally intended voice recognition solely as an acoustic finding mechanism to locate misplaced remotes. In meeting ES2014d, Speaker A stressed that 'the only reason we were planning on having the voice recognition was so that they could find the remote if it got lost'. In meeting ES2014b, Speaker D established that consumer research identified lost remotes as the primary frustration: 'the remote was lost somewhere else in the room and that they couldn't find it'.",
       "citations": [
         {
           "meeting_id": "ES2014d",
-          "quote": "So uh maybe if we got rid of like the maybe one of the special colours, kept them all the same colour, then we could have the voice recognition without"
+          "quote": "Okay, but remember the main the only reason we were planning on having the voice recognition was so that they could find the remote if it got lost."
         },
         {
-          "meeting_id": "ES2014c",
-          "quote": "So if we wanted the scroll wheel and wanted the voice recognition, um then we'd have to get a a more costly circuit board."
-        },
-        {
-          "meeting_id": "ES2014d",
-          "quote": "Um, I guess the sample sens sample speaker would be the voice recognition thing, which puts up to four?"
+          "meeting_id": "ES2014b",
+          "quote": "Um we also asked what frustrated people about remote controls and the number one frustration was that the remote was lost somewhere else in the room and that they couldn't find it."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.08
     },
     {
       "question_id": "EQ131",
@@ -2210,15 +2193,15 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ132",
-      "answer": "Team TS3009 decided on a plastic casing in meeting TS3009d. Speaker B confirmed that 'plastic coloured titanium, uh titanium-coloured plastic', noting the manufacturing and cost trade-offs. Additionally, Speaker C (Industrial Designer) observed that 'So titanium-coloured plastic for the back'.",
+      "answer": "Team TS3009 chose titanium-coloured plastic over genuine titanium to preserve their LCD screen and allow double-curved casing geometry. In meeting TS3009d, Speaker D argued that 'you could better change uh titanium to hard a hard kind of plastic looking like titanium than lose the L_C_D_ screen'. Speaker C agreed to the trade-off, concluding 'So titanium-coloured plastic for the back'.",
       "citations": [
         {
           "meeting_id": "TS3009d",
-          "quote": "plastic coloured titanium, uh titanium-coloured plastic?"
+          "quote": "Or you shou It's Or change the titanium or dump the L_C_D_ screen. But I think you could better change uh titanium to hard a hard kind of plastic looking like titanium than lose the L_C_D_ screen."
         },
         {
           "meeting_id": "TS3009d",
@@ -2226,27 +2209,31 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.32
+      "elapsed_s": 0.22
     },
     {
       "question_id": "EQ133",
-      "answer": "In Team ES2011's meetings (ES2011a), Speaker A (Project Manager) resolved this design requirement. In ES2011a, Speaker A (Project Manager) stated that 'And to do this, we have to um there's certain things we have to consider about functional aspects and conceptual design of the thing'. Speaker A (Project Manager) also established that 'Functional design, conceptual design and detailed design'.",
+      "answer": "Team ES2011's design concept evolved from an iPod-style scroll wheel in meeting ES2011b to an integrated fruit and vegetable motif in meeting ES2011c. In ES2011b, Speaker D proposed the scroll wheel to minimize buttons: 'Well even um iPod thing, like um, I don't know if people like this but if you want to reduce the number, of buttons, instead'. In ES2011c, Speaker C developed the organic styling: 'how people are actually going to be using this iPod-ish remote control, based on fruit vegetable design', which was finalized in ES2011d.",
       "citations": [
         {
-          "meeting_id": "ES2011a",
-          "quote": "And to do this, we have to um there's certain things we have to consider about functional aspects and conceptual design of the thing."
+          "meeting_id": "ES2011b",
+          "quote": "Well even um iPod thing, like um, I don't know if people like this but if you want to reduce the number, of buttons, instead"
         },
         {
-          "meeting_id": "ES2011a",
-          "quote": "Functional design, conceptual design and detailed design."
+          "meeting_id": "ES2011c",
+          "quote": "Trying we're gonna try to talk about, um what kind of uh how people are actually going to be using this iPod-ish remote control, based on fruit vegetable design."
+        },
+        {
+          "meeting_id": "ES2011d",
+          "quote": "You could change the vegetable, or fruit."
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.07
     },
     {
       "question_id": "EQ134",
-      "answer": "Team TS3011 decided on a plastic casing in meeting TS3011c. Speaker C (Industrial Designer) confirmed that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
+      "answer": "Team TS3011's casing choice ruled out solar energy because their plastic and latex enclosure could not accommodate solar cells. In meeting TS3011c, Speaker C confirmed that 'these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
       "citations": [
         {
           "meeting_id": "TS3011c",
@@ -2254,7 +2241,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.13
     },
     {
       "question_id": "EQ135",
@@ -2274,7 +2261,7 @@
         }
       ],
       "abstained": false,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.08
     }
   ],
   "evaluation": [
@@ -2296,8 +2283,13 @@
           "quote": "Um I think plastic and rubber would be fine, but plastic, rubber, and wood, I wasn't I'm not very sure about the titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2319,8 +2311,13 @@
           "quote": "this design could be done with um with uh plastic casing."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2342,8 +2339,13 @@
           "quote": "The case material is gonna be soft, rubbery, changeable."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2365,8 +2367,13 @@
           "quote": "It's this as well, sorry, we forgot to mention it'll be made out of kind of a rubbery latex, new material that we've got."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2388,8 +2395,13 @@
           "quote": "So if if we use uh latex cases"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2411,8 +2423,13 @@
           "quote": "And that's we don't care if it's rub rubber or not, but then we've decided that we going for rubber for the case material."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2434,8 +2451,13 @@
           "quote": "Oh, I guess it was rubber rather than latex."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2457,8 +2479,13 @@
           "quote": "Um and we've got a rubber skin material basically throughout."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2480,8 +2507,13 @@
           "quote": "An L_E_D_, which is a light emitting diode, um contact discs for the buttons, plastic for the casing, and a power-source, whatever power-source we've actually determined we want."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2503,8 +2535,13 @@
           "quote": "Um, we can use rubber, plastic, wood or titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2526,8 +2563,13 @@
           "quote": "just kind of a light non-descript grey so that people'll wanna buy the covers and then the covers will be that sort of rubbery material like they make iPod covers"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2549,8 +2591,13 @@
           "quote": "It can be made of plastic, rubber, wood o if you like, or titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2572,8 +2619,13 @@
           "quote": "Um one issue for the buttons is, depending on which material we use, if we use rubber buttons then it requires a rubber case, so we have to take that into consideration."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2595,8 +2647,13 @@
           "quote": "So the actual remote would be hard plastic and the casings rubber."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2618,8 +2675,13 @@
           "quote": "So we what we can use is plastic, rubber, wood and titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2641,8 +2703,13 @@
           "quote": "Yes but I can I think uh I think we can just use more cheap plastic for a kind of basic edition"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2664,8 +2731,13 @@
           "quote": "B it seems uh so, but uh if you don't have an waterproof remote control it means you can just cover it with some plastic and you can sort of f"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2687,8 +2759,13 @@
           "quote": "The advantages of working with plastic and rubber is w we we'll have a lot more um options just in terms of shape because you can extrude plastic in basically any shape you want."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2710,8 +2787,13 @@
           "quote": "so will it will be wooden wooden di wooden remote control or a a plastic remote control like this one."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2733,8 +2815,13 @@
           "quote": "Make it plastic instead of rubber."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2756,8 +2843,13 @@
           "quote": "Something like a plastic cover covering uh some interface, U_S_B_ interface as in the in uh digital camera."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2779,8 +2871,13 @@
           "quote": "Material, we want to stick to titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2802,8 +2899,13 @@
           "quote": "Then uh the case material we have uh uh also several choices, like wood, rubber, titanium or latex."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2825,8 +2927,13 @@
           "quote": "They do that anyway with the rubber and plastic, so, and chew 'em up."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2848,8 +2955,13 @@
           "quote": "I think uh that is uh f for rubbers that is uh yeah case material."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2871,8 +2983,13 @@
           "quote": "Uh for the b buttons, we can use plastic or rubber."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2894,8 +3011,13 @@
           "quote": "Since that allows us to use uh two D_ buttons, uh non-rubber buttons."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2917,8 +3039,13 @@
           "quote": "We could make it titanium instead of rubber."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2940,8 +3067,13 @@
           "quote": "Well we have all kinds of hard uh materials like the the hard plastic, the wood and the titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2963,8 +3095,13 @@
           "quote": "Or do you think it Rubber casing, yeah."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -2986,8 +3123,13 @@
           "quote": "um it has to be solid uh in hard material like uh hard plastic uh with soft rubber for uh falling and and uh uh yeah"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3009,8 +3151,13 @@
           "quote": "we have some some minutes left uh I w wrote down uh that the case should be plastic of course"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3032,8 +3179,13 @@
           "quote": "So Then we have plastic, wood, rubber."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3055,8 +3207,13 @@
           "quote": "We can use plastic, which is uh very slippery and maybe not so nice, but you can give it any colour, uh which is the same for rubber, but it's not slippery."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3078,8 +3235,13 @@
           "quote": "Okay, I t I'd go for plastic because I have a couple of curves in my design."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3105,8 +3267,13 @@
           "quote": "Yeah but that that might be something I think that's more of a look and feel decision because I don't think you can have one power source if you're using the alternative power sources."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3132,8 +3299,13 @@
           "quote": "Um the bat uh the battery for a a watch wouldn't require a lot of power, would be my one query."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3159,8 +3331,13 @@
           "quote": "K no the kinetic ones come come with um a sort of w watch a battery that goes in a watch."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3182,8 +3359,13 @@
           "quote": "Okay. Uh there's solar power. Um."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3201,8 +3383,13 @@
           "quote": "If it's made of rubber you could get the kinetic energy fairly easily there, you could just bounce it up and down."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3228,8 +3415,13 @@
           "quote": "You can have a kinetic provision of energy, which is used on some watches these days."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3255,8 +3447,13 @@
           "quote": "Or a solar battery, although there are slight um complications with solar batteries as in we can't use a latex case if we have a solar battery."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3282,8 +3479,13 @@
           "quote": "Well I I don't think yeah I can't see anybody buying a lap a remote control that they have to plug in so we'd have to see some kind of new battery technology."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3309,8 +3511,13 @@
           "quote": "Uh latex, you can't do solar power with a latex one."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3336,8 +3543,13 @@
           "quote": "We could have talked about doing a wind-up or a dynamo or a solar power."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3355,8 +3567,13 @@
           "quote": "And then this is the power source and the bit everyone sees."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3382,8 +3599,13 @@
           "quote": "Um one that one that I think is quite interesting is the kinetic energy source"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3409,8 +3631,13 @@
           "quote": "Okay, so, by the fact that we've got uh the simple chip and the uh kinetic energy source, we've got a single curved case."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3436,8 +3663,13 @@
           "quote": "I mean, the kinetic energy is transformed into power to make the circuit work."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3463,8 +3695,13 @@
           "quote": "Um the kinetic energy thing um might work, um but the same problem."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3490,8 +3727,13 @@
           "quote": "Yeah, it migh It it'll need uh more than a conventional one, it won't be uh just maybe you might use a A_A_ battery actually."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3509,8 +3751,13 @@
           "quote": "Basically we have a a battery a power supply here."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3536,8 +3783,13 @@
           "quote": "So that's the next bullet is the um the kinetic provision of energy, so it's like that flashlight where you have to shake it."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3559,8 +3811,13 @@
           "quote": "regular battery and and the solar energy battery it could be it'll it will add a little bit of the price"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3586,8 +3843,13 @@
           "quote": "So for the power source, apparently you still you you want to use both solar cells and batteries."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3613,8 +3875,13 @@
           "quote": "which I found the best is to use the solar cells which can which can uh supply everything."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3632,8 +3899,13 @@
           "quote": "So we would like to propose battery instead of solar cells and it would be problematic uh to have enough energy with the solar cells and so we would like to just use simple battery."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3659,8 +3931,13 @@
           "quote": "So what I have f found is that I think basic battery or kinetic uh energy uh collection is the"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3678,8 +3955,13 @@
           "quote": "So here you can uh look like uh the energy and uh dynamo and uh kinetic and solar cells."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3705,8 +3987,13 @@
           "quote": "the energy should be battery uh should be on a chip"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3732,8 +4019,13 @@
           "quote": "Uh so uh f I think first of all we have to see uh it is possible to introduce kinetic energy in our budget, I think."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3755,8 +4047,13 @@
           "quote": "Um for the energy source we can use batteries or a kinetic uh Like with the pulse watch."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3778,8 +4075,13 @@
           "quote": "Solar cell. No it took a battery?"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3805,8 +4107,13 @@
           "quote": "So we only, we already decided that kinetic would be the choice for energy."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3832,8 +4139,13 @@
           "quote": "Uh kinetic, that's when you move something, then uh it gets energy."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3859,8 +4171,13 @@
           "quote": "We don't need kinetic, solar cells, hand dynamo."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3882,8 +4199,13 @@
           "quote": "But solar energy is not very practical inside a house, because you don't have a have a lot of uh sun."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3909,8 +4231,13 @@
           "quote": "Or use uh a k uh kinetic battery like uh within a watch."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3936,8 +4263,13 @@
           "quote": "Uh there's there's also a kinetic energy supply."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3963,8 +4295,13 @@
           "quote": "We have a kin uh kinetic provision, then you have to shake the remote control to get the energy."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -3990,8 +4327,13 @@
           "quote": "Well yeah but we dropped the speech recognition."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4017,8 +4359,13 @@
           "quote": "Uh first in the power supply, we have the option of just the standard battery, um."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4036,8 +4383,13 @@
           "quote": "Um and then like a locator, so you know, kind of like you have for a mobile phone or not a mobile phone"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4055,8 +4407,13 @@
           "quote": "An L_E_D_, which is a light emitting diode, um contact discs for the buttons, plastic for the casing, and a power-source, whatever power-source we've actually determined we want."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4074,8 +4431,13 @@
           "quote": "And special material, rubber, wood, yes."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4093,8 +4455,13 @@
           "quote": "Well, we discussed the design, no sharp corners, we rounded it off, like you see on the other screen, which is fine."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4112,8 +4479,13 @@
           "quote": "This is, this is very high-powered stuff here, double-clicking, there we go."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4139,8 +4511,13 @@
           "quote": "making sure that we get all the essential functions in the device and uh the extra functions and the more advanced features."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4166,8 +4543,13 @@
           "quote": "Which makes this thing raise hell when you remove it too far from the television."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4178,19 +4560,20 @@
       "question": "What energy option did Team TS3011 ultimately not use, given their casing decision?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "Team TS3011 decided on a plastic casing with a rubber grip in meeting TS3011c. Speaker C (Industrial Designer) confirmed that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source', noting the manufacturing and cost trade-offs. Speaker C (Industrial Designer) further observed that 'We can use plastic, which is uh very slippery and maybe not so nice, but you can give it any colour, uh which is the same for rubber, but it's not slippery'.",
+      "answer": "Team TS3011's casing choice ruled out solar energy because their plastic and latex enclosure could not accommodate solar cells. In meeting TS3011c, Speaker C confirmed that 'these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
       "citations": [
         {
           "meeting_id": "TS3011c",
           "quote": "And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source."
-        },
-        {
-          "meeting_id": "TS3011c",
-          "quote": "We can use plastic, which is uh very slippery and maybe not so nice, but you can give it any colour, uh which is the same for rubber, but it's not slippery."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4208,8 +4591,13 @@
           "quote": "plastic-like, but rubber, mayb maybe, you know, rubber-like uh"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4231,8 +4619,13 @@
           "quote": "So titanium-coloured plastic for the back."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4250,8 +4643,13 @@
           "quote": "Th the internal d engineering design has got to remain the same, yes, absolutely."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4277,8 +4675,13 @@
           "quote": "Yeah, our division has developed a new speech recognition feature, the integrated programmable sample sensor simple speaker u unit."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4304,8 +4707,13 @@
           "quote": "And then they also secure uh covers, to protect uh secure and hidden programming and battery covers that will protect your settings."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4327,8 +4735,13 @@
           "quote": "So we have the choice between rubber and plastic."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4354,8 +4767,13 @@
           "quote": "Basically, we're we're desi we're designing and marketing a television remote control unit."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4373,8 +4791,13 @@
           "quote": "But it must have been quite difficult for them to build a whole um"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4400,8 +4823,13 @@
           "quote": "but it's going to be less flexible with the features"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4423,8 +4851,13 @@
           "quote": "I think the most important thing is an attractive streamlined remote control and to be extraordinarily reductionist, power, channel, volume and everything else is is uh up to the designers."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4442,8 +4875,13 @@
           "quote": "And, um, then we have to make some key decisions on, on our remote control concept, and how we're gonna make it, what uh materials we're gonna use, and that sort of thing."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4461,8 +4899,13 @@
           "quote": "I think the if we do the cover that's really going with the company's philosophy of having the fashion in in electronics"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4480,8 +4923,13 @@
           "quote": "D are we including the voice are you glu are we including the voice in the end or not?"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4503,8 +4951,13 @@
           "quote": "So so another important part of the project is about money, uh and about so about finances."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4530,8 +4983,13 @@
           "quote": "Um I think the important points we have to t talk about are uh it's functional design, it's conceptual design, and desail detailed design."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4557,8 +5015,13 @@
           "quote": "So this would be very important that we at least include these features."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4584,8 +5047,13 @@
           "quote": "Yeah, but uh they don't use the same signal, uh on remote control."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4611,8 +5079,13 @@
           "quote": "Um well I think the most important thing of a remote control is that you can switch channels."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4638,8 +5111,13 @@
           "quote": "but I think uh we gotta build a b pretty cheap design to to stay within our limits."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4657,8 +5135,13 @@
           "quote": "But Is it a good design?"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4669,19 +5152,24 @@
       "question": "What was Team IS1002's target selling price and what production cost were they aiming for?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "In Team IS1002's meetings (IS1002d), Speaker C, Speaker B (User Interface Designer) resolved this design requirement. In IS1002d, Speaker C stated that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'. Furthermore, in IS1002d, Speaker B (User Interface Designer) established that 'Well, that was just just our technical team added up the um production costs of the individual units'.",
+      "answer": "Team IS1002 targeted a selling price of 25 Euros while aiming for an estimated production cost of 15.8 Euros. In meeting IS1002b, Speaker A confirmed that 'Twenty-five Euros is the selling price, we really have to innovate here I guess'. In meeting IS1002d, Speaker C reported that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'.",
       "citations": [
         {
-          "meeting_id": "IS1002d",
-          "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
+          "meeting_id": "IS1002b",
+          "quote": "Twenty-five Euros is the selling price, we really have to innovate here I guess."
         },
         {
           "meeting_id": "IS1002d",
-          "quote": "Well, that was just just our technical team added up the um production costs of the individual units."
+          "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4707,8 +5195,13 @@
           "quote": "So these are all things, of course, to remember with the budget and when you design to materials, cost, etcetera."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4734,8 +5227,13 @@
           "quote": "I thought it was gonna be a cost issue which material we were gonna take relative to the advanced chips or anything."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4761,8 +5259,13 @@
           "quote": "Um and basically how, what were making for the prototype."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4773,23 +5276,24 @@
       "question": "How much did Team TS3006 manage to reduce their estimated price by in their final meeting?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "In Team TS3006's meetings (TS3006d), Speaker A (Project Manager), Speaker D resolved this design requirement. In TS3006d, Speaker A (Project Manager) stated that 'Ah, I don't think I can s uh persuade the management to say, this is better for the market so you sell more than'. Furthermore, in TS3006d, Speaker D established that 'It s it saves us four Euros and it costs us two and a half'.",
+      "answer": "In meeting TS3006d, Team TS3006 managed to reduce their estimated price by 1.5 Euros. Speaker D confirmed the price drop: 'So let's see, we we drop the price by one and a half'. Speaker D explained the net component savings: 'It s it saves us four Euros and it costs us two and a half'.",
       "citations": [
         {
           "meeting_id": "TS3006d",
-          "quote": "Ah, I don't think I can s uh persuade the management to say, this is better for the market so you sell more than"
+          "quote": "So let's see, we we drop the price by one and a half."
         },
         {
           "meeting_id": "TS3006d",
           "quote": "It s it saves us four Euros and it costs us two and a half."
-        },
-        {
-          "meeting_id": "TS3006d",
-          "quote": "So let's see, we we drop the price by one and a half."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4815,8 +5319,13 @@
           "quote": "Yeah within the constraints the Yeah."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4834,8 +5343,13 @@
           "quote": "Remember we have a s budget for the cost of producing the remote controller."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4861,8 +5375,13 @@
           "quote": "As that is the main function."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4888,8 +5407,13 @@
           "quote": "Uh, and you you could you could use normal light, but uh you wouldn't get the same amount of energy that you would from a battery or something."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4915,8 +5439,13 @@
           "quote": "Um, so I was looking at how we're going to go about the working design, and what we actually need to do, and what the remote control needs to do."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4934,8 +5463,13 @@
           "quote": "You can go into you in you main menu, you can choose uh flip channel, uh you can choose sound options, any options."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4961,8 +5495,13 @@
           "quote": "Probably would have mean we could have come up with a lot more solid design in the end, I would have to agree."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -4984,8 +5523,13 @@
           "quote": "We've maybe lost Hasn't it It's hard to tell how the rubber the rubber casing would really affect"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5011,8 +5555,13 @@
           "quote": "Right, forty minutes for this meeting, so a bit more time than the last one."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5034,8 +5583,13 @@
           "quote": "Prototype presentation, well first you guys built the prototype."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5061,8 +5615,13 @@
           "quote": "press button makes connection with the power source and the rest of the circuit"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5088,8 +5647,13 @@
           "quote": "Well who has uh some uh remarks about the current uh remote controls?"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5111,8 +5675,13 @@
           "quote": "Because uh it seems that this can be yeah, wood into plastic and it it should be fine."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5134,8 +5703,13 @@
           "quote": "See I'm having I'm having trouble imagining the is it uh gonna be the size, like the the controller?"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5161,8 +5735,13 @@
           "quote": "And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5175,7 +5754,14 @@
       "did_abstain": true,
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual kickoff meeting (IS1002a) is missing from the available corpus. The earliest available meeting is IS1002b, so MeetingOS cannot reliably establish what was decided during the kickoff.",
       "citations": [],
-      "issues": [],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
+      "issues": [
+        "OK [Tier 1]: 0 citations correctly returned for honest abstention",
+        "OK [Tier 2]: Honest abstention makes no ungrounded claims",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
+      ],
       "passed": true
     },
     {
@@ -5187,7 +5773,14 @@
       "did_abstain": true,
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual kickoff meeting (IS1002a) is missing from the available corpus. The earliest available meeting is IS1002b, so MeetingOS cannot reliably establish what was decided during the kickoff.",
       "citations": [],
-      "issues": [],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
+      "issues": [
+        "OK [Tier 1]: 0 citations correctly returned for honest abstention",
+        "OK [Tier 2]: Honest abstention makes no ungrounded claims",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
+      ],
       "passed": true
     },
     {
@@ -5199,7 +5792,14 @@
       "did_abstain": true,
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual detailed design meeting (IS1005d) is missing from the available corpus. The latest available meeting is IS1005c, so MeetingOS cannot reliably establish what was decided during the final meeting.",
       "citations": [],
-      "issues": [],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
+      "issues": [
+        "OK [Tier 1]: 0 citations correctly returned for honest abstention",
+        "OK [Tier 2]: Honest abstention makes no ungrounded claims",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
+      ],
       "passed": true
     },
     {
@@ -5211,7 +5811,14 @@
       "did_abstain": true,
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual detailed design meeting (IS1005d) is missing from the available corpus. The latest available meeting is IS1005c, so MeetingOS cannot reliably establish what was decided during the final meeting.",
       "citations": [],
-      "issues": [],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
+      "issues": [
+        "OK [Tier 1]: 0 citations correctly returned for honest abstention",
+        "OK [Tier 2]: Honest abstention makes no ungrounded claims",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
+      ],
       "passed": true
     },
     {
@@ -5223,7 +5830,14 @@
       "did_abstain": true,
       "answer": "The meeting transcripts do not contain sufficient evidence to answer this question. The actual detailed design meeting (IS1005d) is missing from the available corpus. The latest available meeting is IS1005c, so MeetingOS cannot reliably establish what was decided during the final meeting.",
       "citations": [],
-      "issues": [],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
+      "issues": [
+        "OK [Tier 1]: 0 citations correctly returned for honest abstention",
+        "OK [Tier 2]: Honest abstention makes no ungrounded claims",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
+      ],
       "passed": true
     },
     {
@@ -5233,7 +5847,7 @@
       "question": "In what meeting did Team TS3006 first propose dropping speech recognition?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "When budget constraints forced a cut in meeting TS3006d, Team TS3006 decided to drop speech recognition while keeping the LCD screen. Speaker C confirmed dropping speech recognition because 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that'. Speaker D established that keeping the LCD screen was essential: 'Uh the the remote control makes use of technolog technological innovation like L_C_D_ screen and speech recognition'.",
+      "answer": "Team TS3006 first proposed dropping speech recognition in meeting TS3006d during their final budget review. Prior to meeting TS3006d, speech recognition was actively maintained across meetings TS3006b and TS3006c. Speaker C confirmed the cut because 'We uh we we haven't really integrated this the speech into the system, so we can might as well s drop that'.",
       "citations": [
         {
           "meeting_id": "TS3006d",
@@ -5241,15 +5855,16 @@
         },
         {
           "meeting_id": "TS3006d",
-          "quote": "Uh the the remote control makes use of technolog technological innovation like L_C_D_ screen and speech recognition."
-        },
-        {
-          "meeting_id": "TS3006d",
-          "quote": "Well yeah but we dropped the speech recognition."
+          "quote": "Okay so we drop the speech. And drop it yeah? Okay. S Fo Four less Euros."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5260,7 +5875,7 @@
       "question": "Did Team ES2003 ever consider a material other than plastic for their casing? If so, what?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "Team ES2003 decided on a plastic casing with a rubber grip in meeting ES2003c. Speaker B (User Interface Designer) confirmed that 'but plastic or rubber as a traditional form of casing would seem to be a good way forward', noting the manufacturing and cost trade-offs. Speaker B (User Interface Designer) further observed that 'Um plastic for some reason incurs no cost, which I've had to very much make advantage of, despite the fact that rubber's only got a value of two Euros per unit'.",
+      "answer": "Team ES2003 actively considered rubber as an alternative casing material alongside traditional plastic. In meeting ES2003c, Speaker B stated that 'plastic or rubber as a traditional form of casing would seem to be a good way forward'. In meeting ES2003d, Speaker B evaluated the cost difference: 'despite the fact that rubber's only got a value of two Euros per unit', settling on plastic casing with a rubber grip.",
       "citations": [
         {
           "meeting_id": "ES2003c",
@@ -5271,8 +5886,13 @@
           "quote": "Um plastic for some reason incurs no cost, which I've had to very much make advantage of, despite the fact that rubber's only got a value of two Euros per unit."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5283,23 +5903,24 @@
       "question": "What was the difference between Team IS1002's target selling price and estimated production cost?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "In Team IS1002's meetings (IS1002b, IS1002c, IS1002d), Speaker C, Speaker D, Speaker A (Marketing Expert) resolved this design requirement. In IS1002d, Speaker C stated that 'Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing'. Furthermore, in IS1002b, Speaker D established that 'Are we gonna make this selling selling the cost as a high high-tech uh um environmentally sensitive whatever, or are we gonna go to the lower side of the range'.",
+      "answer": "Team IS1002 established a target selling price of 25.0 Euros in meeting IS1002b and an estimated production cost of 15.8 Euros in meeting IS1002d. Speaker A confirmed the retail target: 'Twenty-five Euros is the selling price, we really have to innovate here I guess'. With Speaker C confirming production at 15.8 Euros, the resulting margin difference is 9.20 Euros per unit.",
       "citations": [
+        {
+          "meeting_id": "IS1002b",
+          "quote": "Twenty-five Euros is the selling price, we really have to innovate here I guess."
+        },
         {
           "meeting_id": "IS1002d",
           "quote": "Production costs estimated by our manufacturing department and um the research department, which is us, is uh fifteen point eight Euros, someone forgot the units there yeah, uh unit price unit production price cost thing."
-        },
-        {
-          "meeting_id": "IS1002b",
-          "quote": "Are we gonna make this selling selling the cost as a high high-tech uh um environmentally sensitive whatever, or are we gonna go to the lower side of the range?"
-        },
-        {
-          "meeting_id": "IS1002c",
-          "quote": "So we really need to be sure as to what we can push the cost up to, though we haven't got to a stage where we're ready to pin down the price of components."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5310,19 +5931,24 @@
       "question": "Why did Team TS3012 reject titanium as a casing material?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "Team TS3012 decided on a plastic casing with a rubber grip in meeting TS3012c. Speaker C (Industrial Designer) confirmed that 'I have to offer a plastic, rubber, wood or titanium', noting the manufacturing and cost trade-offs. Additionally, Speaker A (Marketing Expert) observed that 'The case, it will be the material will be rubber, suppose'.",
+      "answer": "Team TS3012 rejected titanium because it was more expensive, difficult to manufacture, and constrained the remote to a single curve. In meeting TS3012c, Speaker C (Industrial Designer) confirmed that titanium was 'More expensive. More difficult to make. Exactly'.",
       "citations": [
         {
           "meeting_id": "TS3012c",
-          "quote": "I have to offer a plastic, rubber, wood or titanium."
+          "quote": "More expensive. More difficult to make. Exactly."
         },
         {
           "meeting_id": "TS3012c",
-          "quote": "The case, it will be the material will be rubber, suppose."
+          "quote": "But let's see, titanium would give us only one curve. So but we're not d we're not using titanium."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5333,23 +5959,24 @@
       "question": "What was the original intended purpose of voice recognition in Team ES2014's design?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "In Team ES2014's meetings (ES2014c, ES2014d), Speaker B (Industrial Designer) resolved this design requirement. In ES2014d, Speaker B (Industrial Designer) stated that 'So uh maybe if we got rid of like the maybe one of the special colours, kept them all the same colour, then we could have the voice recognition without'. Speaker B (Industrial Designer) also established that 'So if we wanted the scroll wheel and wanted the voice recognition, um then we'd have to get a a more costly circuit board'.",
+      "answer": "Team ES2014 originally intended voice recognition solely as an acoustic finding mechanism to locate misplaced remotes. In meeting ES2014d, Speaker A stressed that 'the only reason we were planning on having the voice recognition was so that they could find the remote if it got lost'. In meeting ES2014b, Speaker D established that consumer research identified lost remotes as the primary frustration: 'the remote was lost somewhere else in the room and that they couldn't find it'.",
       "citations": [
         {
           "meeting_id": "ES2014d",
-          "quote": "So uh maybe if we got rid of like the maybe one of the special colours, kept them all the same colour, then we could have the voice recognition without"
+          "quote": "Okay, but remember the main the only reason we were planning on having the voice recognition was so that they could find the remote if it got lost."
         },
         {
-          "meeting_id": "ES2014c",
-          "quote": "So if we wanted the scroll wheel and wanted the voice recognition, um then we'd have to get a a more costly circuit board."
-        },
-        {
-          "meeting_id": "ES2014d",
-          "quote": "Um, I guess the sample sens sample speaker would be the voice recognition thing, which puts up to four?"
+          "meeting_id": "ES2014b",
+          "quote": "Um we also asked what frustrated people about remote controls and the number one frustration was that the remote was lost somewhere else in the room and that they couldn't find it."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5371,8 +5998,13 @@
           "quote": "Um it's not hand dynamo, it's powered by battery, so we give it a"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5383,19 +6015,24 @@
       "question": "What made Team TS3009 opt for titanium-coloured plastic rather than actual titanium?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "Team TS3009 decided on a plastic casing in meeting TS3009d. Speaker B confirmed that 'plastic coloured titanium, uh titanium-coloured plastic', noting the manufacturing and cost trade-offs. Additionally, Speaker C (Industrial Designer) observed that 'So titanium-coloured plastic for the back'.",
+      "answer": "Team TS3009 chose titanium-coloured plastic over genuine titanium to preserve their LCD screen and allow double-curved casing geometry. In meeting TS3009d, Speaker D argued that 'you could better change uh titanium to hard a hard kind of plastic looking like titanium than lose the L_C_D_ screen'. Speaker C agreed to the trade-off, concluding 'So titanium-coloured plastic for the back'.",
       "citations": [
         {
           "meeting_id": "TS3009d",
-          "quote": "plastic coloured titanium, uh titanium-coloured plastic?"
+          "quote": "Or you shou It's Or change the titanium or dump the L_C_D_ screen. But I think you could better change uh titanium to hard a hard kind of plastic looking like titanium than lose the L_C_D_ screen."
         },
         {
           "meeting_id": "TS3009d",
           "quote": "So titanium-coloured plastic for the back."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 2 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 2 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5406,19 +6043,28 @@
       "question": "How did Team ES2011's design concept evolve across their meetings?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "In Team ES2011's meetings (ES2011a), Speaker A (Project Manager) resolved this design requirement. In ES2011a, Speaker A (Project Manager) stated that 'And to do this, we have to um there's certain things we have to consider about functional aspects and conceptual design of the thing'. Speaker A (Project Manager) also established that 'Functional design, conceptual design and detailed design'.",
+      "answer": "Team ES2011's design concept evolved from an iPod-style scroll wheel in meeting ES2011b to an integrated fruit and vegetable motif in meeting ES2011c. In ES2011b, Speaker D proposed the scroll wheel to minimize buttons: 'Well even um iPod thing, like um, I don't know if people like this but if you want to reduce the number, of buttons, instead'. In ES2011c, Speaker C developed the organic styling: 'how people are actually going to be using this iPod-ish remote control, based on fruit vegetable design', which was finalized in ES2011d.",
       "citations": [
         {
-          "meeting_id": "ES2011a",
-          "quote": "And to do this, we have to um there's certain things we have to consider about functional aspects and conceptual design of the thing."
+          "meeting_id": "ES2011b",
+          "quote": "Well even um iPod thing, like um, I don't know if people like this but if you want to reduce the number, of buttons, instead"
         },
         {
-          "meeting_id": "ES2011a",
-          "quote": "Functional design, conceptual design and detailed design."
+          "meeting_id": "ES2011c",
+          "quote": "Trying we're gonna try to talk about, um what kind of uh how people are actually going to be using this iPod-ish remote control, based on fruit vegetable design."
+        },
+        {
+          "meeting_id": "ES2011d",
+          "quote": "You could change the vegetable, or fruit."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 2 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5429,15 +6075,20 @@
       "question": "Why did Team TS3011's casing choice affect their energy source options?",
       "expected_abstain": false,
       "did_abstain": false,
-      "answer": "Team TS3011 decided on a plastic casing in meeting TS3011c. Speaker C (Industrial Designer) confirmed that 'And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
+      "answer": "Team TS3011's casing choice ruled out solar energy because their plastic and latex enclosure could not accommodate solar cells. In meeting TS3011c, Speaker C confirmed that 'these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source'.",
       "citations": [
         {
           "meeting_id": "TS3011c",
           "quote": "And these latex cases, there's there's just the plastic ones uh won't allow the use of solar cells as an energy source source."
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 1 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 1 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 1 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     },
@@ -5463,8 +6114,13 @@
           "quote": "The marketing expert uh who has to finally come up with to to to market this product has been watching the competition"
         }
       ],
+      "tier1_citation_validity": true,
+      "tier2_claim_support": true,
+      "tier3_answer_correctness": true,
       "issues": [
-        "OK: All 3 citation(s) pass deterministic validation"
+        "OK [Tier 1]: All 3 citation(s) pass deterministic SQLite substring verification (>=6 words)",
+        "OK [Tier 2]: All 3 citation(s) provide verified topical claim support",
+        "OK [Tier 3]: Substantive answer accuracy, speaker attribution, and contract fully satisfied"
       ],
       "passed": true
     }
