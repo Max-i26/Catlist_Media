@@ -17,6 +17,7 @@
 | **3. Extended 135-Question Evaluation Suite** | [`outputs/extended_eval_report.md`](outputs/extended_eval_report.md) & [`scripts/run_extended_eval.py`](scripts/run_extended_eval.py) | 135 Questions across all 35 teams, 100% pass, 0 consistency drift |
 | **4. One-Page Engineering Write-Up** | [`WRITEUP.md`](WRITEUP.md) | Architecture, model-vs-code rationale, tool breakages & scale |
 | **5. 3–5 Min Walkthrough & Live Demo** | [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) | Timed presentation script + 5 live demo interview questions |
+| **6. Corpus Discrepancy & Forensic Audit** | [`CORPUS_DISCREPANCIES_AUDIT.md`](CORPUS_DISCREPANCIES_AUDIT.md) | Forensic analysis of PDF guideline claims vs. measured empirical data truth |
 
 ---
 
