@@ -18,6 +18,7 @@
 | **4. One-Page Engineering Write-Up** | [`WRITEUP.md`](WRITEUP.md) | Architecture, model-vs-code rationale, tool breakages & scale |
 | **5. 3–5 Min Walkthrough & Live Demo** | [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) | Timed presentation script + 5 live demo interview questions |
 | **6. Corpus Discrepancy & Forensic Audit** | [`CORPUS_DISCREPANCIES_AUDIT.md`](CORPUS_DISCREPANCIES_AUDIT.md) | Forensic analysis of PDF guideline claims vs. measured empirical data truth |
+| **7. Master Study Guide & Handbook** | [`STUDY_GUIDE.md`](STUDY_GUIDE.md) | Complete end-to-end study guide, 12-year-old analogies, architecture, failure post-mortems & interview cheat sheet |
 
 ---
 
